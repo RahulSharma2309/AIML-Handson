@@ -27,6 +27,10 @@ It answers the question: **"For each actual class, what did the model predict?"*
 
 ## Structure of a Confusion Matrix
 
+Here is the complete confusion matrix with all derived metrics:
+
+![Confusion Matrix Diagram](../images/confusion-matrix-diagram.png)
+
 For binary classification (two classes), the matrix is a 2x2 grid:
 
 ```
