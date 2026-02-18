@@ -1,4 +1,8 @@
-# Phase 5 — RAG & Agentic AI (Months 9–10)
+# Phase 5 — RAG & Agentic AI (Months 7–9)
+
+**Learner:** Rahul Sharma — 10-year distributed systems architect with **FreshHarvest-Market** e-commerce platform.
+
+---
 
 ## Phase Overview
 
@@ -6,8 +10,9 @@
 
 | Attribute | Value |
 |-----------|--------|
-| **Timeline** | Months 9–10 |
-| **Prerequisites** | Phase 4 (Transformers & LLMs); comfort with embeddings and LLM APIs |
+| **Timeline** | Months 7–9 |
+| **Primary courses** | Ultimate RAG Bootcamp (Months 7–8); Complete Agentic AI Bootcamp (Month 9) — Krish Naik, Udemy |
+| **Prerequisites** | Phase 2 (NLP/transformers intro); comfort with embeddings and LLM APIs |
 | **Target outcome** | Ship RAG apps and agentic workflows; connect them to FreshHarvest-Market |
 
 ---
@@ -27,37 +32,44 @@ Phase-5-RAG-and-Agents/
 
 ## Courses & Resources
 
-| Resource | Type | Notes |
-|----------|------|--------|
-| [LangChain & Vector Databases in Production](https://www.deeplearning.ai/short-courses/) | DeepLearning.AI short course | Production patterns for RAG and vector DBs |
-| [Building Autonomous AI Agents](https://www.deeplearning.ai/short-courses/) | DeepLearning.AI short course | Agent design and tool use |
-| [LangChain Documentation](https://python.langchain.com/docs/) | Docs | Chains, agents, retrievers, integrations |
-| [LlamaIndex Documentation](https://docs.llamaindex.ai/) | Docs | Alternative RAG/retrieval framework; compare with LangChain |
-| [Building RAG Applications](https://www.deeplearning.ai/short-courses/) | DeepLearning.AI short courses | End-to-end RAG design |
-| [Pinecone Learning Center](https://www.pinecone.io/learn/) | Tutorials | Vector DB concepts and Pinecone usage |
-| [Qdrant Documentation](https://qdrant.tech/documentation/) | Docs | Vector DB with filtering and hybrid search |
+| Course | Role | Timeline | Notes |
+|--------|------|----------|-------|
+| **Ultimate RAG Bootcamp Using LangChain, LangGraph & LangSmith** | **PRIMARY** | Months 7–8 | Krish Naik, Udemy — RAG foundations, advanced techniques, agentic RAG, LangSmith, cloud deployment |
+| **Complete Agentic AI Bootcamp with LangGraph and LangChain** | **PRIMARY** | Month 9 | Krish Naik, Udemy — single agents, multi-agent collaboration, autonomous workflows, state transitions |
+| [LangChain Documentation](https://python.langchain.com/docs/) | SUPPLEMENTARY | — | Chains, agents, retrievers, integrations |
+| [LlamaIndex Documentation](https://docs.llamaindex.ai/) | SUPPLEMENTARY | — | Alternative RAG/retrieval framework |
+| [Pinecone Learning Center](https://www.pinecone.io/learn/) | SUPPLEMENTARY | — | Vector DB concepts |
+| [Qdrant Documentation](https://qdrant.tech/documentation/) | SUPPLEMENTARY | — | Vector DB with filtering and hybrid search |
 
 ---
 
-## Month 9 — RAG & LLM Apps
+## Month 7 — RAG Foundations + Advanced Techniques
 
 | Week | Focus | Topics |
 |------|--------|--------|
-| **1** | **Embeddings deep dive** | What are embeddings; embedding models (OpenAI, sentence-transformers, Cohere); dimensions and normalization |
-| **2** | **Vector databases** | Pinecone, Qdrant, ChromaDB—indexing, similarity search (cosine, dot-product), metadata filtering, hybrid search |
-| **3** | **RAG architecture** | Chunking strategies (semantic, recursive, fixed); retrieval; reranking; generation; evaluation (faithfulness, relevance) |
-| **4** | **Build AI Shopping Assistant** | End-to-end RAG for FreshHarvest: catalog + FAQs + policies; conversation memory; deploy as a service |
+| **1** | **RAG foundations** | Embeddings, vector DBs, chunking strategies; retrieval and generation |
+| **2** | **Advanced RAG** | Hybrid search, reranking; multimodal RAG; self-RAG and adaptive RAG patterns |
 
 ---
 
-## Month 10 — Agentic AI
+## Month 8 — Agentic RAG + LangSmith
 
 | Week | Focus | Topics |
 |------|--------|--------|
-| **1** | **Agent fundamentals** | ReAct pattern (reason + act); tool calling / function calling; agent loops and error handling |
-| **2** | **Planning & reasoning** | Chain-of-thought; tree-of-thought; multi-step workflows; when to use agents vs fixed pipelines |
-| **3** | **Memory systems** | Short-term (conversation buffer); long-term (vector store); episodic memory for agents |
-| **4** | **Build Inventory Management AI Agent** | Agent that can query stock, suggest reorders, and (simulated) trigger workflows for FreshHarvest |
+| **1** | **Agentic RAG** | Multi-agent RAG with LangGraph; RAG + agent loops |
+| **2** | **LangSmith** | Evaluation, debugging, tracing RAG and agent pipelines |
+| **3** | **Deployment** | Cloud deployment of RAG and agent services |
+
+---
+
+## Month 9 — Agentic AI
+
+| Week | Focus | Topics |
+|------|--------|--------|
+| **1** | **Single agents** | ReAct, tool calling, agent loops, error handling |
+| **2** | **Multi-agent collaboration** | Multi-agent systems with LangGraph; state transitions; orchestration |
+| **3** | **Autonomous workflows** | Planning, reasoning; memory (short-term, long-term); production patterns |
+| **4** | **Projects** | Inventory Agent, Dynamic Pricing Agent, Multi-Agent Research Assistant |
 
 ---
 
@@ -65,10 +77,11 @@ Phase-5-RAG-and-Agents/
 
 | Deliverable | Description |
 |-------------|-------------|
-| **RAG-powered search** | Semantic search over product catalog and docs; compare with keyword search |
+| **RAG Product Search** | Semantic search over product catalog and docs; embeddings, vector DB, chunking |
 | **AI Shopping Assistant** | RAG + conversation memory; answers product and policy questions for FreshHarvest |
-| **Inventory Management AI Agent** | Agent with tools (inventory API, reorder logic); multi-step reasoning |
-| **Pricing Analyzer** | Tool or agent that uses internal data + LLM to support pricing decisions |
+| **Multi-Agent Research Assistant** | Multi-agent system (e.g. LangGraph) for research or product comparison |
+| **Inventory Agent** | Agent with tools (inventory API, reorder logic); multi-step reasoning for stock and reorders |
+| **Dynamic Pricing Agent** | Agent that uses internal data + LLM to support or suggest pricing decisions |
 
 ---
 

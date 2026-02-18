@@ -6,20 +6,20 @@
 
 ## 1. Monthly Progress Dashboard
 
-| Month | Phase | Topic | Status | Start Date | End Date | Completion % | Notes |
-|-------|--------|--------|--------|------------|----------|--------------|--------|
-| 1 | Math Foundations | Linear Algebra | Not Started | | | 0% | |
-| 2 | Math Foundations | Probability & Statistics | Not Started | | | 0% | |
-| 3 | Math Foundations | Calculus for ML | Not Started | | | 0% | |
-| 4 | Classical ML | Core ML (Part 1) | Not Started | | | 0% | |
-| 5 | Classical ML | Core ML (Part 2) + Deployment | Not Started | | | 0% | |
-| 6 | Deep Learning | Deep Learning (Part 1) | Not Started | | | 0% | |
-| 7 | Deep Learning | Deep Learning (Part 2) + CNNs/RNNs | Not Started | | | 0% | |
-| 8 | LLMs | Transformers & LLMs | Not Started | | | 0% | |
-| 9 | LLM Applications | RAG & LLM Applications | Not Started | | | 0% | |
-| 10 | Agents | Agentic AI | Not Started | | | 0% | |
-| 11 | Production | MLOps | Not Started | | | 0% | |
-| 12 | Production | AI Infrastructure on K8s | Not Started | | | 0% | |
+| Month | Phase | Topic | Course | Status | Start Date | End Date | Completion % | Notes |
+|-------|--------|--------|--------|--------|------------|----------|--------------|--------|
+| 1 | Math Foundations | Linear Algebra | Math Foundation Bootcamp | Not Started | | | 0% | |
+| 2 | Math Foundations | Probability & Statistics | Math Foundation Bootcamp | Not Started | | | 0% | |
+| 3 | Math Foundations | Calculus & Optimization | Math Foundation Bootcamp | Not Started | | | 0% | |
+| 4 | Core ML | Classical ML Algorithms | Master Theory + ML + DL + NLP | Not Started | | | 0% | |
+| 5 | Core ML | Deep Learning | Master Theory + ML + DL + NLP | Not Started | | | 0% | |
+| 6 | Core ML | NLP & Transformers Intro | Master Theory + ML + DL + NLP | Not Started | | | 0% | |
+| 7 | RAG | Foundations + Advanced Techniques | Ultimate RAG Bootcamp | Not Started | | | 0% | |
+| 8 | RAG | Agentic RAG + LangSmith | Ultimate RAG Bootcamp | Not Started | | | 0% | |
+| 9 | Agentic AI | Agents & Multi-Agent Systems | Agentic AI Bootcamp | Not Started | | | 0% | |
+| 10 | MLOps | Core Tools | MLOps Bootcamp | Not Started | | | 0% | |
+| 11 | MLOps | Pipelines & CI/CD | MLOps Bootcamp | Not Started | | | 0% | |
+| 12 | MLOps | Cloud Deploy & Monitoring | MLOps Bootcamp | Not Started | | | 0% | |
 
 **Status options:** `Not Started` · `In Progress` · `Complete`
 
@@ -47,20 +47,18 @@ _Copy the block below for each week._
 
 ## 3. Course Completion Tracker
 
-| Course Name | Platform | Status | Certificate Link | Date Completed |
-|-------------|----------|--------|-------------------|----------------|
-| Mathematics for ML: Linear Algebra | Coursera (Imperial College) | Not Started | | |
-| Mathematics for ML: Probability & Statistics | Coursera (Imperial College) | Not Started | | |
-| Essence of Calculus | 3Blue1Brown (YouTube) | Not Started | | |
-| Mathematics for ML: Multivariate Calculus | Coursera | Not Started | | |
-| Machine Learning | Coursera (Andrew Ng) | Not Started | | |
-| Hands-On ML with Scikit-Learn | Book (Aurélien Géron) | Not Started | | |
-| ML with Python | Udemy (current course) | In Progress | | |
-| Deep Learning Specialization (5 courses) | Coursera (Andrew Ng) | Not Started | | |
-| NLP with Transformers | HuggingFace | Not Started | | |
-| LangChain & Vector DBs in Production | DeepLearning.AI | Not Started | | |
-| Building Autonomous AI Agents | DeepLearning.AI | Not Started | | |
-| MLOps Specialization | Coursera (DeepLearning.AI) | Not Started | | |
+| Course Name | Platform | Phase | Status | Certificate Link | Date Completed |
+|-------------|----------|--------|--------|-------------------|----------------|
+| Build Strong Math Foundation | Udemy - Krish Naik | Phase 1 | Not Started | | |
+| Master Theory + ML + DL + NLP | Udemy - Krish Naik | Phase 2 | Not Started | | |
+| Ultimate RAG Bootcamp | Udemy - Krish Naik | Phase 3 | Not Started | | |
+| Complete Agentic AI Bootcamp | Udemy - Krish Naik | Phase 4 | Not Started | | |
+| Complete MLOps Bootcamp | Udemy - Krish Naik | Phase 5 | Not Started | | |
+| [Supplementary] Essence of Calculus | 3Blue1Brown (YouTube, Free) | Phase 1 | Not Started | | |
+| [Supplementary] StatQuest | YouTube (Free) | Phase 1-2 | Not Started | | |
+| [Optional] Complete Computer Vision Bootcamp | Udemy - Krish Naik | — | Not Started | | |
+| [Optional] Complete GenAI with LangChain & HuggingFace | Udemy - Krish Naik | — | Not Started | | |
+| [Optional] Building GenAI Apps with Gemini Pro | Udemy - Krish Naik | — | Not Started | | |
 
 **Status options:** `Not Started` · `In Progress` · `Complete`
 
@@ -70,17 +68,22 @@ _Copy the block below for each week._
 
 | Artifact Name | Phase | Status | Repo Link |
 |---------------|--------|--------|-----------|
-| Vector Similarity Search Engine | RAG / Embeddings | Not Started | |
-| Churn Predictor | Classical ML | Not Started | |
-| Gradient Descent Visualizer | Math / DL | Not Started | |
-| Product Recommender | Classical ML | Not Started | |
-| Demand Prediction Microservice | MLOps / Classical ML | Not Started | |
-| Product Image Classifier | Deep Learning (CNNs) | Not Started | |
-| Sentiment Analyzer | NLP / Transformers | Not Started | |
-| RAG Shopping Assistant | RAG & LLM Applications | Not Started | |
-| AI Inventory Agent | Agentic AI | Not Started | |
-| ML Pipeline on K8s | MLOps / Infrastructure | Not Started | |
-| LLM Service with Autoscaling | AI Infrastructure | Not Started | |
+| Vector Similarity Search Engine | Phase 1 | Not Started | |
+| Customer Churn Predictor from Scratch | Phase 1 | Not Started | |
+| Gradient Descent Visualizer | Phase 1 | Not Started | |
+| Sales Prediction Model + API | Phase 2 | Not Started | |
+| Customer Churn Classifier with Scikit-learn | Phase 2 | Not Started | |
+| Product Image Classifier - CNN | Phase 2 | Not Started | |
+| Sentiment Analysis Pipeline - NLP | Phase 2 | Not Started | |
+| RAG-Powered Product Search | Phase 3 | Not Started | |
+| AI Shopping Assistant with Conversation Memory | Phase 3 | Not Started | |
+| Multi-Agent Research Assistant | Phase 3 | Not Started | |
+| Inventory Management AI Agent | Phase 4 | Not Started | |
+| Dynamic Pricing Agent | Phase 4 | Not Started | |
+| End-to-End ML Pipeline (Docker + MLflow + DVC) | Phase 5 | Not Started | |
+| Airflow ETL Pipeline for ML | Phase 5 | Not Started | |
+| Production ML Service on AWS SageMaker | Phase 5 | Not Started | |
+| Grafana ML Monitoring Dashboard | Phase 5 | Not Started | |
 
 **Status options:** `Not Started` · `In Progress` · `Complete`
 

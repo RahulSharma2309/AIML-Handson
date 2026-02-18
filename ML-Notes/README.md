@@ -1,6 +1,6 @@
 # AIML-Handson — AI/ML Learning Repository
 
-> A 12-month structured journey from **Distributed Systems Architect** to **AI-Native Cloud Architect**, with comprehensive notes, hands-on projects, and production-grade deliverables.
+> A 12-month structured journey from **Distributed Systems Architect** to **AI-Native Cloud Architect**, powered by **Krish Naik's Udemy courses** with comprehensive notes, hands-on projects, and production-grade deliverables.
 
 ---
 
@@ -10,6 +10,20 @@
 AI-Native Distributed Systems Architect
 GenAI Platform Engineer
 LLM Systems Designer
+```
+
+---
+
+## Learning Strategy
+
+All 5 primary courses are by **Krish Naik** on Udemy — chosen for clear teaching style, practical depth, and end-to-end project coverage. Supplementary resources (3Blue1Brown, StatQuest) are used for visual intuition only.
+
+```
+Phase 1 (M1-3)   Math Foundation Bootcamp ──────────────────► Mathematical Intuition
+Phase 2 (M4-6)   Master Theory + ML + DL + NLP ────────────► Core ML & Deep Learning
+Phase 3 (M7-8)   Ultimate RAG Bootcamp ────────────────────► RAG Systems in Production
+Phase 4 (M9)     Complete Agentic AI Bootcamp ─────────────► Autonomous AI Agents
+Phase 5 (M10-12) Complete MLOps Bootcamp ──────────────────► Production AI Platform
 ```
 
 ---
@@ -24,54 +38,54 @@ ML-Notes/
 │   ├── progress-tracker.md            ← Notion-style tracking (courses, artifacts, reflections)
 │   └── skill-maturity-framework.md    ← 1-10 scoring across 30+ skills with quarterly checkpoints
 │
-├── Phase-1-Mathematical-Foundations/   ← Months 1–3
-│   ├── README.md                       ← Phase overview & course list
+├── Phase-1-Mathematical-Foundations/   ← Months 1–3 (Math Foundation Bootcamp)
+│   ├── README.md
 │   ├── Month-01-Linear-Algebra/        ← Vectors, matrices, eigenvalues, SVD
 │   ├── Month-02-Probability-and-Statistics/  ← Bayes, distributions, MLE, bias-variance
 │   └── Month-03-Calculus-for-ML/       ← Gradient descent, chain rule, optimization
 │
-├── Phase-2-Classical-ML/               ← Months 4–5
-│   ├── README.md                       ← Phase overview & existing notes index
+├── Phase-2-Classical-ML/               ← Months 4–6 (Master Theory + ML + DL + NLP)
+│   ├── README.md
 │   ├── 00-Key-Terms/                   ← ML, AI, Data Science, LLMs, GenAI, Agentic AI
 │   ├── 01-Supervised-Learning/         ← Labeled data, train/test split, ML process
 │   ├── 02-Evaluation-Metrics/          ← Accuracy, Precision, Recall, F1, Confusion Matrix, MAE/MSE/RMSE
 │   ├── 03-ML-with-Python/              ← Scikit-learn workflow & code patterns
-│   ├── 04-Linear-Regression/           ← (placeholder — notes to be added)
-│   ├── 05-Logistic-Regression/         ← (placeholder)
-│   ├── 06-KNN/                         ← (placeholder)
-│   ├── 07-Decision-Trees-and-Random-Forests/  ← (placeholder)
-│   ├── 08-SVM/                         ← (placeholder)
-│   └── 09-Ensemble-Methods/            ← (placeholder)
+│   ├── 04-Linear-Regression/           ← (notes to be added as course progresses)
+│   ├── 05-Logistic-Regression/
+│   ├── 06-KNN/
+│   ├── 07-Decision-Trees-and-Random-Forests/
+│   ├── 08-SVM/
+│   └── 09-Ensemble-Methods/
 │
-├── Phase-3-Deep-Learning/              ← Months 6–7
-│   ├── README.md                       ← Phase overview & Andrew Ng specialization guide
-│   ├── 01-Neural-Network-Fundamentals/ ← Neurons, activation, backpropagation
-│   ├── 02-CNNs/                        ← Convolutional neural networks
-│   ├── 03-RNNs-and-Sequence-Models/    ← Recurrent networks, LSTMs
-│   └── 04-Regularization-and-Optimization/  ← Dropout, batch norm, Adam
+├── Phase-3-Deep-Learning/              ← Reference notes (covered in Phase 2, Month 5)
+│   ├── README.md
+│   ├── 01-Neural-Network-Fundamentals/
+│   ├── 02-CNNs/
+│   ├── 03-RNNs-and-Sequence-Models/
+│   └── 04-Regularization-and-Optimization/
 │
-├── Phase-4-Transformers-and-LLMs/      ← Month 8
-│   ├── README.md                       ← Phase overview & HuggingFace course guide
-│   ├── 01-Attention-Mechanism/         ← Self-attention, multi-head attention
-│   ├── 02-Transformer-Architecture/    ← Encoder-decoder, positional encoding
-│   ├── 03-BERT-and-GPT/               ← Encoder-only vs decoder-only
-│   └── 04-Fine-Tuning/                ← Transfer learning, LoRA, QLoRA
+├── Phase-4-Transformers-and-LLMs/      ← Reference notes (intro in Phase 2 Month 6, applied in Phase 5)
+│   ├── README.md
+│   ├── 01-Attention-Mechanism/
+│   ├── 02-Transformer-Architecture/
+│   ├── 03-BERT-and-GPT/
+│   └── 04-Fine-Tuning/
 │
-├── Phase-5-RAG-and-Agents/             ← Months 9–10
-│   ├── README.md                       ← Phase overview & LangChain/Vector DB guide
-│   ├── 01-Embeddings-and-Vector-DBs/   ← Embeddings, Pinecone, Qdrant, ChromaDB
-│   ├── 02-RAG-Architecture/            ← Chunking, retrieval, reranking, generation
-│   ├── 03-LangChain-and-Orchestration/ ← Chains, prompts, memory
-│   └── 04-Agentic-AI/                 ← Tool calling, planning, autonomous agents
+├── Phase-5-RAG-and-Agents/             ← Months 7–9 (RAG Bootcamp + Agentic AI Bootcamp)
+│   ├── README.md
+│   ├── 01-Embeddings-and-Vector-DBs/
+│   ├── 02-RAG-Architecture/
+│   ├── 03-LangChain-and-Orchestration/
+│   └── 04-Agentic-AI/
 │
-├── Phase-6-MLOps-and-AI-Architecture/  ← Months 11–12
-│   ├── README.md                       ← Phase overview & production AI platform design
-│   ├── 01-Model-Lifecycle/             ← MLflow, experiment tracking, versioning
-│   ├── 02-Model-Serving-and-Scaling/   ← FastAPI, TorchServe, BentoML, autoscaling
-│   ├── 03-AI-Infrastructure-on-K8s/    ← GPU scheduling, vLLM, KServe
-│   └── 04-Observability-and-Cost/      ← Monitoring, drift detection, cost optimization
+├── Phase-6-MLOps-and-AI-Architecture/  ← Months 10–12 (MLOps Bootcamp)
+│   ├── README.md
+│   ├── 01-Model-Lifecycle/             ← MLflow, DVC, DagsHub
+│   ├── 02-Model-Serving-and-Scaling/   ← Docker, FastAPI, AWS SageMaker
+│   ├── 03-AI-Infrastructure-on-K8s/    ← Airflow, ETL, CI/CD with GitHub Actions
+│   └── 04-Observability-and-Cost/      ← Grafana, PostgreSQL, monitoring
 │
-└── images/                             ← Shared diagrams and screenshots
+└── images/
     ├── confusion-matrix-diagram.png
     └── ml-process-diagram.png
 ```
@@ -80,20 +94,20 @@ ML-Notes/
 
 ## 12-Month Overview
 
-| Month | Phase | Focus | Course | Deliverable |
-|-------|-------|-------|--------|-------------|
-| 1 | Mathematical Foundations | Linear Algebra | Imperial College (Coursera) | Vector Similarity Search Engine |
-| 2 | Mathematical Foundations | Probability & Statistics | Imperial College (Coursera) | Customer Churn Predictor |
-| 3 | Mathematical Foundations | Calculus & Optimization | 3Blue1Brown + Imperial (Coursera) | Gradient Descent Visualizer |
-| 4 | Classical ML | Core Algorithms | Andrew Ng (Coursera) + Udemy | Product Recommendation Engine |
-| 5 | Classical ML | Pipelines & Deployment | Géron Book + Scikit-learn | Demand Prediction Microservice (K8s) |
-| 6 | Deep Learning | Neural Networks & Optimization | Deep Learning Specialization (Coursera) | Neural Network from Scratch |
-| 7 | Deep Learning | CNNs & RNNs | Deep Learning Specialization (Coursera) | Product Image Classifier + Sentiment API |
-| 8 | Transformers & LLMs | Attention, BERT, GPT, Fine-tuning | HuggingFace NLP Course | Fine-tuned Product Classifier |
-| 9 | RAG & Agents | Embeddings, Vector DBs, RAG | DeepLearning.AI | AI Shopping Assistant (RAG) |
-| 10 | RAG & Agents | Agentic AI | DeepLearning.AI | Inventory Management Agent |
-| 11 | MLOps | Model Lifecycle & CI/CD | MLOps Specialization (Coursera) | ML Pipeline on K8s |
-| 12 | AI Architecture | GPU Scheduling, Scaling, Observability | Self-directed + Docs | LLM Microservice with Autoscaling |
+| Month | Phase | Focus | Course (Krish Naik, Udemy) | Deliverable |
+|-------|-------|-------|---------------------------|-------------|
+| 1 | Math Foundations | Linear Algebra | Math Foundation Bootcamp | Vector Similarity Search Engine |
+| 2 | Math Foundations | Probability & Statistics | Math Foundation Bootcamp | Customer Churn Predictor |
+| 3 | Math Foundations | Calculus & Optimization | Math Foundation Bootcamp | Gradient Descent Visualizer |
+| 4 | Core ML + DL + NLP | Classical ML Algorithms | Master Theory + ML + DL + NLP | Sales Prediction Model + API |
+| 5 | Core ML + DL + NLP | Deep Learning | Master Theory + ML + DL + NLP | Product Image Classifier (CNN) |
+| 6 | Core ML + DL + NLP | NLP & Transformers Intro | Master Theory + ML + DL + NLP | Sentiment Analysis Pipeline |
+| 7 | RAG Systems | RAG Foundations + Advanced | Ultimate RAG Bootcamp | RAG-Powered Product Search |
+| 8 | RAG Systems | Agentic RAG + LangSmith | Ultimate RAG Bootcamp | AI Shopping Assistant |
+| 9 | Agentic AI | Agents & Multi-Agent Systems | Agentic AI Bootcamp | Inventory Management Agent |
+| 10 | MLOps | Core Tools (Docker, MLflow, DVC) | MLOps Bootcamp | End-to-End ML Pipeline |
+| 11 | MLOps | Pipelines & CI/CD (Airflow, GitHub Actions) | MLOps Bootcamp | Airflow ETL Pipeline |
+| 12 | MLOps | Cloud Deploy & Monitoring (AWS, Grafana) | MLOps Bootcamp | Production ML Service + Dashboard |
 
 ---
 
@@ -109,14 +123,14 @@ ML-Notes/
 
 ### Phase Landing Pages
 
-| Phase | Months | Link |
-|-------|--------|------|
-| Phase 1: Mathematical Foundations | 1–3 | [README](./Phase-1-Mathematical-Foundations/README.md) |
-| Phase 2: Classical ML | 4–5 | [README](./Phase-2-Classical-ML/README.md) |
-| Phase 3: Deep Learning | 6–7 | [README](./Phase-3-Deep-Learning/README.md) |
-| Phase 4: Transformers & LLMs | 8 | [README](./Phase-4-Transformers-and-LLMs/README.md) |
-| Phase 5: RAG & Agents | 9–10 | [README](./Phase-5-RAG-and-Agents/README.md) |
-| Phase 6: MLOps & AI Architecture | 11–12 | [README](./Phase-6-MLOps-and-AI-Architecture/README.md) |
+| Phase | Months | Primary Course | Link |
+|-------|--------|---------------|------|
+| Phase 1: Math Foundations | 1–3 | Math Foundation Bootcamp | [README](./Phase-1-Mathematical-Foundations/README.md) |
+| Phase 2: Core ML + DL + NLP | 4–6 | Master Theory + ML + DL + NLP | [README](./Phase-2-Classical-ML/README.md) |
+| Phase 3: Deep Learning (Reference) | — | (Covered in Phase 2, Month 5) | [README](./Phase-3-Deep-Learning/README.md) |
+| Phase 4: Transformers (Reference) | — | (Intro in Phase 2 Month 6, applied in Phase 5) | [README](./Phase-4-Transformers-and-LLMs/README.md) |
+| Phase 5: RAG & Agents | 7–9 | RAG Bootcamp + Agentic AI Bootcamp | [README](./Phase-5-RAG-and-Agents/README.md) |
+| Phase 6: MLOps & AI Architecture | 10–12 | MLOps Bootcamp | [README](./Phase-6-MLOps-and-AI-Architecture/README.md) |
 
 ### Existing Notes (Phase 2 — Currently In Progress)
 
@@ -131,23 +145,35 @@ ML-Notes/
 
 ---
 
-## All Courses in Order
+## All Courses (Ordered)
 
-| # | Course | Platform | Phase | Cost |
-|---|--------|----------|-------|------|
-| 1 | Mathematics for ML: Linear Algebra | Coursera (Imperial College) | 1 | Paid / Audit free |
-| 2 | Mathematics for ML: Probability & Statistics | Coursera (Imperial College) | 1 | Paid / Audit free |
-| 3 | Essence of Calculus | YouTube (3Blue1Brown) | 1 | Free |
-| 4 | Mathematics for ML: Multivariate Calculus | Coursera (Imperial College) | 1 | Paid / Audit free |
-| 5 | Machine Learning | Coursera (Andrew Ng / Stanford) | 2 | Paid / Audit free |
-| 6 | ML with Python | Udemy | 2 | Paid (enrolled) |
-| 7 | Hands-On ML with Scikit-Learn, Keras & TF | Book (Aurélien Géron) | 2 | Book purchase |
-| 8 | Deep Learning Specialization (5 courses) | Coursera (Andrew Ng) | 3 | Paid / Audit free |
-| 9 | NLP with Transformers | HuggingFace (free course + book) | 4 | Free / Book purchase |
-| 10 | LangChain & Vector DBs in Production | DeepLearning.AI | 5 | Free |
-| 11 | Building Autonomous AI Agents | DeepLearning.AI (short courses) | 5 | Free |
-| 12 | MLOps Specialization | Coursera (DeepLearning.AI) | 6 | Paid / Audit free |
-| 13 | Designing Machine Learning Systems | Book (Chip Huyen) | 6 | Book purchase |
+### Primary Courses (Krish Naik, Udemy)
+
+| # | Course | Phase | Months |
+|---|--------|-------|--------|
+| 1 | **Build Strong Math Foundation** (Linear Algebra, Stats, Probability, Calculus) | Phase 1 | 1–3 |
+| 2 | **Master Theory + ML + DL + NLP** (End-to-End Projects) | Phase 2 | 4–6 |
+| 3 | **Ultimate RAG Bootcamp** (LangChain, LangGraph, LangSmith) | Phase 3 | 7–8 |
+| 4 | **Complete Agentic AI Bootcamp** (LangGraph, LangChain) | Phase 4 | 9 |
+| 5 | **Complete MLOps Bootcamp** (10+ End-to-End Projects) | Phase 5 | 10–12 |
+
+### Supplementary Resources
+
+| Resource | Type | Phase | Cost |
+|----------|------|-------|------|
+| ML with Python (Udemy — currently enrolled) | Course | 2 | Paid |
+| Essence of Calculus (3Blue1Brown) | YouTube | 1 | Free |
+| Essence of Linear Algebra (3Blue1Brown) | YouTube | 1 | Free |
+| StatQuest with Josh Starmer | YouTube | 1–2 | Free |
+| Designing Machine Learning Systems (Chip Huyen) | Book | 5 | Purchase |
+
+### Optional Courses (Krish Naik, Udemy — skip unless needed)
+
+| Course | When to Consider |
+|--------|-----------------|
+| Complete Computer Vision Bootcamp (PyTorch & TensorFlow) | Only if you want CV specialization |
+| Complete GenAI with LangChain & HuggingFace | Skip if RAG Bootcamp covers LangChain deeply enough |
+| Building GenAI Apps with Gemini Pro | Tool-specific; LLM vendors change — skip |
 
 ---
 
@@ -156,18 +182,21 @@ ML-Notes/
 | # | Artifact | Phase | Tech Stack |
 |---|----------|-------|------------|
 | 1 | Vector Similarity Search Engine | 1 | Python, NumPy |
-| 2 | Customer Churn Predictor | 1 | Python, logistic regression from scratch |
+| 2 | Customer Churn Predictor (from scratch) | 1 | Python, logistic regression |
 | 3 | Gradient Descent Visualizer | 1 | Python, Matplotlib |
-| 4 | Product Recommendation Engine | 2 | Scikit-learn, collaborative filtering |
-| 5 | Demand Prediction Microservice | 2 | Scikit-learn, FastAPI, Docker, K8s |
-| 6 | Neural Network from Scratch | 3 | Python, NumPy |
-| 7 | Product Image Classifier | 3 | PyTorch/TensorFlow, CNN |
-| 8 | Review Sentiment Analyzer | 3-4 | HuggingFace Transformers, FastAPI |
-| 9 | Fine-tuned Product Classifier | 4 | HuggingFace, LoRA |
-| 10 | RAG-Powered AI Shopping Assistant | 5 | LangChain, Qdrant/Pinecone, OpenAI |
-| 11 | Inventory Management AI Agent | 5 | LangChain Agents, tool calling |
-| 12 | ML Pipeline on Kubernetes | 6 | MLflow, KServe, GitHub Actions |
-| 13 | LLM Microservice with Autoscaling | 6 | vLLM, K8s HPA, Prometheus/Grafana |
+| 4 | Sales Prediction Model + API | 2 | Scikit-learn, FastAPI |
+| 5 | Customer Churn Classifier | 2 | Scikit-learn, pipelines |
+| 6 | Product Image Classifier (CNN) | 2 | PyTorch/TensorFlow |
+| 7 | Sentiment Analysis Pipeline (NLP) | 2 | HuggingFace, FastAPI |
+| 8 | RAG-Powered Product Search | 3 | LangChain, FAISS/Qdrant |
+| 9 | AI Shopping Assistant with Memory | 3 | LangChain, LangGraph |
+| 10 | Multi-Agent Research Assistant | 3 | LangGraph, LangSmith |
+| 11 | Inventory Management AI Agent | 4 | LangGraph, tool calling |
+| 12 | Dynamic Pricing Agent | 4 | LangChain Agents |
+| 13 | End-to-End ML Pipeline | 5 | Docker, MLflow, DVC |
+| 14 | Airflow ETL Pipeline for ML | 5 | Apache Airflow, Astro |
+| 15 | Production ML Service on AWS | 5 | AWS SageMaker, HuggingFace |
+| 16 | Grafana ML Monitoring Dashboard | 5 | Grafana, PostgreSQL |
 
 ---
 

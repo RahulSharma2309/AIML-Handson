@@ -1,7 +1,9 @@
 # Phase 1 — Mathematical Foundations (Months 1–3)
 
 **Timeline:** Months 1–3  
-**Audience:** Distributed systems architect (C#/.NET, K8s, microservices) transitioning into AI — building **FreshHarvest-Market** and beyond.
+**Learner:** Rahul Sharma — 10-year distributed systems architect with **FreshHarvest-Market** e-commerce platform, transitioning into AI.
+
+**Primary course:** Build Strong Math Foundation with Linear Algebra, Stats, Probability, Differential Calculus — Krish Naik (Udemy).
 
 ---
 
@@ -49,12 +51,13 @@ Phase-1-Mathematical-Foundations/
 
 ## Courses
 
-| Course | Platform | Duration | Link |
-|--------|----------|----------|------|
-| Mathematics for ML: Linear Algebra | Imperial College, Coursera | ~20 hrs | [Coursera — Linear Algebra](https://www.coursera.org/learn/linear-algebra-machine-learning) |
-| Mathematics for ML: Probability & Statistics | Imperial College, Coursera | ~20 hrs | [Coursera — Probability & Statistics](https://www.coursera.org/learn/probability-statistics) |
-| Essence of Calculus | 3Blue1Brown, YouTube | Free | [YouTube — Essence of Calculus](https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr) |
-| Mathematics for ML: Multivariate Calculus | Imperial College, Coursera | ~20 hrs | [Coursera — Multivariate Calculus](https://www.coursera.org/learn/multivariate-calculus-machine-learning) |
+| Course | Role | Platform | Notes |
+|--------|------|----------|-------|
+| **Build Strong Math Foundation with Linear Algebra, Stats, Probability, Differential Calculus** | **PRIMARY** | Krish Naik, Udemy | Covers linear algebra, probability, statistics, and calculus for ML across Months 1–3 |
+| Essence of Linear Algebra | SUPPLEMENTARY | 3Blue1Brown, YouTube | [YouTube — Essence of Linear Algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDn6-jXOUVqIZGQJ3w1q0WB) |
+| Essence of Calculus | SUPPLEMENTARY | 3Blue1Brown, YouTube | [YouTube — Essence of Calculus](https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr) |
+| StatQuest (Statistics, PCA, etc.) | SUPPLEMENTARY | StatQuest, YouTube | Visual intuition for stats and ML concepts |
+| Khan Academy (Algebra, Precalculus, Statistics) | SUPPLEMENTARY | Khan Academy | Brush-up or alternate explanations |
 
 ---
 

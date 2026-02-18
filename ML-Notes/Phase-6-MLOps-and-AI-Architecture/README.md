@@ -1,4 +1,8 @@
-# Phase 6 — MLOps & AI Systems Architecture (Months 11–12)
+# Phase 6 — MLOps & AI Systems Architecture (Months 10–12)
+
+**Learner:** Rahul Sharma — 10-year distributed systems architect with **FreshHarvest-Market** e-commerce platform.
+
+---
 
 ## Phase Overview
 
@@ -6,9 +10,10 @@
 
 | Attribute | Value |
 |-----------|--------|
-| **Timeline** | Months 11–12 |
+| **Timeline** | Months 10–12 |
+| **Primary course** | Complete MLOps Bootcamp with 10+ End-to-End ML Projects — Krish Naik (Udemy) |
 | **Prerequisites** | All previous phases + existing K8s and distributed systems experience |
-| **Target outcome** | Production AI platform on K8s: lifecycle, serving, scaling, observability, cost |
+| **Target outcome** | Production AI platform: lifecycle, pipelines, CI/CD, cloud, monitoring |
 
 ---
 
@@ -27,36 +32,46 @@ Phase-6-MLOps-and-AI-Architecture/
 
 ## Courses & Resources
 
-| Resource | Type | Notes |
+| Resource | Role | Notes |
 |----------|------|--------|
-| [MLOps Specialization](https://www.coursera.org/specializations/machine-learning-engineering-for-production-mlops) | Coursera (DeepLearning.AI, Andrew Ng) | End-to-end MLOps concepts |
-| [Designing Machine Learning Systems](https://www.oreilly.com/library/view/designing-machine-learning/9781098107956/) | Book (Chip Huyen) | Systems design for ML at scale |
-| [MLflow Documentation](https://mlflow.org/docs/latest/index.html) | Docs | Experiment tracking, model registry, projects |
-| [Kubeflow Documentation](https://www.kubeflow.org/docs/) | Docs | ML pipelines and training on K8s |
-| [Made With ML](https://madewithml.com/) | Free MLOps course | Practical MLOps from training to deployment |
-| [Seldon Core](https://docs.seldon.io/projects/seldon-core/) / [KServe](https://kserve.github.io/website/) | Docs | Model serving on Kubernetes |
+| **Complete MLOps Bootcamp with 10+ End-to-End ML Projects** | **PRIMARY** | Krish Naik, Udemy — Months 10–12: Core MLOps, Pipelines & CI/CD, Cloud & Monitoring |
+| [Designing Machine Learning Systems](https://www.oreilly.com/library/view/designing-machine-learning/9781098107956/) | SUPPLEMENTARY | Book (Chip Huyen) — systems design for ML at scale |
+| [MLflow Documentation](https://mlflow.org/docs/latest/index.html) | SUPPLEMENTARY | Experiment tracking, model registry, projects |
+| [Kubeflow Documentation](https://www.kubeflow.org/docs/) | SUPPLEMENTARY | ML pipelines and training on K8s |
+| [Seldon Core](https://docs.seldon.io/projects/seldon-core/) / [KServe](https://kserve.github.io/website/) | SUPPLEMENTARY | Model serving on Kubernetes |
 
 ---
 
-## Month 11 — MLOps
+## Month 10 — Core MLOps
 
 | Week | Focus | Topics |
 |------|--------|--------|
-| **1** | **ML lifecycle & experiment tracking** | MLflow, Weights & Biases—runs, metrics, artifacts; model registry and stage promotion |
-| **2** | **Data versioning & feature stores** | DVC for data and model versioning; Feast (or similar) for feature store concepts; train/serve consistency |
-| **3** | **Model serving** | FastAPI, TorchServe, TF Serving, BentoML—contracts, batching, versioned endpoints |
-| **4** | **CI/CD for ML** | GitHub Actions (or similar): trigger training on data/config changes; model tests; deploy to staging/prod |
+| **1** | **Git/GitHub for ML** | Repos, branching, versioning code and configs for ML projects |
+| **2** | **Docker for ML** | Containerizing training and serving; Dockerfiles for ML workloads |
+| **3** | **MLflow** | Experiment tracking, runs, metrics, artifacts; model registry and stage promotion |
+| **4** | **DVC & DagsHub** | Data and model versioning; train/serve consistency; collaboration |
 
 ---
 
-## Month 12 — AI Infrastructure
+## Month 11 — Pipelines & CI/CD
 
 | Week | Focus | Topics |
 |------|--------|--------|
-| **1** | **GPU scheduling in Kubernetes** | NVIDIA GPU Operator; node selectors; resource quotas; multi-tenant GPU sharing |
-| **2** | **Model scaling** | Horizontal Pod Autoscaler; batch vs real-time inference; model sharding and multi-replica |
-| **3** | **LLM-specific infrastructure** | vLLM, TGI; KV-cache; speculative decoding; LLM caching (e.g. GPTCache) for cost and latency |
-| **4** | **Observability & cost** | Prometheus/Grafana for ML metrics; token usage and cost tracking; evaluation dashboards; alerts on drift and errors |
+| **1** | **Apache Airflow + Astro** | Orchestrating ML and ETL pipelines; DAGs for training and data jobs |
+| **2** | **ETL pipelines** | Data ingestion, transformation, and loading for ML |
+| **3** | **GitHub Actions CI/CD** | Trigger training on data/config changes; model tests; deploy to staging/prod |
+| **4** | **End-to-end ML project** | Full pipeline from data to deployed model (per bootcamp projects) |
+
+---
+
+## Month 12 — Cloud & Monitoring
+
+| Week | Focus | Topics |
+|------|--------|--------|
+| **1** | **AWS SageMaker** | Training and deployment on AWS; managed ML services |
+| **2** | **HuggingFace NLP deployment** | Deploying NLP/transformer models in production |
+| **3** | **Gen AI on AWS** | Generative AI workloads and services on AWS |
+| **4** | **Grafana + PostgreSQL monitoring** | Metrics, dashboards, alerts; cost and performance monitoring |
 
 ---
 

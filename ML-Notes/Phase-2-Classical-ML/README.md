@@ -1,7 +1,10 @@
-# Phase 2 — Classical Machine Learning (Months 4–5)
+# Phase 2 — Classical Machine Learning & Deep Learning (Months 4–6)
 
-**Timeline:** Months 4–5  
-**Audience:** Distributed systems architect (C#/.NET, K8s, microservices) transitioning into AI — **FreshHarvest-Market** and production ML.
+**Timeline:** Months 4–6  
+**Learner:** Rahul Sharma — 10-year distributed systems architect with **FreshHarvest-Market** e-commerce platform.
+
+**Primary course:** Master the Theory, Practice, and Math Behind Data Science, ML, DL, NLP — Krish Naik (Udemy).  
+**Also:** ML with Python (Udemy) — course you are currently doing; use it alongside for hands-on classical ML.
 
 ---
 
@@ -13,12 +16,13 @@ This phase builds **classical machine learning** foundations—supervised learni
 
 ---
 
-## Timeline: Months 4–5
+## Timeline: Months 4–6
 
 | Month | Focus | Main idea |
 |-------|--------|-----------|
-| **4** | Core algorithms | Linear Regression, Logistic Regression, KNN, Decision Trees, SVM |
-| **5** | Ensemble methods, tuning, deployment | Random forests, pipelines, model versioning, K8s microservice |
+| **4** | Classical ML algorithms | Linear Regression, Logistic Regression, KNN, Decision Trees, SVM, ensemble methods, pipelines |
+| **5** | Deep Learning | Neural networks, CNNs, RNNs, optimization, regularization; practical projects |
+| **6** | NLP / Transformers intro | Attention, transformer fundamentals; bridges to Phase 4 (reference) and Phase 5 (RAG) |
 
 ---
 
@@ -43,11 +47,11 @@ Phase-2-Classical-ML/
 
 ## Courses
 
-| Course | Platform | Duration | Link |
-|--------|----------|----------|------|
-| Machine Learning | Andrew Ng, Coursera | ~60 hrs | [Coursera — Machine Learning](https://www.coursera.org/learn/machine-learning) |
-| ML with Python | Udemy (currently enrolled) | — | Your current course |
-| Hands-On ML with Scikit-Learn, Keras & TensorFlow | Aurélien Géron (book) | — | [O'Reilly](https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/) / [Amazon](https://www.amazon.com/Hands-Machine-Learning-Scikit-Learn-TensorFlow/dp/1492032646) |
+| Course | Role | Platform | Notes |
+|--------|------|----------|-------|
+| **Master the Theory, Practice, and Math Behind Data Science, ML, DL, NLP** | **PRIMARY** | Krish Naik, Udemy | Covers classical ML (Month 4), Deep Learning (Month 5), and NLP/transformers intro (Month 6) |
+| ML with Python | PRIMARY (hands-on) | Udemy (currently enrolled) | Your current course; use for classical ML implementation alongside Krish Naik |
+| Hands-On ML with Scikit-Learn, Keras & TensorFlow | SUPPLEMENTARY (optional) | Aurélien Géron (book) | [O'Reilly](https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/) / [Amazon](https://www.amazon.com/Hands-Machine-Learning-Scikit-Learn-TensorFlow/dp/1492032646) — optional reading |
 
 ---
 
@@ -83,27 +87,36 @@ Phase-2-Classical-ML/
 
 ---
 
-## Month 4 Plan: Core Algorithms
+## Month 4 Plan: Classical ML Algorithms
 
 | Week | Topics | Notes location |
 |------|--------|----------------|
 | 4.1 | Linear regression (single/multiple), cost function, gradient descent | `04-Linear-Regression/` |
 | 4.2 | Logistic regression, decision boundary, classification metrics | `05-Logistic-Regression/` |
 | 4.3 | K-Nearest Neighbors; distance metrics; scaling | `06-KNN/` |
-| 4.4 | Decision trees: splits, impurity (Gini, entropy), pruning | `07-Decision-Trees-and-Random-Forests/` |
+| 4.4 | Decision trees: splits, impurity (Gini, entropy), pruning; random forests, bagging | `07-Decision-Trees-and-Random-Forests/` |
 | 4.5 | Support Vector Machines; kernels (linear, RBF); margin | `08-SVM/` |
+| 4.6 | Ensemble methods: boosting, XGBoost, stacking; pipelines, cross-validation, grid search | `09-Ensemble-Methods/`, `03-ML-with-Python/` |
 
 ---
 
-## Month 5 Plan: Ensemble Methods, Tuning, Deployment
+## Month 5 Plan: Deep Learning
 
 | Week | Topics | Notes location |
 |------|--------|----------------|
-| 5.1 | Random forests, bagging, feature importance | `07-Decision-Trees-and-Random-Forests/` |
-| 5.2 | Ensemble methods: boosting, XGBoost, stacking | `09-Ensemble-Methods/` |
-| 5.3 | Model tuning: pipelines, cross-validation, grid search | `03-ML-with-Python/`, `09-Ensemble-Methods/` |
-| 5.4 | Model versioning, serialization (joblib, ONNX) | — |
-| 5.5 | Deployment: REST API, container, K8s microservice | Mini-project |
+| 5.1 | Neural network fundamentals: perceptron, activation functions, forward/backward pass | See Phase 3 (reference) `01-Neural-Network-Fundamentals/` |
+| 5.2 | Optimization, regularization (dropout, batch norm); training loops | See Phase 3 (reference) `04-Regularization-and-Optimization/` |
+| 5.3 | CNNs: convolutions, pooling, transfer learning | See Phase 3 (reference) `02-CNNs/` |
+| 5.4 | RNNs, LSTM, GRU; sequence models | See Phase 3 (reference) `03-RNNs-and-Sequence-Models/` |
+| 5.5 | Practical projects: image classifier, sentiment model; deployment | Mini-project |
+
+---
+
+## Month 6 Plan: NLP / Transformers Intro (Krish Naik Master Theory)
+
+| Week | Topics | Notes location |
+|------|--------|----------------|
+| 6.1–6.4 | NLP section of Master Theory course: attention, transformer fundamentals, text applications | See Phase 4 (reference) for deeper transformer study |
 
 ---
 
@@ -134,8 +147,10 @@ Classical ML is **interpretable**, **fast to train**, and often **sufficient for
 | Link | Description |
 |------|-------------|
 | [Phase 1 — Mathematical Foundations](../Phase-1-Mathematical-Foundations/README.md) | Prerequisites (math) |
-| [Phase 3 — Deep Learning](../Phase-3-Deep-Learning/README.md) | Next phase |
+| [Phase 3 — Deep Learning (reference)](../Phase-3-Deep-Learning/README.md) | Deep learning notes and folder structure (content covered in this phase, Month 5) |
+| [Phase 4 — Transformers & LLMs (reference)](../Phase-4-Transformers-and-LLMs/README.md) | Deeper transformer study (NLP intro in Month 6 here) |
+| [Phase 5 — RAG & Agentic AI](../Phase-5-RAG-and-Agents/README.md) | Next phase |
 
 ---
 
-*Next: [Phase 3 — Deep Learning](../Phase-3-Deep-Learning/README.md).*
+*Next: [Phase 5 — RAG & Agentic AI](../Phase-5-RAG-and-Agents/README.md).*

@@ -27,13 +27,14 @@ Phase-4-Transformers-and-LLMs/
 
 ## Courses & Resources
 
-| Resource | Type | Notes |
+| Resource | Role | Notes |
 |----------|------|--------|
-| [Natural Language Processing with Transformers](https://www.oreilly.com/library/view/natural-language-processing/9781098136789/) | Book (HuggingFace/O'Reilly) | Reference for implementation and best practices |
-| [HuggingFace NLP Course](https://huggingface.co/learn/nlp-course) | Free course | Hands-on with `transformers`, tokenizers, pipelines |
-| [Attention Is All You Need](https://arxiv.org/abs/1706.03762) | Paper | The original transformer paper—read after Week 1 |
-| [Andrej Karpathy — Let's build GPT](https://www.youtube.com/watch?v=kCc8FmEb1nY) | YouTube | Build a small GPT from scratch; solid intuition |
-| [Jay Alammar — The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/) | Blog | Visual walkthrough of the architecture |
+| **Krish Naik — Master Theory course (NLP section)** | PRIMARY (Phase 2, Month 6) | Transformer fundamentals; see Phase 2 README |
+| [Natural Language Processing with Transformers](https://www.oreilly.com/library/view/natural-language-processing/9781098136789/) | SUPPLEMENTARY | Book (HuggingFace/O'Reilly) — implementation and best practices |
+| [HuggingFace NLP Course](https://huggingface.co/learn/nlp-course) | SUPPLEMENTARY | Free; hands-on with `transformers`, tokenizers, pipelines |
+| [Attention Is All You Need](https://arxiv.org/abs/1706.03762) | SUPPLEMENTARY | Original transformer paper |
+| [Andrej Karpathy — Let's build GPT](https://www.youtube.com/watch?v=kCc8FmEb1nY) | SUPPLEMENTARY | YouTube — build a small GPT from scratch |
+| [Jay Alammar — The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/) | SUPPLEMENTARY | Blog — visual walkthrough of the architecture |
 
 ---
 
@@ -67,7 +68,7 @@ Phase-4-Transformers-and-LLMs/
 | **Content generation** | Product descriptions, recommendations, marketing copy—all decoder-based |
 | **Code assistants** | Same architecture; different training data and tool use (Phase 5) |
 
-Think of this phase as learning the *engine*; Phase 5 is where you wire it into *systems* (RAG, agents).
+Transformer fundamentals are in Phase 2 (Month 6); Phase 5 is where you wire them into *systems* (RAG, agents).
 
 ---
 
@@ -86,6 +87,7 @@ Think of this phase as learning the *engine*; Phase 5 is where you wire it into 
 
 ## Navigation
 
-- **Previous:** [Phase 3 — Deep Learning](../Phase-3-Deep-Learning/README.md)
-- **Next:** [Phase 5 — RAG & Agentic AI](../Phase-5-RAG-and-Agents/README.md)
+- **Phase 2 (Month 6 — NLP/Transformers intro):** [Phase 2 — Classical ML & Deep Learning](../Phase-2-Classical-ML/README.md)
+- **Phase 3 (DL reference):** [Phase 3 — Deep Learning (reference)](../Phase-3-Deep-Learning/README.md)
+- **Phase 5 (RAG & LLM apps):** [Phase 5 — RAG & Agentic AI](../Phase-5-RAG-and-Agents/README.md)
 - **Root:** [ML-Notes](../README.md)

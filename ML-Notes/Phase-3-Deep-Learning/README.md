@@ -1,24 +1,27 @@
-# Phase 3 — Deep Learning (Months 6–7)
+# Phase 3 — Deep Learning (Reference / Notes)
 
-**Timeline:** Months 6–7  
-**Audience:** Distributed systems architect (C#/.NET, K8s, microservices) transitioning into AI — **FreshHarvest-Market** and production DL.
-
----
-
-## Phase Overview
-
-This phase introduces **neural networks and deep learning**—the machinery behind modern computer vision, NLP, and generative models. You go from perceptrons to **CNNs and RNNs**, with a focus on how these models are trained (forward/backward pass, optimizers), regularized (dropout, batch norm), and deployed. As an architect, you'll think about **GPU infrastructure, training pipelines, and distributed training** with the same rigor as designing a distributed data pipeline.
-
-**In short:** Deep learning is where **scale and infrastructure** become first-class: GPU scheduling, checkpointing, and reproducibility matter as much as algorithm choice.
+**Learner:** Rahul Sharma — 10-year distributed systems architect with **FreshHarvest-Market** e-commerce platform.
 
 ---
 
-## Timeline: Months 6–7
+## How This Phase Fits Now
 
-| Month | Focus | Main idea |
-|-------|--------|-----------|
-| **6** | Neural network fundamentals | Backpropagation, optimization, regularization |
-| **7** | CNNs & RNNs | Computer vision and sequence models; practical projects |
+**Deep Learning is covered in Phase 2, Month 5.** The primary course is **Master the Theory, Practice, and Math Behind Data Science, ML, DL, NLP** by Krish Naik (Udemy), which includes neural networks, CNNs, RNNs, optimization, and regularization in its Deep Learning section.
+
+**This folder is a REFERENCE and NOTES area** for deep learning topics. Use it to store and organize your notes while following Krish Naik's Master Theory course (Month 5). The folder structure below remains the place to put notes; the course mapping is:
+
+| Folder | Content | When (Phase 2) |
+|--------|---------|----------------|
+| `01-Neural-Network-Fundamentals/` | Perceptron, forward/backward pass, activations, training loop | Month 5 (Weeks 5.1–5.2) |
+| `02-CNNs/` | Convolutions, pooling, transfer learning, image projects | Month 5 (Weeks 5.3–5.5) |
+| `03-RNNs-and-Sequence-Models/` | RNNs, LSTM, GRU, sequence-to-sequence | Month 5 (Week 5.4) |
+| `04-Regularization-and-Optimization/` | Dropout, batch norm, SGD, Adam, tuning | Month 5 (Week 5.2) |
+
+---
+
+## Timeline (Reference Only)
+
+Deep learning *content* lives in **Phase 2, Month 5**. There is no separate "Months 6–7" phase for DL; Month 6 in Phase 2 is NLP/Transformers intro.
 
 ---
 
@@ -26,85 +29,32 @@ This phase introduces **neural networks and deep learning**—the machinery behi
 
 ```
 Phase-3-Deep-Learning/
-├── README.md                                    ← You are here
+├── README.md                                    <- You are here (reference)
 ├── 01-Neural-Network-Fundamentals/
 ├── 02-CNNs/
 ├── 03-RNNs-and-Sequence-Models/
 └── 04-Regularization-and-Optimization/
 ```
 
----
-
-## Courses
-
-| Course | Platform | Duration | Link |
-|--------|----------|----------|------|
-| **Deep Learning Specialization** (5 courses) | Andrew Ng, Coursera | ~5 months part-time | [Coursera — Deep Learning](https://www.coursera.org/specializations/deep-learning) |
-
-### Deep Learning Specialization — Course Breakdown
-
-| # | Course name | Content |
-|---|-------------|---------|
-| 1 | Neural Networks and Deep Learning | Perceptron, shallow and deep nets, forward/backward prop, vectorization |
-| 2 | Improving Deep Neural Networks | Regularization, dropout, batch norm; optimizers (Adam, etc.); tuning |
-| 3 | Structuring Machine Learning Projects | Train/dev/test; bias-variance; error analysis; project workflow |
-| 4 | Convolutional Neural Networks | Conv layers, padding, stride; CNNs; transfer learning; detection |
-| 5 | Sequence Models | RNNs, LSTM, GRU; sequence-to-sequence; attention intro |
+Use these folders to store notes from Krish Naik's Deep Learning section and any supplementary material.
 
 ---
 
-## Prerequisites
+## Primary Course (Delivered in Phase 2)
 
-- **Phase 1 (Math):** Linear algebra (vectors, matrices, dot products), **calculus** (chain rule, gradients — essential for backprop), basic probability.
-- **Phase 2 (Classical ML):** Supervised learning, loss functions, train/val/test splits, metrics (accuracy, F1, RMSE), pipelines.
-- **Python:** NumPy; PyTorch or TensorFlow/Keras will be built in this phase.
-
----
-
-## Month 6 Plan: Neural Network Fundamentals
-
-| Week | Topics | Notes location |
-|------|--------|----------------|
-| 6.1 | Perceptron, activation functions (ReLU, sigmoid, softmax) | `01-Neural-Network-Fundamentals/` |
-| 6.2 | Forward propagation; loss (cross-entropy, MSE); dimensions | `01-Neural-Network-Fundamentals/` |
-| 6.3 | Backward propagation; chain rule; gradients w.r.t. weights/biases | `01-Neural-Network-Fundamentals/` |
-| 6.4 | Regularization: L2, dropout; batch normalization | `04-Regularization-and-Optimization/` |
-| 6.5 | Optimizers: SGD, momentum, RMSProp, Adam | `04-Regularization-and-Optimization/` |
-| 6.6 | Training loop: batching, epochs, validation, early stopping | `01-Neural-Network-Fundamentals/` |
+| Course | Role | When |
+|--------|------|------|
+| **Master the Theory, Practice, and Math Behind Data Science, ML, DL, NLP** | PRIMARY | Phase 2, Month 5 (Deep Learning section) |
 
 ---
 
-## Month 7 Plan: CNNs, RNNs, Practical Projects
-
-| Week | Topics | Notes location |
-|------|--------|----------------|
-| 7.1 | Convolutional layers; padding, stride; feature maps; pooling | `02-CNNs/` |
-| 7.2 | CNN architectures; transfer learning (e.g. ResNet, fine-tune head) | `02-CNNs/` |
-| 7.3 | RNNs; LSTM, GRU; vanishing/exploding gradients | `03-RNNs-and-Sequence-Models/` |
-| 7.4 | Sequence-to-one and sequence-to-sequence; padding, masking, batching | `03-RNNs-and-Sequence-Models/` |
-| 7.5–7.6 | Projects: image classifier, review sentiment; FastAPI deployment | — |
-
----
-
-## Key Deliverables
+## Key Deliverables (Done in Phase 2, Month 5)
 
 | # | Deliverable | Description |
 |---|-------------|-------------|
-| 1 | **Product image classifier** | Classify product images into categories (e.g. produce, dairy) using a CNN; transfer learning (e.g. ResNet) + custom head. |
-| 2 | **Review sentiment model** | Classify or score review sentiment using an RNN/LSTM (or simple transformer later); embed + LSTM/GRU → sentiment. |
-| 3 | **FastAPI deployment** | Serve the image classifier or sentiment model via FastAPI; containerize; health checks and simple versioning. |
-
----
-
-## Architecture Connection: How Deep Learning Powers Production Systems
-
-| Use case | How deep learning fits | FreshHarvest-Market angle |
-|----------|------------------------|----------------------------|
-| **Image recognition** | CNNs for local structure; transfer learning for limited data | Product photo tagging, category from image, quality checks. |
-| **NLP / text** | RNNs/LSTMs (or transformers in Phase 4) for sequences | Review sentiment, search intent, support ticket routing. |
-| **Recommendation ranking** | Neural rankers (embeddings + MLP) on top of classical retrieval | Re-rank "also bought" or "for you" lists. |
-
-Deep learning adds **representation learning** (no need to hand-craft all features) and scales with **data and compute**—GPU infrastructure and training pipelines become part of your system design.
+| 1 | **Product image classifier** | Classify product images (e.g. produce, dairy) using CNN; transfer learning + custom head. |
+| 2 | **Review sentiment model** | RNN/LSTM or simple transformer for review sentiment; embed + LSTM/GRU. |
+| 3 | **FastAPI deployment** | Serve image classifier or sentiment model via FastAPI; containerize; health checks. |
 
 ---
 
@@ -112,10 +62,10 @@ Deep learning adds **representation learning** (no need to hand-craft all featur
 
 | Link | Description |
 |------|-------------|
-| [Phase 1 — Mathematical Foundations](../Phase-1-Mathematical-Foundations/README.md) | Math prerequisites (especially calculus for backprop) |
-| [Phase 2 — Classical ML](../Phase-2-Classical-ML/README.md) | ML concepts prerequisite |
-| Phase 4+ | Transformers & LLMs (next in roadmap) |
+| [Phase 2 — Classical ML & Deep Learning](../Phase-2-Classical-ML/README.md) | Where DL is taught (Month 5) |
+| [Phase 4 — Transformers & LLMs (reference)](../Phase-4-Transformers-and-LLMs/README.md) | Transformer fundamentals (intro in Phase 2 Month 6) |
+| [Phase 5 — RAG & Agentic AI](../Phase-5-RAG-and-Agents/README.md) | RAG and agents |
 
 ---
 
-*Next: Phase 4 — Transformers & LLMs.*
+*This phase is a notes/reference area; the main learning path is [Phase 2 — Classical ML & Deep Learning](../Phase-2-Classical-ML/README.md).*

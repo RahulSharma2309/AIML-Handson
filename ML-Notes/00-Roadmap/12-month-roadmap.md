@@ -1,39 +1,56 @@
-# 12-Month AI/ML Learning Roadmap
+# 12-Month AI/ML Learning Roadmap — Krish Naik Course Track
 
-**Target Identity:** AI-Native Distributed Systems Architect / GenAI Platform Engineer / LLM Systems Designer
+**Learner:** Rahul Sharma  
+**Profile:** 10-year distributed systems architect (C#/.NET, Kubernetes, microservices)  
+**Reference Platform:** FreshHarvest-Market (e-commerce)
 
-**Background:** 10-year distributed systems architect (C#/.NET, microservices, Kubernetes) transitioning into AI-native systems engineering. E-commerce microservices platform: **FreshHarvest-Market** (GitHub).
-
----
-
-## Roadmap Overview
-
-```
-┌─────────────────────────────────────────────────────────────────────────────────────────┐
-│                    12-MONTH AI/ML LEARNING JOURNEY — 6 PHASES                             │
-├──────────┬──────────┬──────────┬──────────┬──────────┬──────────┬──────────┬──────────────┤
-│   M1     │   M2     │   M3     │   M4     │   M5     │   M6     │   M7     │     M8       │
-│ Linear   │ Prob &   │ Calculus │ Classical│ Classical│ Deep     │ Deep     │ Transformers │
-│ Algebra  │ Stats    │ for ML   │ ML Core  │ ML Deploy│ Learning │ Learning │ & LLMs       │
-├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────────┤
-│   M9     │   M10    │   M11    │   M12    │          │          │          │              │
-│ LLM Apps │ Agentic  │ MLOps    │ AI       │          │          │          │              │
-│ & RAG    │ AI       │          │ Infra    │          │          │          │              │
-└──────────┴──────────┴──────────┴──────────┴──────────┴──────────┴──────────┴──────────────┘
-
-PHASE 1: Math Foundations (M1–M3)
-    → PHASE 2: Classical ML (M4–M5)
-        → PHASE 3: Deep Learning (M6–M7)
-            → PHASE 4: Transformers & LLMs (M8)
-                → PHASE 5: RAG & Agents (M9–M10)
-                    → PHASE 6: MLOps & AI Architecture (M11–M12)
-```
+**Target Identity:** AI-Native Distributed Systems Architect / GenAI Platform Engineer / Production ML Engineer
 
 ---
 
-# PHASE 1 — Mathematical Foundations (Months 1–3)
+## Strategy Note: Course Selection
 
-> **Goal:** Build the mathematical intuition required to understand neural networks, optimization, and probabilistic ML. No black boxes.
+**Primary track uses 5 Krish Naik Udemy courses in this order.** The following courses are **optional/skipped** per this strategy:
+
+- **#4 — Computer Vision** — Optional; not in core path (vision covered at intro level in Course #7).
+- **#6 — GenAI with LangChain/HuggingFace** — Optional; RAG and agent content covered by Courses #1 and #3.
+- **#8 — Gemini Pro** — Optional; focus is on concepts and LangChain/LangGraph, not vendor-specific LLM APIs.
+
+Use the five courses below as the **primary** learning path; supplements (3Blue1Brown, StatQuest, etc.) are for intuition and reference only.
+
+---
+
+## ASCII Overview — All 12 Months
+
+```
+┌─────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│                         12-MONTH AI/ML ROADMAP — 5 PHASES (Krish Naik Udemy)                             │
+├──────────┬──────────┬──────────┬──────────┬──────────┬──────────┬──────────┬──────────┬──────────┬────────┤
+│   M1     │   M2     │   M3     │   M4     │   M5     │   M6     │   M7     │   M8     │   M9     │  M10   │
+│ Linear   │ Prob &   │ Diff     │ Classical│ Deep     │ NLP      │ RAG      │ Agentic  │ Agentic  │ MLOps  │
+│ Algebra  │ Stats    │ Calculus │ ML       │ Learning │          │ Found.   │ RAG +    │ AI       │ Core   │
+│          │          │ & Optim │          │          │          │ + Adv    │ LangSmith│          │        │
+├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼────────┤
+│  M11     │  M12     │          │          │          │          │          │          │          │        │
+│ ML       │ Cloud    │          │          │          │          │          │          │          │        │
+│ Pipelines│ Deploy   │          │          │          │          │          │          │          │        │
+│ & CI/CD  │ & Monitor│          │          │          │          │          │          │          │        │
+└──────────┴──────────┴──────────┴──────────┴──────────┴──────────┴──────────┴──────────┴──────────┴────────┘
+
+PHASE 1: Math Foundations (M1–M3)     → Course #2 — Build Strong Math Foundation
+PHASE 2: Core ML + DL + NLP (M4–M6)  → Course #7 — Master Theory + Math + ML + DL + NLP
+PHASE 3: RAG Systems (M7–M8)         → Course #1 — Ultimate RAG Bootcamp (LangChain, LangGraph, LangSmith)
+PHASE 4: Agentic AI (M9)             → Course #3 — Complete Agentic AI Bootcamp (LangGraph, LangChain)
+PHASE 5: MLOps & Production AI (M10–M12) → Course #5 — Complete MLOps Bootcamp (10+ End-to-End ML Projects)
+```
+
+---
+
+# PHASE 1 — Math Foundations (Months 1–3)
+
+**Primary Course:** #2 — Build Strong Math Foundation with Linear Algebra, Stats, Probability, Differential Calculus (Udemy, Krish Naik)
+
+**Goal:** Build mathematical intuition so that ML/DL concepts (layers, loss, optimization, inference) are not black boxes. Connect every concept to neural nets, embeddings, and optimization.
 
 ---
 
@@ -41,88 +58,77 @@ PHASE 1: Math Foundations (M1–M3)
 
 ### Learning Goals
 
-| Goal | Description |
-|------|-------------|
-| **Conceptual** | Understand vectors, matrices, and linear transformations as the language of neural networks and embeddings |
-| **Computational** | Implement dot products, matrix multiplication, and SVD in code |
-| **Application** | Connect linear algebra to embedding-based search (vector similarity, attention) |
+| Goal Type      | Description |
+|----------------|-------------|
+| **Conceptual** | Understand vectors, matrices, and linear transformations as the language of neural layers and embeddings; interpret dot products and similarity geometrically. |
+| **Computational** | Implement dot products, matrix multiplication, norms, and SVD in code; compute eigenvalues for small matrices. |
+| **Application** | Connect linear algebra to embedding-based search (vector similarity, attention), and to the forward pass of a single layer: y = Wx + b. |
 
 ### Primary Course
 
-| Resource | Provider | Type |
-|----------|----------|------|
-| **Mathematics for Machine Learning: Linear Algebra** | Imperial College London (Coursera) | Primary course |
+| Item | Detail |
+|------|--------|
+| **Course** | #2 — Build Strong Math Foundation with Linear Algebra, Stats, Probability, Differential Calculus (Udemy, Krish Naik) |
+| **Focus this month** | Linear Algebra module only: vectors, matrices, dot products, eigenvalues, SVD. Complete all exercises and code-alongs in this section. |
 
 ### Exact Topics
 
-| Topic | Why It Matters for AI/ML |
-|-------|---------------------------|
-| Vectors, vector operations, norms | Embeddings are vectors; similarity = geometry |
-| Dot products, cosine similarity | Attention uses scaled dot product; retrieval uses cosine |
-| Matrices, matrix multiplication | Neural layers = matrix multiply: y = Wx + b |
-| Basis, span, linear transformations | Latent space, representation learning |
-| Eigenvalues & eigenvectors | PCA, spectral methods, dimensionality reduction |
-| SVD (Singular Value Decomposition) | Recommender factorizations, low-rank approximations |
+| Topic | Why It Matters for ML/AI | Key Deliverable |
+|-------|---------------------------|-----------------|
+| Vectors, vector operations, norms | Embeddings are vectors; similarity is geometry (distance, angle). | Vector class with dot, norm, cosine similarity. |
+| Dot products, cosine similarity | Attention uses scaled dot product; retrieval uses cosine. | Similarity search over 100+ vectors from scratch. |
+| Matrices, matrix multiplication | Neural layer = matrix multiply: y = Wx + b. | Matrix multiply from scratch (no NumPy for core algo). |
+| Basis, span, linear transformations | Latent space, representation learning, change of basis. | 2D transformation demo or notes. |
+| Eigenvalues and eigenvectors | PCA, spectral methods, dimensionality reduction. | PCA from SVD on small dataset; plot first 2 components. |
+| SVD (Singular Value Decomposition) | Recommender factorizations, low-rank approximations, numerical stability. | SVD wrapper; use for PCA or low-rank approx. |
 
-### Why This Month Matters
+### Weekly Milestones
 
-```
-Neural forward pass:     y = σ(Wx + b)                    ← matrix multiply + nonlinearity
-Embedding similarity:    sim(a,b) = a·b / (‖a‖‖b‖)       ← dot product / cosine
-Attention scores:        Attention(Q,K,V) ∝ softmax(QK^T/√d) V  ← scaled dot product
-```
-
-### Weekly Milestones (Week 1–4)
-
-| Week | Focus | Milestones | Deliverables |
-|------|--------|------------|--------------|
-| **Week 1** | Vectors, vector operations, dot product, geometric interpretation | Complete Coursera Week 1; implement dot product and norm in Python | `vectors.py`: Vector class, dot product, norm, cosine similarity |
-| **Week 2** | Matrices, multiplication, inverses, systems of linear equations | Solve Ax=b by hand for 2×2; implement matrix multiply from scratch | `matrices.py`: Matrix multiply, inverse (small), SVD wrapper |
+| Week | Focus | Milestone | Deliverable |
+|------|--------|-----------|-------------|
+| **Week 1** | Vectors, vector operations, dot product, geometric interpretation | Complete Course #2 Linear Algebra Week 1; implement dot product and norm in Python | `vectors.py`: Vector class, dot product, norm, cosine similarity |
+| **Week 2** | Matrices, multiplication, inverses, systems of linear equations | Solve Ax = b by hand for 2×2; implement matrix multiply from scratch | `matrices.py`: Matrix multiply, inverse (small), SVD wrapper |
 | **Week 3** | Basis, span, transformations, change of basis | Explain how a linear map changes coordinates; 2D transformation demo | Notes + small demo script for 2D transformations |
-| **Week 4** | Eigenvalues, eigenvectors, SVD intuition, PCA preview | Compute top-2 PCA by hand on small matrix; SVD in NumPy | `pca_demo.py`: PCA from SVD on toy data |
+| **Week 4** | Eigenvalues, eigenvectors, SVD intuition, PCA preview | Compute top-2 PCA by hand on small matrix; SVD in NumPy | `pca_demo.py`: PCA from SVD on toy data; plot |
 
-### Implementation Tasks
+### Implementation Task (FreshHarvest-Market)
 
-- [ ] Implement a `Vector` class with `dot`, `norm`, `cosine_similarity`
-- [ ] Implement matrix multiplication from scratch (no NumPy for core algo)
-- [ ] Use NumPy SVD to compute PCA on a small dataset; plot first 2 components
-- [ ] Build product embedding representation (e.g., category + price bins → vector)
-- [ ] Implement brute-force top-K similarity search over product embeddings
+Build a **product similarity search** module for the FreshHarvest catalog:
 
-### Mini-Project: Vector Similarity Search (FreshHarvest-Market)
+- Define product embeddings (e.g., category + price bins, or simple feature vector).
+- Implement cosine similarity manually (no sklearn for similarity).
+- Given a product_id, return top-K similar products with similarity scores.
+- Scope: 100–500 products; precomputed or simple embeddings.
 
-| Item | Description |
-|------|-------------|
-| **Objective** | Implement cosine similarity manually in Python; store product embeddings and compute similarity for FreshHarvest catalog |
-| **Scope** | Small product catalog (100–500 items); precomputed or simple embeddings (category + price bins, or manual feature vector) |
-| **Output** | Script that, given a product ID, returns top-K similar products with similarity scores |
-| **Tech** | Python, NumPy; no sklearn for similarity (implement from scratch) |
+### Production-Level Deliverable
 
-### Production Deliverable
-
-- A **similarity search module** that can be called from a service: input `product_id`, output list of `(product_id, similarity_score)`. Document API contract for future integration into FreshHarvest-Market search/recommendation service.
+A **similarity search module** callable from a service: input `product_id`, output list of `(product_id, similarity_score)`. Document the API contract for future integration into FreshHarvest-Market search or recommendation service.
 
 ### GitHub Portfolio Artifact
 
 ```
-FreshHarvest-Market/  (or repo: linear-algebra-from-scratch/)
+FreshHarvest-Market/  (or repo: ml-foundations-linear-algebra/)
 ├── ml-foundations/
 │   ├── vectors.py              # Vector class, dot product, norm, cosine similarity
 │   ├── matrices.py             # Matrix multiply, inverse (small), SVD wrapper
 │   ├── pca_demo.py             # PCA from SVD on toy data
-│   └── similarity_search/      # Mini-project: product embeddings + similarity
+│   └── similarity_search/
 │       ├── embeddings.py       # Build product embeddings (FreshHarvest schema)
 │       ├── search.py           # Top-K similarity search
-│       └── README.md           # How to run, link to FreshHarvest
+│       └── README.md           # How to run; link to FreshHarvest
 └── README.md
 ```
 
+### Architecture Diagram to Design
+
+**Product Similarity Search — Data Flow:** Draw a diagram showing: (1) FreshHarvest product catalog / DB as source, (2) embedding generation step (features → vector), (3) in-memory or file-based vector store, (4) query flow: product_id → embedding lookup → cosine similarity over all vectors → top-K results. Label where this would sit relative to existing microservices (e.g., Search API, Recommendation Service).
+
 ### Evaluation Criteria
 
-- [ ] Explain in one paragraph how matrix multiplication appears in a single neural layer
-- [ ] Implement cosine similarity and use it to find similar vectors in O(n) for n items
-- [ ] Describe how embedding-based search scales (brute-force vs approximate indexes) in a production context
-- [ ] Run similarity search on FreshHarvest product set and document one example query + results
+- [ ] Explain in one paragraph how matrix multiplication appears in a single neural layer.
+- [ ] Implement cosine similarity and use it to find similar vectors in O(n) for n items.
+- [ ] Describe how embedding-based search scales (brute-force vs approximate indexes) in production.
+- [ ] Run similarity search on FreshHarvest product set and document one example query + results.
 
 ---
 
@@ -130,65 +136,51 @@ FreshHarvest-Market/  (or repo: linear-algebra-from-scratch/)
 
 ### Learning Goals
 
-| Goal | Description |
-|------|-------------|
-| **Conceptual** | Model uncertainty; connect distributions to likelihoods and training objectives |
-| **Computational** | Derive MLE for common distributions; implement logistic regression from scratch |
-| **Application** | Churn probability, A/B testing, model evaluation (precision, recall, ROC) |
+| Goal Type      | Description |
+|----------------|-------------|
+| **Conceptual** | Model uncertainty; connect distributions to likelihoods and training objectives; interpret Bayes theorem and MLE. |
+| **Computational** | Derive MLE for common distributions; implement sampling and basic hypothesis tests; implement logistic regression from scratch. |
+| **Application** | Churn probability, A/B testing design, model evaluation (precision, recall, ROC); bias–variance tradeoff. |
 
 ### Primary Course
 
-| Resource | Provider | Type |
-|----------|----------|------|
-| **Mathematics for Machine Learning: Probability & Statistics** | Imperial College London (Coursera) | Primary |
+| Item | Detail |
+|------|--------|
+| **Course** | #2 — Build Strong Math Foundation (Udemy, Krish Naik) |
+| **Focus this month** | Probability & Statistics module: Bayes, distributions, MLE, hypothesis testing, bias–variance. Complete all exercises. |
 
 ### Exact Topics
 
-| Topic | Why It Matters for AI/ML |
-|-------|---------------------------|
-| Random variables, PMF/PDF, CDF | Modeling outputs and uncertainties |
-| Expectation, variance | Loss design, evaluation metrics |
-| Gaussian, Bernoulli, Binomial, Poisson | Common likelihoods and priors |
-| Bayes theorem, conditional probability | Naive Bayes, Bayesian inference |
-| MLE (Maximum Likelihood Estimation) | Training objective; cross-entropy as MLE of Bernoulli |
-| Hypothesis testing, confidence intervals | A/B tests, model comparison |
+| Topic | Why It Matters for ML/AI | Key Deliverable |
+|-------|---------------------------|-----------------|
+| Random variables, PMF/PDF, CDF | Modeling outputs and uncertainties; loss design. | PMF/PDF/CDF for Bernoulli, Gaussian in code. |
+| Expectation, variance | Loss design, evaluation metrics, convergence. | Derive E[X], Var(X) for Bernoulli and Gaussian. |
+| Gaussian, Bernoulli, Binomial, Poisson | Common likelihoods and priors in ML. | Sampling and plotting for each distribution. |
+| Bayes theorem, conditional probability | Naive Bayes, Bayesian inference, posterior updates. | Bayes demo (e.g., medical test example). |
+| MLE (Maximum Likelihood Estimation) | Training objective; cross-entropy as MLE of Bernoulli. | MLE for Gaussian mean; link to logistic regression. |
+| Hypothesis testing, confidence intervals | A/B tests, model comparison, statistical significance. | t-test or bootstrap CI script. |
+| Bias–variance tradeoff | Underfitting vs overfitting; regularization intuition. | Short write-up with learning curve interpretation. |
 
-### Why This Month Matters
+### Weekly Milestones
 
-- **Logistic regression:** Binary classification as MLE of Bernoulli likelihood
-- **Naive Bayes:** Text/classification with conditional independence
-- **Model evaluation:** Accuracy, precision, recall, ROC; variance of metrics
-- **Bias–variance tradeoff:** Underfitting vs overfitting
-
-### Weekly Milestones (Week 1–4)
-
-| Week | Focus | Milestones | Deliverables |
-|------|--------|------------|--------------|
+| Week | Focus | Milestone | Deliverable |
+|------|--------|-----------|-------------|
 | **Week 1** | Random variables, PMF/PDF, CDF, expectation, variance | Derive E[X] and Var(X) for Bernoulli and Gaussian; code sampling | `distributions.py`: PMF/PDF/CDF for Bernoulli, Gaussian |
 | **Week 2** | Common distributions (Bernoulli, Binomial, Gaussian, Poisson), CLT | When to use which; CLT demo with sample means | Add Binomial, Poisson; CLT demo script |
 | **Week 3** | Bayes theorem, conditional probability, Bayesian thinking | Bayes by hand (e.g., medical test); posterior vs prior | `bayes_demo.py`: Bayes theorem examples |
-| **Week 4** | MLE, MAP, hypothesis testing, confidence intervals | MLE for Gaussian mean; t-test for two means; bootstrap CI | `mle_map.py`: MLE for Gaussian, MAP with prior |
+| **Week 4** | MLE, MAP, hypothesis testing, confidence intervals | MLE for Gaussian mean; t-test for two means; bootstrap CI | `mle_map.py`: MLE for Gaussian, MAP with prior; logistic from scratch |
 
-### Implementation Tasks
+### Implementation Task (FreshHarvest-Market)
 
-- [ ] Implement PMF/PDF/CDF for Bernoulli, Gaussian (and optionally Binomial, Poisson)
-- [ ] Derive Bernoulli likelihood and show how maximizing it gives logistic regression
-- [ ] Implement logistic regression from scratch (no sklearn for core algorithm): gradient ascent/descent on log-likelihood
-- [ ] Train on churn dataset; report accuracy, precision, recall, ROC-AUC
-- [ ] Design an A/B test (null, alternative, metric, sample size intuition) for a model change
+Build a **churn probability estimator**:
 
-### Mini-Project: Churn Probability Estimator (FreshHarvest-Market)
+- Implement logistic regression from scratch (gradient ascent/descent on log-likelihood; no sklearn for core algorithm).
+- Use synthetic or public data (e.g., Telco churn) with features mappable to FreshHarvest: tenure → order frequency, usage → basket size, contract type → subscription.
+- Output: trained coefficients; predict P(churn); report accuracy, precision, recall, ROC-AUC.
 
-| Item | Description |
-|------|-------------|
-| **Objective** | Build a churn probability estimator; implement logistic regression from scratch |
-| **Data** | Synthetic or public (e.g., Telco churn); features: tenure, usage, contract type (map to FreshHarvest: order frequency, basket size, subscription) |
-| **Output** | Trained coefficients; predict P(churn); report accuracy, precision, recall, ROC-AUC |
-| **Tech** | Python only for model; sklearn only for metrics/splits if desired |
+### Production-Level Deliverable
 
-### Production Deliverable
-
-- **Churn probability API contract**: input (customer_id or feature vector), output P(churn). Document how this would plug into FreshHarvest-Market (e.g., retention campaign triggers).
+**Churn probability API contract:** input (customer_id or feature vector), output P(churn). Document how this would plug into FreshHarvest-Market (e.g., retention campaign triggers, segment scoring).
 
 ### GitHub Portfolio Artifact
 
@@ -206,76 +198,66 @@ FreshHarvest-Market/  (or probability-stats-implementations/)
 └── README.md
 ```
 
+### Architecture Diagram to Design
+
+**Churn Scoring Pipeline:** Diagram showing: (1) source of customer/order data (DB or warehouse), (2) feature computation (tenure, order frequency, basket size, etc.), (3) model inference (logistic regression), (4) output P(churn) consumed by campaign service or segment builder. Include where A/B testing or monitoring would hook in.
+
 ### Evaluation Criteria
 
-- [ ] Write the Bernoulli likelihood and show how maximizing it gives logistic regression
-- [ ] Design an A/B test (null, alternative, metric, sample size intuition) for a model change
-- [ ] Explain how you would monitor a production classifier (metrics, confidence, drift)
-- [ ] Deliver trained churn model with reported metrics and one paragraph on FreshHarvest integration
+- [ ] Write the Bernoulli likelihood and show how maximizing it gives logistic regression.
+- [ ] Design an A/B test (null, alternative, metric, sample size intuition) for a model change.
+- [ ] Explain how you would monitor a production classifier (metrics, confidence, drift).
+- [ ] Deliver trained churn model with reported metrics and one paragraph on FreshHarvest integration.
 
 ---
 
-## MONTH 3 — Calculus for ML
+## MONTH 3 — Differential Calculus & Optimization
 
 ### Learning Goals
 
-| Goal | Description |
-|------|-------------|
-| **Conceptual** | Gradients as direction of steepest ascent; chain rule as backpropagation |
-| **Computational** | Implement gradient descent (batch, SGD, mini-batch); visualize convergence |
-| **Application** | Loss minimization, learning rates, batch size vs convergence |
+| Goal Type      | Description |
+|----------------|-------------|
+| **Conceptual** | Gradients as direction of steepest ascent; chain rule as backpropagation; why learning rate and batch size matter. |
+| **Computational** | Implement gradient descent (batch, SGD, mini-batch); compute partial derivatives and gradients for toy functions. |
+| **Application** | Loss minimization, learning rates, batch size vs convergence; backprop intuition for neural nets. |
 
-### Primary Courses
+### Primary Course
 
-| Resource | Provider | Type |
-|----------|----------|------|
-| **Essence of Calculus** | 3Blue1Brown (YouTube) | Intuition |
-| **Mathematics for ML: Multivariate Calculus** | Imperial College London (Coursera) | Primary |
+| Item | Detail |
+|------|--------|
+| **Course** | #2 — Build Strong Math Foundation (Udemy, Krish Naik) |
+| **Focus this month** | Differential Calculus & Optimization: derivatives, gradients, gradient descent, chain rule, backprop intuition. |
 
 ### Exact Topics
 
-| Topic | Why It Matters for AI/ML |
-|-------|---------------------------|
-| Derivatives, rules of differentiation | Rate of change of loss w.r.t. parameters |
-| Partial derivatives, gradients | ∇L(θ) for multi-parameter models |
-| Chain rule, computation graphs | Backpropagation = chain rule on a graph |
-| Gradient descent (batch, SGD, mini-batch) | How neural nets are trained |
-| Optimization landscape (convex, saddle) | Why initialization and learning rate matter |
+| Topic | Why It Matters for ML/AI | Key Deliverable |
+|-------|---------------------------|-----------------|
+| Derivatives, rules of differentiation | Rate of change of loss w.r.t. parameters. | Derivative of polynomial, exp, log; tangent line demo. |
+| Partial derivatives, gradients | ∇L(θ) for multi-parameter models. | ∇f(x,y) by hand; numerical gradient in code. |
+| Chain rule, computation graphs | Backpropagation = chain rule on a graph. | 2-layer net as graph; ∂L/∂W for one layer on paper. |
+| Gradient descent (batch, SGD, mini-batch) | How neural nets are trained. | GD, SGD, mini-batch GD; plot loss curves. |
+| Optimization landscape (convex, saddle) | Why initialization and learning rate matter. | 2D contour plot of loss with trajectory overlay. |
 
-### Why This Month Matters
+### Weekly Milestones
 
-- **Backpropagation:** Application of chain rule to computation graph
-- **Loss minimization:** Gradient descent and variants (learning rate, momentum, Adam)
-- **Training infrastructure:** Batch size ↔ throughput vs convergence; GPU for matrix ops
-
-### Weekly Milestones (Week 1–4)
-
-| Week | Focus | Milestones | Deliverables |
-|------|--------|------------|--------------|
-| **Week 1** | Derivatives, rules of differentiation, intuition | Derivative of polynomial, exp, log; tangent line = direction of steepest ascent | Notes + small derivative exercises in code |
-| **Week 2** | Partial derivatives, gradients, directional derivatives | ∇f(x,y) by hand; gradient points uphill; implement gradient for 2D function | `derivatives.py`: numerical/symbolic gradient for toy functions |
+| Week | Focus | Milestone | Deliverable |
+|------|--------|-----------|-------------|
+| **Week 1** | Derivatives, rules of differentiation, intuition | Derivative of polynomial, exp, log; tangent line = steepest ascent | Notes + small derivative exercises in code |
+| **Week 2** | Partial derivatives, gradients, directional derivatives | ∇f(x,y) by hand; implement gradient for 2D function | `derivatives.py`: numerical/symbolic gradient for toy functions |
 | **Week 3** | Chain rule, computation graphs, backpropagation math | Draw 2-layer net as graph; write ∂L/∂W for one layer symbolically | Hand-written derivation + 1-page doc |
-| **Week 4** | Gradient descent variants (batch, SGD, mini-batch), learning rate, convergence | Code GD, SGD, mini-batch GD; plot loss curves; try different learning rates | `gradient_descent.py`, `linear_regression_gd.py`, visualizations |
+| **Week 4** | Gradient descent variants, learning rate, convergence | Code GD, SGD, mini-batch GD; plot loss; try different learning rates | `gradient_descent.py`, `linear_regression_gd.py`, visualizations |
 
-### Implementation Tasks
+### Implementation Task (FreshHarvest-Market)
 
-- [ ] Implement numerical gradient for a scalar function of 2 variables
-- [ ] Implement batch, stochastic, and mini-batch gradient descent
-- [ ] Fit linear regression (y = Wx + b) using GD only (MSE loss)
-- [ ] Visualize convergence: 2D contour plot of loss with trajectory overlay
-- [ ] Compare convergence on convex bowl vs saddle (if time)
+Implement **gradient descent from scratch** and optionally tie to FreshHarvest:
 
-### Mini-Project: Gradient Descent from Scratch + Visualize Convergence
+- Fit linear regression (y = Wx + b) using GD only (MSE loss).
+- Optional: use a tiny slice of FreshHarvest data (e.g., price vs demand or quantity sold) for the linear fit.
+- Visualize: 2D contour plot of loss with trajectory overlay; compare batch vs SGD vs mini-batch convergence.
 
-| Item | Description |
-|------|-------------|
-| **Objective** | Implement gradient descent from scratch; visualize convergence on different loss surfaces |
-| **Output** | Script that runs GD/SGD on a simple loss (e.g., linear regression MSE); 2D contour plot of loss with trajectory overlay |
-| **Link to FreshHarvest** | Optional: use a tiny slice of FreshHarvest data (e.g., price vs demand) for linear fit |
+### Production-Level Deliverable
 
-### Production Deliverable
-
-- **Reusable gradient descent module** with batch/SGD/mini-batch options and logging of loss per step. Document how this translates to “training infrastructure” (batch size, iteration count, GPU vs CPU).
+**Reusable gradient descent module** with batch/SGD/mini-batch options and logging of loss per step. Document how this translates to “training infrastructure” (batch size, iteration count, GPU vs CPU).
 
 ### GitHub Portfolio Artifact
 
@@ -284,40 +266,36 @@ FreshHarvest-Market/  (or calculus-gradient-descent/)
 ├── ml-foundations/
 │   ├── derivatives.py         # Symbolic or numerical gradients for toy functions
 │   ├── gradient_descent.py    # Batch, SGD, mini-batch
-│   ├── visualizations/        # Loss surfaces and trajectories
 │   ├── linear_regression_gd.py # Fit y = Wx + b with GD
+│   ├── visualizations/        # Loss surfaces and trajectories
 │   └── README.md
 └── README.md
 ```
 
+### Architecture Diagram to Design
+
+**Training Loop — High-Level:** Diagram showing: (1) data batch → (2) forward pass (model) → (3) loss → (4) backward pass (gradients) → (5) parameter update → (6) repeat. Annotate where batch size, learning rate, and GPU (large matrix multiplies) fit in. One paragraph on when to use GPU vs CPU.
+
 ### Evaluation Criteria
 
-- [ ] Derive ∂L/∂W for one layer (e.g., linear layer + MSE)
-- [ ] Explain the tradeoff between batch size, iteration count, and convergence
-- [ ] Justify when to use GPU (large matrix multiplies) vs CPU (small models, preprocessing)
-- [ ] Produce at least one convergence plot and one contour plot with trajectory
+- [ ] Derive ∂L/∂W for one layer (e.g., linear layer + MSE).
+- [ ] Explain the tradeoff between batch size, iteration count, and convergence.
+- [ ] Justify when to use GPU (large matrix multiplies) vs CPU (small models, preprocessing).
+- [ ] Produce at least one convergence plot and one contour plot with trajectory.
 
 ---
 
-### PHASE 1 — Supplementary Resources
+### PHASE 1 — Supplementary Resources (Supplements Only)
 
 | Type | Resource | Use |
 |------|----------|-----|
-| YouTube | 3Blue1Brown — Linear Algebra, Essence of Calculus | Visual intuition |
-| YouTube | StatQuest — Statistics Fundamentals | Probability & stats intuition |
+| YouTube | 3Blue1Brown — Linear Algebra, Essence of Calculus | Visual intuition for vectors, matrices, derivatives |
+| YouTube | StatQuest — Statistics Fundamentals | Probability and stats intuition |
 | Blog | Distill.pub — Linear Algebra, Calculus | Clear explanations |
-| Book | *Linear Algebra and Its Applications* (Gilbert Strang) | Reference |
-| Paper | “Matrix Calculus” (Wikipedia / Petersen) | Chain rule reference |
+| Book | Linear Algebra and Its Applications (Gilbert Strang) | Reference |
+| Paper / Wiki | Matrix Calculus (Wikipedia / Petersen) | Chain rule reference |
 
-### PHASE 1 — Architecture-Level Application
-
-| Knowledge Area | How It Maps to Production AI Systems |
-|----------------|--------------------------------------|
-| **Linear algebra** | Embedding-based search: vector DBs, similarity indexes, scaling (brute-force vs HNSW/IVF). Understanding why “embedding + similarity” is the backbone of RAG and recommendations. |
-| **Probability & statistics** | A/B testing framework design; probabilistic model monitoring (drift, confidence intervals on metrics); defining “good” via precision/recall/ROC. |
-| **Calculus** | Training infrastructure: batch size, GPU vs CPU, memory, distributed training; interpreting loss curves and learning rate schedules. |
-
-### PHASE 1 — Checkpoint Criteria (How to Know You’ve Mastered It)
+### PHASE 1 — Checkpoint Criteria
 
 - [ ] **Linear algebra:** Explain in 2 minutes how a single neural layer is a matrix multiply + nonlinearity; implement and run cosine similarity search on 500+ vectors.
 - [ ] **Probability & stats:** Derive logistic regression from Bernoulli MLE; design one A/B test and one monitoring plan for a classifier.
@@ -325,71 +303,65 @@ FreshHarvest-Market/  (or calculus-gradient-descent/)
 
 ---
 
-# PHASE 2 — Classical Machine Learning (Months 4–5)
+# PHASE 2 — Core ML + Deep Learning + NLP (Months 4–6)
 
-> **Goal:** Implement and deploy classical ML models; connect to FreshHarvest-Market and Kubernetes experience.
+**Primary Course:** #7 — Master Theory + Math + ML + DL + NLP with End-to-End Projects (Udemy, Krish Naik)
+
+**Goal:** Implement classical ML, deep learning, and NLP with end-to-end projects; connect each to FreshHarvest-Market where applicable.
 
 ---
 
-## MONTH 4 — Core ML Algorithms
+## MONTH 4 — Classical ML
 
 ### Learning Goals
 
-| Goal | Description |
-|------|-------------|
-| **Conceptual** | Linear/logistic regression, regularization, bias/variance, evaluation metrics, pipelines |
-| **Computational** | Train and evaluate models with Scikit-learn; build recommendation and forecasting pipelines |
-| **Application** | Product recommendation (collaborative filtering), demand prediction, microservice design |
+| Goal Type      | Description |
+|----------------|-------------|
+| **Conceptual** | Linear/logistic regression, decision trees, SVM, KNN, ensemble methods; evaluation metrics; bias–variance; pipelines. |
+| **Computational** | Train and evaluate models with Scikit-learn; build preprocessing and evaluation pipelines. |
+| **Application** | Product recommendation, demand prediction, classification for FreshHarvest; microservice design. |
 
-### Primary Courses & Materials
+### Primary Course
 
-| Resource | Provider | Type |
-|----------|----------|------|
-| **Machine Learning** | Andrew Ng (Coursera) | Primary |
-| **Hands-On Machine Learning with Scikit-Learn, Keras & TensorFlow** | Aurélien Géron (Book) | Primary |
-| **ML with Python** (Udemy, Scikit-learn based) | Udemy | Current / parallel |
+| Item | Detail |
+|------|--------|
+| **Course** | #7 — Master Theory + Math + ML + DL + NLP with End-to-End Projects (Udemy, Krish Naik) |
+| **Focus this month** | Classical ML: linear regression, logistic regression, decision trees, SVM, KNN, ensemble methods, evaluation metrics. Complete ML theory and hands-on sections. |
 
 ### Exact Topics
 
-| Topic | Relevance |
-|-------|-----------|
-| Linear regression, normal equation, gradient descent | Baseline, interpretability |
-| Logistic regression, regularization (L1/L2) | Classification, overfitting control |
-| Neural network basics (Ng) | Bridge to Phase 3 |
-| SVM (linear and kernel) | High-dimensional classification |
-| K-means | Clustering, segmentation |
-| Bias/variance, evaluation metrics (accuracy, precision, recall, F1, RMSE, MAE) | Reliable evaluation |
-| Pipelines, preprocessing | Reproducibility, productionization |
-| Ensemble methods (trees, bagging intro) | Robustness |
+| Topic | Why It Matters for ML/AI | Key Deliverable |
+|-------|---------------------------|-----------------|
+| Linear regression (analytical + GD), cost function | Baseline, interpretability, gradient-based training. | Trained linear regression; coefficient interpretation. |
+| Logistic regression, decision boundary, regularization (Ridge/Lasso) | Classification, overfitting control. | Regularized logistic model; learning curve plot. |
+| Decision trees (splits, impurity) | Interpretability, ensemble building block. | Trained tree; feature importance. |
+| SVM (linear and kernel), margin, C and gamma | High-dimensional classification. | SVM on non-linear data; when to use vs trees. |
+| KNN | Simple baseline; similarity-based prediction. | KNN classifier; effect of k. |
+| Ensemble methods (bagging, Random Forest, intro to boosting) | Robustness, production tabular ML. | Random Forest; feature importance; pipeline. |
+| Evaluation metrics (accuracy, precision, recall, F1, RMSE, MAE, ROC-AUC) | Reliable evaluation and model selection. | Evaluation script; metrics report. |
+| Pipelines, preprocessing (scaling, encoding) | Reproducibility, productionization. | End-to-end pipeline: raw data → features → model. |
 
-### Weekly Milestones (Week 1–4)
+### Weekly Milestones
 
-| Week | Focus | Milestones | Deliverables |
-|------|--------|------------|--------------|
-| **Week 1** | Linear regression (analytical + GD), cost function, feature scaling | Implement or use sklearn; interpret coefficients; RMSE/R² | Trained linear regression; short report on coefficients |
-| **Week 2** | Logistic regression, decision boundary, regularization (Ridge/Lasso) | Binary classifier; regularization strength vs overfitting | Regularized logistic model; learning curve plot |
-| **Week 3** | SVMs: margin, kernel trick (RBF), C and gamma; K-means | SVM for non-linear data; when to use vs trees; clustering demo | SVM + K-means notebooks or scripts |
-| **Week 4** | Decision trees (splits, impurity), Random Forest and bagging; pipelines | Train tree and small forest; feature importance; sklearn Pipeline | End-to-end pipeline: raw data → features → model |
+| Week | Focus | Milestone | Deliverable |
+|------|--------|-----------|-------------|
+| **Week 1** | Linear regression, cost function, feature scaling | Implement or use sklearn; interpret coefficients; RMSE/R² | Trained linear regression; short report on coefficients |
+| **Week 2** | Logistic regression, decision boundary, regularization | Binary classifier; regularization strength vs overfitting | Regularized logistic model; learning curve plot |
+| **Week 3** | SVMs (margin, kernel), KNN; decision trees | SVM for non-linear data; KNN; when to use which | SVM + KNN + tree notebooks or scripts |
+| **Week 4** | Ensemble (Random Forest, bagging), pipelines, evaluation | Train tree and small forest; feature importance; sklearn Pipeline | End-to-end pipeline: raw data → features → model; metrics |
 
-### Implementation Tasks
+### Implementation Task (FreshHarvest-Market)
 
-- [ ] Build a collaborative filtering recommendation model (user-item matrix; matrix factorization or k-NN on embeddings)
-- [ ] Evaluate with RMSE/MAE or ranking metric (e.g., NDCG, hit rate)
-- [ ] Expose recommendations via REST API (e.g., “recommended for user X”, “similar to item Y”)
-- [ ] Document how to deploy as a K8s microservice (Dockerfile, health checks)
+Build a **product recommendation engine** using classical ML:
 
-### Mini-Project: Product Recommendation Engine (FreshHarvest-Market)
+- Collaborative filtering (user–item matrix): matrix factorization or k-NN on embeddings.
+- Evaluate with RMSE/MAE or ranking metric (e.g., NDCG, hit rate).
+- Expose via REST API: “recommended for user X”, “similar to item Y”.
+- Document how to deploy as a K8s microservice (Dockerfile, health checks).
 
-| Item | Description |
-|------|-------------|
-| **Objective** | Build a product recommendation engine using collaborative filtering |
-| **Scope** | Small dataset (MovieLens or synthetic e-commerce interactions); map to FreshHarvest products/users |
-| **Output** | API that returns “recommended for user X” or “similar to item Y”; model versioning plan |
-| **Deployment** | Package as microservice (FastAPI); document K8s deployment |
+### Production-Level Deliverable
 
-### Production Deliverable
-
-- **Recommendation microservice**: one or more endpoints (e.g., `GET /recommend?user_id=`, `GET /similar?product_id=`); Dockerfile; optional K8s Deployment + Service; README with runbook.
+**Recommendation microservice:** endpoints (e.g., GET /recommend?user_id=, GET /similar?product_id=); Dockerfile; optional K8s Deployment + Service; README with runbook.
 
 ### GitHub Portfolio Artifact
 
@@ -405,173 +377,67 @@ FreshHarvest-Market/  (or recommendation-microservice/)
 └── README.md
 ```
 
-### Evaluation Criteria
+### Architecture Diagram to Design
 
-- [ ] Train and evaluate a collaborative filtering model (RMSE/MAE or ranking metric)
-- [ ] Expose recommendations via REST API and document it
-- [ ] Describe how you would add health checks and readiness for K8s
-- [ ] One paragraph on how recommendation service fits into FreshHarvest-Market architecture
-
----
-
-## MONTH 5 — Advanced ML & Deployment
-
-### Learning Goals
-
-| Goal | Description |
-|------|-------------|
-| **Conceptual** | Ensemble methods (RF, gradient boosting), feature engineering, model versioning |
-| **Computational** | Pipelines, cross-validation, hyperparameter tuning; export and load model artifacts |
-| **Application** | Demand prediction for FreshHarvest; deploy as K8s microservice with model versioning |
-
-### Exact Topics
-
-| Topic | Relevance |
-|-------|-----------|
-| Random forests, gradient boosting (XGBoost/LightGBM) | Production tabular ML |
-| Feature engineering, pipelines | Reproducibility, productionization |
-| Model tuning (grid/random search), cross-validation | Reliable evaluation and hyperparameters |
-| Model versioning, deployment patterns | MLOps basics |
-
-### Weekly Milestones (Week 1–4)
-
-| Week | Focus | Milestones | Deliverables |
-|------|--------|------------|--------------|
-| **Week 1** | Random forests in depth, hyperparameters; gradient boosting (XGBoost) | Train RF and XGBoost; compare on same dataset | Comparison report; best model chosen |
-| **Week 2** | Feature engineering (encoding, scaling, temporal), sklearn Pipelines | End-to-end pipeline: raw data → features → model | Pipeline code; feature doc |
-| **Week 3** | Cross-validation, grid/random search, metric choice | Tuned model with CV; report best params and validation score | Tuned model; validation metrics |
-| **Week 4** | Model versioning (artifact store), deployment as microservice, basic monitoring | Versioned model artifact; deploy in container; log predictions (POC) | Versioned artifact; Docker + K8s; logging design |
-
-### Implementation Tasks
-
-- [ ] Build demand prediction model (units sold per product/week or similar) using XGBoost or LightGBM
-- [ ] Create reproducible training pipeline (data → features → train → artifact)
-- [ ] Version model (path or tag in artifact store; e.g., S3, GCS, or local with naming convention)
-- [ ] Deploy model behind FastAPI; run in Docker and in K8s (Deployment + Service)
-- [ ] Document rollback to a previous model version
-
-### Mini-Project: Demand Prediction + Deploy as K8s Microservice (FreshHarvest-Market)
-
-| Item | Description |
-|------|-------------|
-| **Objective** | Demand prediction model for e-commerce (units sold per product/week). Deploy as microservice in K8s; add model versioning |
-| **Output** | Trained model (e.g., XGBoost), pipeline from raw data to prediction; API endpoint; Docker image; K8s Deployment + Service; short doc on model versioning |
-| **Production** | API contract: input (product_id, optional features), output (predicted demand); versioned model load |
-
-### Production Deliverable
-
-- **Demand forecast microservice** running in K8s with versioned model artifact; README with runbook, rollback procedure, and placeholder for monitoring (latency, errors).
-
-### GitHub Portfolio Artifact
-
-```
-FreshHarvest-Market/  (or demand-forecast-pipeline/)
-├── services/
-│   └── demand-forecast-service/
-│       ├── data/           # Prep scripts
-│       ├── pipeline/       # Feature pipeline, train script
-│       ├── model_registry/ # Versioning strategy (paths/tags)
-│       ├── app/            # FastAPI, model load
-│       ├── Dockerfile
-│       ├── k8s/            # Deployment, Service
-│       └── README.md       # Runbook, versioning, rollback
-└── README.md
-```
+**Recommendation Service in FreshHarvest:** Diagram showing: (1) user/item interaction data source, (2) training pipeline (batch or periodic) producing model/embeddings, (3) recommendation service (load model, serve /recommend and /similar), (4) API gateway or BFF calling the service. Include caching and scaling considerations.
 
 ### Evaluation Criteria
 
-- [ ] Deliver a reproducible training pipeline and a versioned model artifact
-- [ ] Run the model behind an API in a container and in K8s
-- [ ] Explain one way to roll back to a previous model version
-- [ ] Document where model artifacts are stored and how the service loads a specific version
+- [ ] Train and evaluate a collaborative filtering or k-NN recommendation model (RMSE/MAE or ranking metric).
+- [ ] Expose recommendations via REST API and document it.
+- [ ] Describe how you would add health checks and readiness for K8s.
+- [ ] One paragraph on how the recommendation service fits into FreshHarvest-Market architecture.
 
 ---
 
-### PHASE 2 — Supplementary Resources
-
-| Type | Resource | Use |
-|------|----------|-----|
-| YouTube | StatQuest — ML algorithms | Quick intuition |
-| Book | *Hands-On ML* (Géron) | End-to-end projects |
-| Docs | Scikit-learn user guide | Pipelines, APIs |
-| Blog | ML design patterns (Google) | Production patterns |
-
-### PHASE 2 — Architecture-Level Application
-
-| Area | Application |
-|------|-------------|
-| **Service boundary** | Recommendation and demand forecast as separate microservices; versioned APIs |
-| **Scaling** | Stateless inference; horizontal pod scaling; caching recommendations |
-| **Data** | Where user/item embeddings or model artifacts are stored; pipeline reproducibility |
-| **Lifecycle** | Model versioning and rollback; health checks and readiness for K8s |
-
-### PHASE 2 — Checkpoint Criteria
-
-- [ ] Train and evaluate at least two classical ML models (e.g., collaborative filtering + XGBoost demand model)
-- [ ] Deploy both as containerized services and document K8s deployment
-- [ ] Implement model versioning for one service and document rollback
-
----
-
-# PHASE 3 — Deep Learning (Months 6–7)
-
-> **Goal:** Understand and implement neural networks, CNNs, and RNNs; connect to training infrastructure and deployment.
-
----
-
-## MONTH 6 — Neural Networks & CNNs
+## MONTH 5 — Deep Learning
 
 ### Learning Goals
 
-| Goal | Description |
-|------|-------------|
-| **Conceptual** | Perceptron to MLP; backpropagation; regularization (L2, dropout); optimization (Adam, RMSProp) |
-| **Computational** | Implement or use PyTorch/TensorFlow for MLP and CNN; train on product images |
-| **Application** | Product image classifier for FreshHarvest; deploy with FastAPI |
+| Goal Type      | Description |
+|----------------|-------------|
+| **Conceptual** | Neural networks, backpropagation, CNNs, RNNs; regularization (dropout, L2); optimization (Adam, etc.). |
+| **Computational** | Implement or use PyTorch/TensorFlow for MLP and CNN; train on product or image data. |
+| **Application** | Product image classifier or tabular DL for FreshHarvest; deploy with FastAPI. |
 
 ### Primary Course
 
-| Resource | Provider | Type |
-|----------|----------|------|
-| **Deep Learning Specialization** (Courses 1–3) | Andrew Ng (Coursera) | Primary |
+| Item | Detail |
+|------|--------|
+| **Course** | #7 — Master Theory + Math + ML + DL + NLP (Udemy, Krish Naik) |
+| **Focus this month** | Deep Learning module: neural networks, backpropagation, CNNs, RNNs, regularization, optimization (Adam, etc.). Complete DL theory and projects. |
 
 ### Exact Topics
 
-| Topic | Relevance |
-|-------|-----------|
-| Perceptron, activation functions (ReLU, sigmoid, softmax) | Building blocks of NNs |
-| Forward propagation, backward propagation | Training NNs |
-| Regularization (L2, dropout), batch normalization | Stability and generalization |
-| Optimization: SGD, momentum, Adam, RMSProp | Practical training |
-| CNNs: conv, pooling, architectures | Vision in production |
+| Topic | Why It Matters for ML/AI | Key Deliverable |
+|-------|---------------------------|-----------------|
+| Perceptron, activation functions (ReLU, sigmoid, softmax) | Building blocks of NNs. | 2-layer MLP from scratch or with framework. |
+| Forward propagation, backward propagation | Training NNs. | Backprop for MLP; gradient check. |
+| Regularization (L2, dropout), batch normalization | Stability and generalization. | Comparison with/without dropout. |
+| Optimization: SGD, momentum, Adam, RMSProp | Practical training. | Train with Adam; plot loss. |
+| CNNs: conv, pooling, architectures | Vision in production. | CNN for image classification. |
+| RNNs, LSTM, GRU (intro) | Sequences; bridge to NLP. | Small RNN/LSTM on sequence data. |
 
-### Weekly Milestones (Week 1–4)
+### Weekly Milestones
 
-| Week | Focus | Milestones | Deliverables |
-|------|--------|------------|--------------|
-| **Week 1** | Perceptron, MLP, activations; forward pass | Implement 2-layer MLP in NumPy or PyTorch from scratch (no autograd) | MLP code; forward pass verified |
+| Week | Focus | Milestone | Deliverable |
+|------|--------|-----------|-------------|
+| **Week 1** | Perceptron, MLP, activations; forward pass | Implement 2-layer MLP in NumPy or PyTorch (forward only or full) | MLP code; forward pass verified |
 | **Week 2** | Backpropagation, chain rule in layers | Backprop for MLP; gradient check | Backprop implementation; gradient check |
-| **Week 3** | Regularization (dropout, L2), batch norm | Train on overfitting-prone data; compare with/without dropout | Comparison report; tuned model |
+| **Week 3** | Regularization (dropout, L2), batch norm; optimization (Adam) | Train on overfitting-prone data; compare with/without dropout | Comparison report; tuned model |
 | **Week 4** | CNNs: conv, pooling; product image classifier | Train CNN on product images by category; evaluate | CNN model; accuracy on held-out set |
 
-### Implementation Tasks
+### Implementation Task (FreshHarvest-Market)
 
-- [ ] Implement or use a CNN for image classification (e.g., PyTorch or TensorFlow)
-- [ ] Use product images by category (e.g., fashion, electronics, produce) — FreshHarvest or public dataset
-- [ ] Report accuracy (and optionally precision/recall per class)
-- [ ] Create inference script; optional: wrap in FastAPI
+Build a **product image classifier**:
 
-### Mini-Project: Product Image Classifier (FreshHarvest-Market)
+- Use CNN (PyTorch or TensorFlow) on product images by category (FreshHarvest or public dataset).
+- Report accuracy (and optionally precision/recall per class).
+- Create inference script; optionally wrap in FastAPI.
 
-| Item | Description |
-|------|-------------|
-| **Objective** | Build a product image classifier using CNNs; dataset: product images by category |
-| **Output** | Trained CNN; evaluation metrics; inference script; optional simple API |
-| **Deployment** | Deploy with FastAPI (single or batch inference) |
+### Production-Level Deliverable
 
-### Production Deliverable
-
-- **Image classification API**: input image(s), output category (and confidence). Dockerfile; document batch vs single image and latency/throughput tradeoff.
+**Image classification API:** input image(s), output category and confidence. Dockerfile; document batch vs single image and latency/throughput tradeoff.
 
 ### GitHub Portfolio Artifact
 
@@ -590,366 +456,349 @@ FreshHarvest-Market/  (or product-image-classifier/)
 └── README.md
 ```
 
+### Architecture Diagram to Design
+
+**Image Classification Service:** Diagram: (1) image upload or URL input, (2) preprocessing (resize, normalize), (3) CNN inference, (4) category + confidence output; (5) optional batch endpoint. Include where GPU would be used and how scaling (replicas, batch size) affects latency and cost.
+
 ### Evaluation Criteria
 
-- [ ] Implement or use a CNN and report accuracy on a held-out set
-- [ ] Explain what dropout and batch norm do in one sentence each
-- [ ] Describe batch size vs GPU memory and throughput tradeoff
-- [ ] Ship inference script or API that can be called with an image
+- [ ] Implement or use a CNN and report accuracy on a held-out set.
+- [ ] Explain what dropout and batch norm do in one sentence each.
+- [ ] Describe batch size vs GPU memory and throughput tradeoff.
+- [ ] Ship inference script or API that can be called with an image.
 
 ---
 
-## MONTH 7 — RNNs & Sequence Models
+## MONTH 6 — NLP
 
 ### Learning Goals
 
-| Goal | Description |
-|------|-------------|
-| **Conceptual** | RNN, LSTM, GRU; sequence-to-sequence; attention intro |
-| **Computational** | Train RNN/LSTM on sequences (time-series or text); optional seq2seq/attention |
-| **Application** | Review text generator (RNN) or time-series; deploy with FastAPI |
+| Goal Type      | Description |
+|----------------|-------------|
+| **Conceptual** | Text preprocessing, word embeddings, sequence models, transformers intro; sentiment analysis; end-to-end NLP project. |
+| **Computational** | Preprocess text; use embeddings (e.g., Word2Vec, or pretrained); build sequence model or fine-tune for sentiment. |
+| **Application** | Product review sentiment, title/description classification for FreshHarvest; end-to-end NLP pipeline. |
 
 ### Primary Course
 
-| Resource | Provider | Type |
-|----------|----------|------|
-| **Deep Learning Specialization** (Courses 4–5) | Andrew Ng (Coursera) | Primary |
+| Item | Detail |
+|------|--------|
+| **Course** | #7 — Master Theory + Math + ML + DL + NLP (Udemy, Krish Naik) |
+| **Focus this month** | NLP module: text preprocessing, word embeddings, sequence models, transformers intro, sentiment analysis, end-to-end NLP project. |
 
 ### Exact Topics
 
-| Topic | Relevance |
-|-------|-----------|
-| RNNs, vanishing gradient; LSTM, GRU | Sequences (time-series, text) |
-| Sequence-to-sequence, attention (high level) | Bridge to transformers |
-| Transfer learning (ResNet backbone) | Vision production |
+| Topic | Why It Matters for ML/AI | Key Deliverable |
+|-------|---------------------------|-----------------|
+| Text preprocessing (tokenization, lowercasing, stop words, stemming/lemmatization) | Input pipeline for NLP. | Preprocessing pipeline script. |
+| Word embeddings (Word2Vec, GloVe, or pretrained) | Dense representation for retrieval and classification. | Embedding lookup; similarity demo. |
+| Sequence models (RNN/LSTM for text) | Sentiment, sequence classification. | Trained RNN/LSTM for sentiment. |
+| Transformers intro (attention, encoder–decoder) | Bridge to RAG and LLMs. | 1-page summary + diagram. |
+| Sentiment analysis | Review scoring for e-commerce. | Sentiment model; eval metrics. |
+| End-to-end NLP project | Full pipeline from raw text to prediction. | End-to-end project: data → model → API. |
 
-### Weekly Milestones (Week 1–4)
+### Weekly Milestones
 
-| Week | Focus | Milestones | Deliverables |
-|------|--------|------------|--------------|
-| **Week 1** | CNN recap; transfer learning (e.g., ResNet backbone) | Fine-tune pretrained model on product images | Transfer-learned classifier; accuracy |
-| **Week 2** | RNN, vanishing gradient; LSTM/GRU | Train small RNN/LSTM on sequence data (time-series or text) | Trained RNN/LSTM; loss curve |
-| **Week 3** | Seq2seq, attention mechanism (high level) | Read “Attention Is All You Need” abstract and intro; diagram encoder–decoder | 1-page summary + diagram |
-| **Week 4** | Integration: review text generator or time-series | Mini-project: review text generator (character/word-level RNN) or demand forecasting with LSTM | Review generator or LSTM forecaster; README |
+| Week | Focus | Milestone | Deliverable |
+|------|--------|-----------|-------------|
+| **Week 1** | Text preprocessing, tokenization, embeddings | Preprocessing pipeline; load or train embeddings; similarity demo | Preprocessing script; embedding demo |
+| **Week 2** | Sequence models (RNN/LSTM) for text | Train RNN/LSTM on sentiment or classification task | Trained model; loss curve |
+| **Week 3** | Transformers intro; sentiment with pretrained model | Read transformer intro; fine-tune or use pretrained for sentiment | Sentiment model; eval metrics |
+| **Week 4** | End-to-end NLP project | Full pipeline: raw reviews → preprocess → model → prediction; optional API | End-to-end project; README |
 
-### Implementation Tasks
+### Implementation Task (FreshHarvest-Market)
 
-- [ ] Train an RNN or LSTM for either: (A) short review text generation (character or word-level), or (B) demand forecasting (compare to XGBoost)
-- [ ] Explain the role of the hidden state in one paragraph
-- [ ] Deploy one DL model (CNN or RNN) with FastAPI; document latency and batch behavior
+Build an **end-to-end NLP pipeline** for FreshHarvest:
 
-### Mini-Project: Review Text Generator (FreshHarvest-Market)
+- **Sentiment analysis** on product reviews: raw text → preprocess → model (RNN/LSTM or small transformer) → sentiment score or class.
+- Optional: **product title/description → category** using same or separate model.
+- Output: trained model(s), evaluation metrics, inference script or small API.
 
-| Item | Description |
-|------|-------------|
-| **Objective** | Short review text generator (character or word-level RNN); quality secondary to understanding the pipeline |
-| **Alternative** | Time-series demand forecasting with LSTM; compare to XGBoost from Month 5 |
-| **Output** | Trained model; inference script; optional API |
-| **Deployment** | Deploy with FastAPI |
+### Production-Level Deliverable
 
-### Production Deliverable
-
-- **Sequence model service**: either review generation or LSTM forecast endpoint; Dockerfile; one paragraph on challenges of serving autoregressive models at scale (latency, batching, state).
+**NLP service:** at least one endpoint (e.g., sentiment for review text, or category for title+description). Dockerfile; short doc on token limits and scaling (batch inference, model size).
 
 ### GitHub Portfolio Artifact
 
 ```
-FreshHarvest-Market/  (or demand-forecast-lstm/ / review-text-rnn/)
+FreshHarvest-Market/  (or nlp-sentiment-pipeline/)
 ├── ml-models/
-│   ├── review-text-rnn/      # or demand-forecast-lstm/
-│   │   ├── model/
-│   │   ├── train.py
-│   │   ├── generate.py
-│   │   └── README.md
-│   └── ...
+│   └── nlp-models/
+│       ├── preprocessing/   # Tokenization, cleaning
+│       ├── sentiment/      # Sentiment model
+│       ├── train.py
+│       ├── evaluate.py
+│       └── README.md
 ├── services/
-│   └── sequence-model-api/   # FastAPI for RNN/LSTM
+│   └── nlp-api/            # FastAPI, Dockerfile
 └── README.md
 ```
 
+### Architecture Diagram to Design
+
+**NLP Pipeline in FreshHarvest:** Diagram: (1) source of review text (DB, event stream), (2) preprocessing service or step, (3) model inference (sentiment/category), (4) output consumed by catalog service or analytics. Include batch vs real-time and where to cache results.
+
 ### Evaluation Criteria
 
-- [ ] Use transfer learning to train an image model and report accuracy
-- [ ] Train an RNN/LSTM and explain the role of the hidden state
-- [ ] Describe one challenge of serving autoregressive sequence models at scale
-- [ ] Ship at least one DL model (CNN or RNN) behind FastAPI with Docker
+- [ ] Deliver a preprocessing pipeline and at least one trained NLP model (sentiment or classification).
+- [ ] Report accuracy/F1 and document token/sequence length handling.
+- [ ] Explain in one paragraph how this fits into FreshHarvest (reviews, categories).
+- [ ] Ship inference script or API with Dockerfile.
 
 ---
 
-### PHASE 3 — Supplementary Resources
+### PHASE 2 — Supplementary Resources (Supplements Only)
 
 | Type | Resource | Use |
 |------|----------|-----|
-| Paper | “Attention Is All You Need” | Transformer intro |
-| Blog | Jay Alammar — Visualizing RNNs, CNNs | Intuition |
-| Book | *Deep Learning* (Goodfellow et al.) | Reference |
-| YouTube | 3Blue1Brown — Neural networks | Intuition |
+| YouTube | StatQuest — ML algorithms | Quick intuition |
+| Book | Hands-On ML (Géron) | End-to-end projects |
+| Docs | Scikit-learn user guide | Pipelines, APIs |
+| Blog | Jay Alammar — RNNs, attention | NLP intuition |
 
-### PHASE 3 — Architecture-Level Application
+### PHASE 2 — Checkpoint Criteria
 
-| Area | Application |
-|------|-------------|
-| **Training** | GPU usage, batch size, epoch time; when to use GPU in production |
-| **Inference** | Batch vs single request; latency vs throughput; GPU vs CPU |
-| **Serving** | When to use CNNs vs classical ML for tabular; sequence model latency and state handling |
+- [ ] Train and evaluate at least two classical ML models (e.g., recommendation + one other).
+- [ ] Train and evaluate a CNN (product images) and one NLP model (sentiment or classification).
+- [ ] Deploy at least one ML/DL service (recommendation or image or NLP) with Docker; document K8s deployment.
+- [ ] Produce one end-to-end pipeline from raw data to served prediction.
+
+---
+
+# PHASE 3 — RAG Systems (Months 7–8)
+
+**Primary Course:** #1 — Ultimate RAG Bootcamp Using LangChain, LangGraph & LangSmith (Udemy, Krish Naik)
+
+**Goal:** Design and build production-oriented RAG systems; use LangSmith for debugging and evaluation; deploy RAG to cloud.
+
+---
+
+## MONTH 7 — RAG Foundations + Advanced Techniques
+
+### Learning Goals
+
+| Goal Type      | Description |
+|----------------|-------------|
+| **Conceptual** | RAG architecture (index, retrieve, generate); embeddings, vector DBs; chunking strategies; hybrid search; multimodal RAG; self-RAG, adaptive RAG. |
+| **Computational** | Build RAG pipeline with LangChain; implement chunking, embedding, and retrieval; compare strategies. |
+| **Application** | FreshHarvest product catalog as knowledge base; “ask about products” and search augmentation. |
+
+### Primary Course
+
+| Item | Detail |
+|------|--------|
+| **Course** | #1 — Ultimate RAG Bootcamp Using LangChain, LangGraph & LangSmith (Udemy, Krish Naik) |
+| **Focus this month** | RAG architecture, embeddings, vector databases, chunking strategies, hybrid search, multimodal RAG, self-RAG, adaptive RAG. Complete foundations and advanced RAG sections. |
+
+### Exact Topics
+
+| Topic | Why It Matters for ML/AI | Key Deliverable |
+|-------|---------------------------|-----------------|
+| RAG architecture (index, retrieve, rerank, generate) | Core pattern for grounded LLM apps. | End-to-end RAG pipeline. |
+| Embeddings (open-source vs API); vector DBs | Scalable similarity search. | Index 1k+ chunks in vector DB. |
+| Chunking strategies (size, overlap, semantic) | Retrieval quality and relevance. | Compare 2+ chunking strategies; document choice. |
+| Hybrid search (keyword + vector) | Better recall on mixed queries. | Hybrid retrieval implementation. |
+| Multimodal RAG (text + images) | Richer product search. | Optional: image + text retrieval. |
+| Self-RAG, adaptive RAG | Quality and efficiency. | Optional: self-query or adaptive retrieval. |
+
+### Weekly Milestones
+
+| Week | Focus | Milestone | Deliverable |
+|------|--------|-----------|-------------|
+| **Week 1** | RAG architecture; embeddings; vector DB setup | Index FreshHarvest catalog (or subset) in vector DB; run similarity search | Indexed corpus; similarity search script |
+| **Week 2** | Chunking (size, overlap, semantic); metadata | Compare chunking strategies; measure retrieval recall on sample | Chunking comparison doc; chosen strategy |
+| **Week 3** | RAG pipeline: retrieve → rerank (optional) → prompt → LLM | End-to-end RAG on product catalog or docs | RAG pipeline code; example Q&A |
+| **Week 4** | Hybrid search; optional self-RAG/adaptive | Implement hybrid search; optional advanced RAG variant | Hybrid retrieval; short doc on tradeoffs |
+
+### Implementation Task (FreshHarvest-Market)
+
+Build **RAG over FreshHarvest product catalog**:
+
+- Ingest product catalog (or subset) into vector DB (Chroma, Qdrant, Pinecone, or similar via LangChain).
+- Implement chunking (e.g., per product or by description); compare at least two strategies on a small eval set.
+- Build pipeline: query → embed → retrieve → (rerank) → prompt → LLM → answer.
+- Document failure modes (retrieval misses, hallucination) and one mitigation each (e.g., rerank, grounding, prompts).
+
+### Production-Level Deliverable
+
+**RAG service:** endpoint(s) for “ask about products” (and optional chat). Document failure modes and mitigations; API contract for integration with FreshHarvest front-end or search.
+
+### GitHub Portfolio Artifact
+
+```
+FreshHarvest-Market/  (or rag-product-catalog/)
+├── services/
+│   └── rag-service/
+│       ├── ingestion/      # Index catalog to vector DB
+│       ├── chunking/      # Strategies and comparison
+│       ├── pipeline/      # Retrieve, rerank, prompt, LLM
+│       ├── api/           # FastAPI or LangChain serve
+│       ├── docs/          # Architecture, failure modes
+│       └── README.md
+└── README.md
+```
+
+### Architecture Diagram to Design
+
+**RAG System Architecture:** Diagram: (1) data source (product catalog/DB), (2) ingestion pipeline (chunk → embed → vector DB), (3) query path (user query → embed → retrieve → rerank → prompt + context → LLM → response). Label LangChain/LangGraph components, vector DB, and LLM. Add a small “failure modes” callout (retrieval miss, hallucination) with mitigation.
+
+### Evaluation Criteria
+
+- [ ] Run RAG end-to-end and show one example query with retrieved context and answer.
+- [ ] Compare two chunking strategies with a small eval set (recall or relevance).
+- [ ] Document failure modes and at least one mitigation each.
+- [ ] Provide API or interface that could be integrated into FreshHarvest.
+
+---
+
+## MONTH 8 — Agentic RAG + LangSmith Evaluation
+
+### Learning Goals
+
+| Goal Type      | Description |
+|----------------|-------------|
+| **Conceptual** | Multi-agent RAG pipelines with LangGraph; autonomous RAG; LangSmith for debugging, tracking, evaluation. |
+| **Computational** | Build multi-step or agentic RAG with LangGraph; use LangSmith for traces and eval; deploy RAG to cloud. |
+| **Application** | Production RAG with observability; deploy to cloud (e.g., AWS, GCP, or Docker on cloud VM). |
+
+### Primary Course
+
+| Item | Detail |
+|------|--------|
+| **Course** | #1 — Ultimate RAG Bootcamp (Udemy, Krish Naik) |
+| **Focus this month** | Agentic RAG, multi-agent RAG with LangGraph, autonomous RAG, LangSmith for debugging/tracking/evaluation, deploy RAG to cloud. |
+
+### Exact Topics
+
+| Topic | Why It Matters for ML/AI | Key Deliverable |
+|-------|---------------------------|-----------------|
+| Multi-agent RAG pipelines (LangGraph) | Complex workflows; routing, multi-step reasoning. | Multi-step RAG or agentic RAG pipeline. |
+| Autonomous RAG (agent decides when to retrieve/generate) | Quality and cost. | Pipeline with conditional retrieve/generate. |
+| LangSmith: debugging, tracing, tracking | Observability and iteration. | LangSmith project with traces and runs. |
+| LangSmith: evaluation (correctness, relevance) | Production quality gates. | Eval dataset; metrics in LangSmith. |
+| Deploy RAG to cloud | Production readiness. | Deployed RAG API (e.g., cloud run, ECS, or VM). |
+
+### Weekly Milestones
+
+| Week | Focus | Milestone | Deliverable |
+|------|--------|-----------|-------------|
+| **Week 1** | LangGraph for RAG; multi-step flows | Build RAG flow with LangGraph (retrieve → maybe reretrieve → generate) | LangGraph RAG pipeline |
+| **Week 2** | LangSmith: tracing, debugging | Instrument pipeline; inspect traces and debug one failure | LangSmith project; trace examples |
+| **Week 3** | LangSmith: evaluation | Create eval set; run evals; log metrics (correctness, relevance) | Eval dataset; LangSmith eval results |
+| **Week 4** | Deploy RAG to cloud | Deploy RAG API to cloud (e.g., AWS Lambda + API GW, or container on ECS/Cloud Run) | Deployed endpoint; runbook |
+
+### Implementation Task (FreshHarvest-Market)
+
+**Agentic RAG + production deployment:**
+
+- Extend Month 7 RAG with LangGraph: multi-step or conditional retrieval (e.g., self-query, adaptive).
+- Instrument with LangSmith: log runs, traces, and eval results.
+- Deploy to cloud: containerized RAG service behind an API (e.g., AWS ECS, Cloud Run, or EC2 + Docker).
+- Document runbook: how to redeploy, check LangSmith, rollback.
+
+### Production-Level Deliverable
+
+**Production RAG service** on cloud with LangSmith observability: deployed API, tracing, and evaluation dashboard; runbook and one paragraph on scaling and cost.
+
+### GitHub Portfolio Artifact
+
+```
+FreshHarvest-Market/  (or rag-production/)
+├── services/
+│   └── rag-service/
+│       ├── pipeline/      # LangGraph RAG
+│       ├── evaluation/   # LangSmith eval config and dataset
+│       ├── deploy/       # Dockerfile, cloud config (e.g., ECS, Cloud Run)
+│       ├── runbook.md
+│       └── README.md
+└── README.md
+```
+
+### Architecture Diagram to Design
+
+**Production RAG + LangSmith:** Diagram: (1) User/API → (2) RAG service (LangGraph pipeline) → (3) Vector DB + LLM; (4) LangSmith receiving traces and eval runs. Add cloud boundary (e.g., VPC, load balancer, container service). Label where logs and metrics go (LangSmith, cloud logging).
+
+### Evaluation Criteria
+
+- [ ] Build a multi-step or agentic RAG pipeline with LangGraph.
+- [ ] Use LangSmith for tracing and at least one evaluation metric (e.g., faithfulness, relevance).
+- [ ] Deploy RAG to cloud and document the deployment.
+- [ ] Write runbook with redeploy and rollback steps.
+
+---
+
+### PHASE 3 — Supplementary Resources (Supplements Only)
+
+| Type | Resource | Use |
+|------|----------|-----|
+| Docs | LangChain, LangGraph, LangSmith | Implementation and patterns |
+| Blog | RAG survey posts, retrieval best practices | Design choices |
 
 ### PHASE 3 — Checkpoint Criteria
 
-- [ ] Train and evaluate a CNN (product images) and an RNN/LSTM (text or time-series)
-- [ ] Deploy at least one DL model with FastAPI and document tradeoffs
-- [ ] Explain in one paragraph: batch size vs GPU memory and throughput; one challenge of autoregressive serving
+- [ ] Ship a RAG pipeline over FreshHarvest catalog (or equivalent) with at least two chunking strategies compared.
+- [ ] Use LangSmith for tracing and evaluation.
+- [ ] Deploy RAG to cloud and document architecture and runbook.
 
 ---
 
-# PHASE 4 — Transformers & LLMs (Month 8)
+# PHASE 4 — Agentic AI (Month 9)
 
-> **Goal:** Deep dive into transformer architecture and LLM engineering (tokenization, fine-tuning, serving).
+**Primary Course:** #3 — Complete Agentic AI Bootcamp with LangGraph and LangChain (Udemy, Krish Naik)
+
+**Goal:** Build single and multi-agent systems with memory and tools; design event-driven workflows and state transitions; apply to FreshHarvest use cases (research, task automation).
 
 ---
 
-## MONTH 8 — Transformers & LLMs
+## MONTH 9 — Agentic AI
 
 ### Learning Goals
 
-| Goal | Description |
-|------|-------------|
-| **Conceptual** | Attention mechanism, self-attention math, BERT/GPT architectures, pretraining vs fine-tuning |
-| **Computational** | Tokenization (BPE, WordPiece); fine-tune model for classification/sentiment; host with FastAPI |
-| **Application** | Product classification (title + description → category); sentiment analysis; production API |
-
-### Primary Course & Materials
-
-| Resource | Provider | Type |
-|----------|----------|------|
-| **Natural Language Processing with Transformers** | HuggingFace (Book + HuggingFace course) | Primary |
-| **Attention Is All You Need** | Paper | Supplementary |
-| **Jay Alammar’s illustrated guides** | Blog | Supplementary |
-
-### Exact Topics
-
-| Topic | Relevance |
-|-------|-----------|
-| Attention mechanism, self-attention, scaled dot-product | Core of transformers |
-| Multi-head attention, positional encoding | Expressiveness and order |
-| Encoder-only (BERT), decoder-only (GPT) | Model families |
-| Tokenization (BPE, WordPiece), vocabulary | Input pipeline |
-| Pretraining vs fine-tuning | When to fine-tune vs prompt |
-| Fine-tuning for classification and sentiment | Downstream tasks |
-
-### Weekly Milestones (Week 1–4)
-
-| Week | Focus | Milestones | Deliverables |
-|------|--------|------------|--------------|
-| **Week 1** | Attention: Q, K, V; scaled dot-product; self-attention | Implement single-head self-attention in code; diagram | Self-attention code; 1-page diagram |
-| **Week 2** | Multi-head attention, positional encoding, transformer block | Assemble block from HF or from scratch; run on dummy sequence | Transformer block demo; notes |
-| **Week 3** | BERT vs GPT; tokenization (BPE) | Use tokenizer on sample text; run BERT and GPT-2 for fill-mask/generation | Tokenization examples; BERT/GPT-2 runs |
-| **Week 4** | Fine-tuning: data, loss, eval; product classification + sentiment | Fine-tune small model (e.g., BERT/DistilBERT) on product category and sentiment; host with FastAPI | Fine-tuned model; eval metrics; FastAPI service |
-
-### Implementation Tasks
-
-- [ ] Implement or use self-attention; explain Q, K, V in one paragraph
-- [ ] Fine-tune BERT-base or DistilBERT for: (1) product category (title + description → category), (2) sentiment analysis (reviews)
-- [ ] Evaluate: accuracy, F1; document encoder-only vs decoder-only for these use cases
-- [ ] Host model(s) with FastAPI; Dockerfile; document token limits and chunking
-
-### Mini-Project: Fine-Tune for Product Classification + Sentiment (FreshHarvest-Market)
-
-| Item | Description |
-|------|-------------|
-| **Objective** | Fine-tune a small transformer (e.g., BERT-base or DistilBERT) for product category classification and review sentiment analysis |
-| **Output** | Fine-tuned model(s); evaluation (accuracy, F1); inference script; FastAPI host |
-| **Production** | API: input text (product title/description or review), output category and/or sentiment |
-
-### Production Deliverable
-
-- **Transformer API**: at least one endpoint (e.g., classify product category, or sentiment); Dockerfile; short doc on model size vs latency and GPU memory.
-
-### GitHub Portfolio Artifact
-
-```
-FreshHarvest-Market/  (or transformer-product-classifier/)
-├── ml-models/
-│   └── transformer-models/
-│       ├── product-classifier/   # Fine-tune BERT for category
-│       ├── sentiment-analysis/   # Fine-tune for sentiment
-│       ├── tokenization_demos/
-│       └── README.md
-├── services/
-│   └── transformer-api/         # FastAPI, Dockerfile
-└── README.md
-```
-
-### Evaluation Criteria
-
-- [ ] Implement or use self-attention and explain Q, K, V in one paragraph
-- [ ] Fine-tune a HuggingFace model and report metrics for classification and/or sentiment
-- [ ] Explain the difference between encoder-only and decoder-only for your use case
-- [ ] Ship FastAPI service that returns category or sentiment; document token limits and one scaling consideration
-
----
-
-### PHASE 4 — Supplementary Resources
-
-| Type | Resource | Use |
-|------|----------|-----|
-| Paper | “Attention Is All You Need” | Full detail |
-| Blog | Jay Alammar — The Illustrated Transformer | Visual guide |
-| Docs | HuggingFace Transformers | Implementation |
-| Course | HuggingFace NLP Course | Hands-on |
-
-### PHASE 4 — Architecture-Level Application
-
-| Area | Application |
-|------|-------------|
-| **Token limits** | Chunking for long documents; truncation strategies |
-| **Model size** | Small vs large in production; latency and GPU memory |
-| **Serving** | Caching repeated inputs; batch inference for cost/latency |
-
-### PHASE 4 — Checkpoint Criteria
-
-- [ ] Fine-tune at least one transformer (e.g., BERT/DistilBERT) for a FreshHarvest-relevant task
-- [ ] Host it with FastAPI and document one production consideration (token limits, model size, or scaling)
-- [ ] Explain self-attention (Q, K, V) and encoder-only vs decoder-only in writing
-
----
-
-# PHASE 5 — RAG & Agents (Months 9–10)
-
-> **Goal:** Design and build RAG systems and agentic workflows that integrate with FreshHarvest-Market.
-
----
-
-## MONTH 9 — LLM Apps & RAG
-
-### Learning Goals
-
-| Goal | Description |
-|------|-------------|
-| **Conceptual** | Embeddings, vector DBs, RAG pipeline (index, retrieve, rerank, generate), prompt templates, memory |
-| **Computational** | Index catalog in vector DB; build RAG pipeline; AI Shopping Assistant with conversation memory |
-| **Application** | Replace or augment FreshHarvest search with RAG; AI Shopping Assistant |
+| Goal Type      | Description |
+|----------------|-------------|
+| **Conceptual** | Single agents with memory and tools; multi-agent collaboration; event-driven workflows; state transitions; autonomous research agents; task automation bots. |
+| **Computational** | Build agents with LangChain/LangGraph; implement tools, memory, and multi-agent orchestration; state machines. |
+| **Application** | Inventory or pricing agent, research agent, or task automation bot for FreshHarvest. |
 
 ### Primary Course
 
-| Resource | Provider | Type |
-|----------|----------|------|
-| **LangChain & Vector Databases in Production** | DeepLearning.AI | Primary |
+| Item | Detail |
+|------|--------|
+| **Course** | #3 — Complete Agentic AI Bootcamp with LangGraph and LangChain (Udemy, Krish Naik) |
+| **Focus this month** | Single agents (memory, tools), multi-agent collaboration, event-driven workflows, state transitions, autonomous research agents, task automation bots. Complete all modules and projects. |
 
 ### Exact Topics
 
-| Topic | Relevance |
-|-------|-----------|
-| Embeddings (open-source vs API) | Retrieval backbone |
-| Vector DBs (Pinecone, Qdrant, ChromaDB) | Scalable similarity search |
-| RAG pipeline: index, retrieve, rerank, generate | End-to-end RAG |
-| Chunking strategies, metadata filtering | Quality and relevance |
-| Prompt templates, conversation memory | UX and consistency |
-| Agents (intro) | Bridge to Month 10 |
+| Topic | Why It Matters for ML/AI | Key Deliverable |
+|-------|---------------------------|-----------------|
+| Single agents: tools (function calling), memory | Agents that use APIs and retain context. | Agent with 2+ tools and memory. |
+| Multi-agent collaboration (orchestrator + specialists) | Complex tasks; separation of concerns. | Multi-agent design or implementation. |
+| Event-driven workflows | Production integration; async. | Workflow that reacts to events. |
+| State transitions (LangGraph state machine) | Reliable multi-step behavior. | Graph with clear states and transitions. |
+| Autonomous research agents | Gather and synthesize information. | Research agent (e.g., product/supplier research). |
+| Task automation bots | Repetitive tasks (orders, alerts). | Bot that automates one concrete task. |
 
-### Weekly Milestones (Week 1–4)
+### Weekly Milestones
 
-| Week | Focus | Milestones | Deliverables |
-|------|--------|------------|--------------|
-| **Week 1** | Embeddings (open-source vs API); vector DB setup | Index 1k+ documents in a vector DB; run similarity search | Indexed corpus; similarity search script |
-| **Week 2** | Chunking (size, overlap, semantic); metadata | Compare chunking strategies; measure retrieval recall (manual or sample) | Chunking comparison doc; chosen strategy |
-| **Week 3** | RAG pipeline: retrieve → rerank (optional) → prompt → LLM | End-to-end RAG on product catalog or docs | RAG pipeline code; example Q&A |
-| **Week 4** | Prompt templates, history/memory; replace search | “AI Shopping Assistant”: question over catalog; optional conversation | AI Shopping Assistant; conversation memory; architecture doc |
+| Week | Focus | Milestone | Deliverable |
+|------|--------|-----------|-------------|
+| **Week 1** | Single agent: tools, LLM chooses tool and args; memory | Agent that can query product API and answer user questions with memory | Agent with 2+ tools and memory; example dialogue |
+| **Week 2** | Multi-agent: orchestrator + specialists | Design or implement inventory + pricing (or search) agents; orchestrator coordinates | Multi-agent design doc or code |
+| **Week 3** | Event-driven workflows; state transitions (LangGraph) | Build workflow with state machine (e.g., order approval, research steps) | LangGraph workflow with states and transitions |
+| **Week 4** | Autonomous research agent or task automation bot | Research agent (e.g., “find suppliers for X”) or task bot (e.g., low-stock alerts → draft order) | End-to-end agent or bot; README |
 
-### Implementation Tasks
+### Implementation Task (FreshHarvest-Market)
 
-- [ ] Ingest FreshHarvest product catalog (or subset) into a vector DB (Qdrant, ChromaDB, or Pinecone)
-- [ ] Build RAG pipeline: query → embed → retrieve → (rerank) → prompt → LLM → answer
-- [ ] Add prompt templates and conversation memory for multi-turn “AI Shopping Assistant”
-- [ ] Document architecture: index, retrieval, model, API; compare two chunking strategies on a small eval set
+Build an **inventory management AI agent** (or equivalent):
 
-### Mini-Project: Replace FreshHarvest Search with RAG + AI Shopping Assistant
+- At least 2–3 tools: e.g., “get low-stock items”, “get pricing history”, “place order” (mock).
+- Optional: auto-generate supplier orders (rule-based or simple model) as tool or sub-agent.
+- Optional: pricing trend analysis as tool or sub-agent.
+- Document one risk (e.g., wrong tool, wrong args) and a mitigation; sketch tracing/logging for production.
 
-| Item | Description |
-|------|-------------|
-| **Objective** | Replace or augment e-commerce search with RAG (product catalog as knowledge base). Add AI Shopping Assistant that answers product questions and suggests items. |
-| **Output** | Indexed catalog; RAG pipeline; simple chat or Q&A interface; conversation memory; architecture diagram (ASCII) |
-| **Production** | API or UI that can be integrated into FreshHarvest-Market front-end |
+### Production-Level Deliverable
 
-### Production Deliverable
-
-- **RAG service**: endpoint(s) for “ask about products” and optional chat; document failure modes (retrieval misses, hallucination) and mitigation (rerank, grounding, prompts).
-
-### GitHub Portfolio Artifact
-
-```
-FreshHarvest-Market/  (or rag-shopping-assistant/)
-├── services/
-│   └── rag-shopping-assistant/
-│       ├── ingestion/      # Index catalog to vector DB
-│       ├── pipeline/       # Retrieve, rerank, prompt, LLM
-│       ├── memory/         # Conversation memory
-│       ├── api/             # FastAPI or LangChain serve
-│       ├── docs/            # Architecture diagram (ASCII)
-│       └── README.md
-└── README.md
-```
-
-### Evaluation Criteria
-
-- [ ] Run RAG end-to-end and show one example query with retrieved context + answer
-- [ ] Compare two chunking strategies with a small eval set
-- [ ] Draw the RAG pipeline and list failure modes (e.g., retrieval misses, model hallucination) and one mitigation each
-- [ ] Demonstrate AI Shopping Assistant with at least one multi-turn conversation using memory
-
----
-
-## MONTH 10 — Agentic AI
-
-### Learning Goals
-
-| Goal | Description |
-|------|-------------|
-| **Conceptual** | Tool calling, planning, multi-step reasoning, memory systems, workflow orchestration |
-| **Computational** | Build agent with 2+ tools; planning and re-plan on failure; optional multi-agent design |
-| **Application** | Inventory management AI agent; auto-generate supplier orders; pricing trend analysis |
-
-### Primary Course
-
-| Resource | Provider | Type |
-|----------|----------|------|
-| **Building Autonomous AI Agents** | DeepLearning.AI (short courses) | Primary |
-
-### Exact Topics
-
-| Topic | Relevance |
-|-------|-----------|
-| Tool calling (function calling) | Agents that use APIs and tools |
-| Planning, multi-step reasoning | Break goal into steps; execute and re-plan on failure |
-| Memory (short/long-term) | Coherent multi-turn and cross-session behavior |
-| Workflow orchestration, multi-agent (intro) | Production agent design |
-
-### Weekly Milestones (Week 1–4)
-
-| Week | Focus | Milestones | Deliverables |
-|------|--------|------------|--------------|
-| **Week 1** | Tool use: define tools, LLM chooses tool and args; execute and feed back | Agent that can query product API and answer user questions | Agent with 1–2 tools (e.g., get product, get stock) |
-| **Week 2** | Planning: break goal into steps; execute and re-plan on failure | Agent that “plans” a small workflow (e.g., find product → check stock → suggest) | Planning demo; re-plan on failure |
-| **Week 3** | Memory: summarize or store key facts; use in next turn | Add memory to agent; multi-turn coherent behavior | Agent with memory; example dialogue |
-| **Week 4** | Multi-agent (optional): specialist agents + orchestrator | Design or implement inventory + pricing agents; orchestrator coordinates | Design doc or code: inventory agent, pricing agent, orchestrator |
-
-### Implementation Tasks
-
-- [ ] Build an inventory management AI agent with at least 2–3 tools: e.g., “get low-stock items”, “get pricing history”, “place order” (mock)
-- [ ] Implement auto-generate supplier orders (rule-based or simple model) as a tool or sub-agent
-- [ ] Implement or mock pricing trend analysis (tool or sub-agent)
-- [ ] Document one risk (e.g., wrong tool, wrong args) and a mitigation; sketch tracing/logging for production
-
-### Mini-Project: Inventory Management AI Agent (FreshHarvest-Market)
-
-| Item | Description |
-|------|-------------|
-| **Objective** | Build an inventory management AI agent that can: auto-generate supplier orders (based on rules or model), auto-analyze pricing trends (using tool or sub-agent), and answer operator questions (RAG over inventory docs) |
-| **Output** | Agent with at least 2–3 tools; optional dashboard or CLI; architecture doc |
-| **Production** | Design for reliability (timeouts, retries, idempotency for orders); security (which tools, input validation, audit logging) |
-
-### Production Deliverable
-
-- **Agent service**: agent loop (ReAct or similar) with tools; mock or real APIs; README and architecture diagram; document reliability and security considerations.
+**Agent service:** agent loop (ReAct or LangGraph) with tools; mock or real APIs; README and architecture diagram; document reliability (timeouts, retries, idempotency for orders) and security (tool scope, input validation, audit logging).
 
 ### GitHub Portfolio Artifact
 
@@ -958,276 +807,313 @@ FreshHarvest-Market/  (or inventory-agent/)
 ├── services/
 │   └── inventory-agent/
 │       ├── tools/          # get_low_stock, get_pricing_history, place_order (mock)
-│       ├── agent/          # ReAct or similar loop
+│       ├── agent/          # LangGraph or ReAct loop
 │       ├── memory/         # If applicable
 │       ├── docs/           # Architecture, risks, tracing
 │       └── README.md
 └── README.md
 ```
 
+### Architecture Diagram to Design
+
+**Agent System Architecture:** Diagram: (1) User or event input → (2) Agent (LangGraph) with state; (3) Tools (product API, inventory API, order API); (4) Memory store; (5) Logging/tracing (e.g., LangSmith). Label failure points (timeout, wrong tool, invalid args) and where retries and validation sit.
+
 ### Evaluation Criteria
 
-- [ ] Demonstrate an agent that uses at least two tools correctly in one run
-- [ ] Document one risk of agentic systems (e.g., wrong tool, wrong args) and a mitigation
-- [ ] Sketch how you would trace and log agent decisions in production
-- [ ] Deliver architecture diagram and one paragraph on reliability (timeouts, idempotency) and security (tool scope, audit)
+- [ ] Demonstrate an agent that uses at least two tools correctly in one run.
+- [ ] Document one risk of agentic systems (e.g., wrong tool, wrong args) and a mitigation.
+- [ ] Sketch how you would trace and log agent decisions in production.
+- [ ] Deliver architecture diagram and one paragraph on reliability (timeouts, idempotency) and security (tool scope, audit).
 
 ---
 
-### PHASE 5 — Supplementary Resources
+### PHASE 4 — Supplementary Resources (Supplements Only)
 
 | Type | Resource | Use |
 |------|----------|-----|
-| Course | LangChain docs — Agents | Implementation |
+| Docs | LangChain Agents, LangGraph | Implementation |
 | Blog | Lilian Weng — LLM Agent survey | Theory and patterns |
-| Docs | OpenAI / Anthropic — Tool use | API design |
 
-### PHASE 5 — Architecture-Level Application
+### PHASE 4 — Checkpoint Criteria
 
-| Area | Application |
-|------|-------------|
-| **RAG** | When to use RAG vs fine-tuning; cost and freshness; vector DB choice; caching embeddings and responses |
-| **Agents** | Reliability: timeouts, retries, idempotency for tool calls (e.g., orders) |
-| **Security** | Which tools the agent can call; input validation and audit logging |
-| **Observability** | Tracing agent steps and tool calls for debugging |
-
-### PHASE 5 — Checkpoint Criteria
-
-- [ ] Ship a RAG pipeline and an AI Shopping Assistant with conversation memory
-- [ ] Ship an agent with at least two tools and document risks and mitigations
-- [ ] Produce architecture diagrams and one paragraph each on RAG scaling and agent observability
+- [ ] Ship an agent with at least two tools and memory (or multi-agent).
+- [ ] Document risks and mitigations and production tracing.
+- [ ] Produce architecture diagram for the agent system.
 
 ---
 
-# PHASE 6 — MLOps & AI Architecture (Months 11–12)
+# PHASE 5 — MLOps & Production AI (Months 10–12)
 
-> **Goal:** Productionize LLM-powered services on Kubernetes with lifecycle, observability, and cost in mind.
+**Primary Course:** #5 — Complete MLOps Bootcamp with 10+ End-to-End ML Projects (Udemy, Krish Naik)
+
+**Goal:** Implement MLOps core (versioning, experiment tracking, pipelines, CI/CD) and deploy ML/Gen AI to cloud with monitoring.
 
 ---
 
-## MONTH 11 — MLOps
+## MONTH 10 — MLOps Core
 
 ### Learning Goals
 
-| Goal | Description |
-|------|-------------|
-| **Conceptual** | Model lifecycle, data versioning, feature stores, model serving, CI/CD for ML, monitoring, drift detection |
-| **Computational** | DVC or similar for versioning; CI pipeline that trains/tests/deploys; metrics and one dashboard |
-| **Application** | Full lifecycle for one ML/LLM service; deploy to K8s with monitoring |
+| Goal Type      | Description |
+|----------------|-------------|
+| **Conceptual** | Git/GitHub for ML; Docker containerization; MLflow experiment tracking; DVC data versioning; DagsHub. |
+| **Computational** | Set up versioning (DVC), experiment tracking (MLflow), and containerization for at least one ML project. |
+| **Application** | Reproducible training and data lineage for FreshHarvest ML services. |
 
 ### Primary Course
 
-| Resource | Provider | Type |
-|----------|----------|------|
-| **MLOps Specialization** | DeepLearning.AI (Coursera) | Primary |
+| Item | Detail |
+|------|--------|
+| **Course** | #5 — Complete MLOps Bootcamp with 10+ End-to-End ML Projects (Udemy, Krish Naik) |
+| **Focus this month** | Git/GitHub for ML, Docker containerization, MLflow experiment tracking, DVC data versioning, DagsHub. Complete MLOps fundamentals and first projects. |
 
 ### Exact Topics
 
-| Topic | Relevance |
-|-------|-----------|
-| Model lifecycle | Reproducibility and reuse |
-| Data versioning (DVC), feature stores | Reproducibility and reuse |
-| Model serving (TFServing, Triton, vLLM/TGI) | Low-latency inference |
-| CI/CD for ML (tests, training triggers, deployment gates) | Safe releases |
-| Monitoring, drift detection | Reliability and quality |
-| LLM-specific metrics | Evaluation in production |
+| Topic | Why It Matters for ML/AI | Key Deliverable |
+|-------|---------------------------|-----------------|
+| Git/GitHub for ML (code, config, not data in repo) | Version control and collaboration. | ML repo structure; .gitignore for data/models. |
+| Docker containerization for ML | Reproducible environments; deployment. | Dockerfile for training and/or inference. |
+| MLflow: experiment tracking (params, metrics, artifacts) | Reproducibility and comparison. | MLflow project with ≥2 runs logged. |
+| DVC: data versioning (datasets, large files) | Data lineage and reproducibility. | DVC setup; versioned dataset. |
+| DagsHub (or similar) integration | Unified ML project hub. | Optional: project on DagsHub. |
 
-### Weekly Milestones (Week 1–4)
+### Weekly Milestones
 
-| Week | Focus | Milestones | Deliverables |
-|------|--------|------------|--------------|
-| **Week 1** | Model and data versioning; feature store concepts; experiment tracking | DVC or similar for one project; document versioning strategy | Versioning setup; 1-page strategy doc |
-| **Week 2** | Serving: TFServing/Triton vs dedicated LLM servers (vLLM, TGI); batching | Run one model in a serving stack; measure latency and throughput | Serving PoC; latency/throughput notes |
-| **Week 3** | CI/CD: unit tests, integration tests, training pipeline, deploy pipeline | Pipeline that trains (or downloads), tests, and deploys to K8s | CI/CD pipeline (e.g., GitHub Actions); deploy to K8s |
-| **Week 4** | Monitoring: latency, errors, drift; LLM caching; cost; evaluation dashboard | Add metrics and one dashboard; document alerting and rollback | Dashboard; alerting/rollback doc |
+| Week | Focus | Milestone | Deliverable |
+|------|--------|-----------|-------------|
+| **Week 1** | Git/GitHub for ML; Docker for ML | ML repo structure; Dockerfile for one training or inference service | Repo with Dockerfile; run container locally |
+| **Week 2** | MLflow: experiment tracking | Log params, metrics, artifacts for ≥2 training runs | MLflow project; compare runs in UI |
+| **Week 3** | DVC: data versioning | Add DVC to project; version one dataset | DVC config; versioned dataset; dvc pull flow |
+| **Week 4** | DagsHub or consolidate | Optional DagsHub; document versioning and experiment strategy | 1-page MLOps strategy doc |
 
-### Implementation Tasks
+### Implementation Task (FreshHarvest-Market)
 
-- [ ] Set up data/model versioning (DVC or path-based) for at least one project
-- [ ] Run one model (classical or LLM) in a serving stack (e.g., vLLM or TGI for LLM); measure latency and throughput
-- [ ] Build CI pipeline: build image, run tests, deploy to K8s (or staging)
-- [ ] Add metrics (latency, errors, optional drift) and one dashboard (Grafana or simple UI); document rollback
+Apply **MLOps core** to one existing FreshHarvest ML asset:
 
-### Mini-Project: MLOps Pipeline for One Service
+- Choose one project (e.g., recommendation, demand forecast, or NLP).
+- Add Git-based repo structure (code + config only); Dockerfile for training or inference.
+- Add MLflow for experiment tracking (log params, metrics, model artifact).
+- Add DVC for data (or document why data is excluded); version one dataset or data config.
 
-| Item | Description |
-|------|-------------|
-| **Objective** | Apply MLOps practices to one existing service (e.g., demand forecast, RAG, or transformer API): versioning, serving, CI/CD, monitoring |
-| **Output** | Versioned data/model; serving config; CI pipeline; dashboard; runbook with rollback |
+### Production-Level Deliverable
 
-### Production Deliverable
+**MLOps-ready project:** versioned code (Git), versioned data (DVC where applicable), experiment tracking (MLflow), and containerized build (Docker). One-page document: how we version data and models and run experiments.
 
-- **MLOps-ready service**: versioned artifacts, CI/CD that deploys to K8s, at least one dashboard and rollback procedure.
+### GitHub Portfolio Artifact
+
+```
+FreshHarvest-Market/  (or mlops-core-demo/)
+├── .gitignore        # data/, models/, .env
+├── dvc.yaml          # Data pipeline (if using DVC)
+├── Dockerfile        # Training or inference
+├── mlflow_project/   # Or MLflow at repo root
+│   └── ...
+├── data/             # DVC-tracked or documented
+├── docs/
+│   └── mlops-strategy.md
+└── README.md
+```
+
+### Architecture Diagram to Design
+
+**MLOps Core — Data and Model Flow:** Diagram: (1) Raw data (versioned with DVC or external store), (2) Training job (Docker, MLflow run), (3) MLflow artifact store (model, metrics), (4) Inference service (load from MLflow or exported artifact). Label Git (code), DVC (data), MLflow (experiments, artifacts).
+
+### Evaluation Criteria
+
+- [ ] Have a Git repo with clear separation of code/config vs data/models.
+- [ ] Run training (or inference) in Docker and document the image.
+- [ ] Log at least 2 runs to MLflow with params, metrics, and artifact.
+- [ ] Document data versioning (DVC or alternative) and one-page MLOps strategy.
+
+---
+
+## MONTH 11 — ML Pipelines & CI/CD
+
+### Learning Goals
+
+| Goal Type      | Description |
+|----------------|-------------|
+| **Conceptual** | Apache Airflow (or Astro) for orchestration; ETL pipelines; CI/CD with GitHub Actions; end-to-end ML project deployment. |
+| **Computational** | Build an ETL or training pipeline with Airflow/Astro; CI/CD that builds, tests, and deploys an ML service. |
+| **Application** | Automated training and deployment for one FreshHarvest ML service. |
+
+### Primary Course
+
+| Item | Detail |
+|------|--------|
+| **Course** | #5 — Complete MLOps Bootcamp (Udemy, Krish Naik) |
+| **Focus this month** | Apache Airflow with Astro, ETL pipelines, CI/CD with GitHub Actions, end-to-end ML project deployment. |
+
+### Exact Topics
+
+| Topic | Why It Matters for ML/AI | Key Deliverable |
+|-------|---------------------------|-----------------|
+| Apache Airflow (or Astro): DAGs, tasks, scheduling | Orchestration for ETL and training. | One DAG: data prep → train → (evaluate) → register. |
+| ETL pipelines for ML (extract, transform, load) | Data readiness for training. | ETL DAG or script. |
+| CI/CD with GitHub Actions | Automated test and deploy. | Workflow: build image, test, deploy (e.g., to staging/K8s). |
+| End-to-end ML project deployment | From code push to running service. | Full pipeline: trigger on push or schedule → deploy. |
+
+### Weekly Milestones
+
+| Week | Focus | Milestone | Deliverable |
+|------|--------|-----------|-------------|
+| **Week 1** | Airflow/Astro: DAGs, tasks | Create DAG with ≥2 tasks (e.g., fetch data, preprocess) | DAG code; run locally or in Astro |
+| **Week 2** | ETL + train in pipeline | Extend DAG: data → train → log to MLflow (or save artifact) | End-to-end DAG |
+| **Week 3** | GitHub Actions: build, test | CI: on push, run tests and build Docker image | .github/workflows/*.yml |
+| **Week 4** | CI/CD: deploy to staging or K8s | CD: deploy image to staging or K8s; document rollback | Deploy workflow; rollback doc |
+
+### Implementation Task (FreshHarvest-Market)
+
+Build **CI/CD for one ML service**:
+
+- Pipeline: code push → run tests → build Docker image → (optional) run training or use cached model → deploy to staging or K8s.
+- Use Airflow/Astro for scheduled training or ETL if applicable.
+- Document: how to trigger deployment, how to rollback to a previous image or model version.
+
+### Production-Level Deliverable
+
+**End-to-end ML deployment pipeline:** GitHub Actions (or equivalent) that builds, tests, and deploys one ML service (e.g., recommendation, demand forecast, or NLP); optional Airflow DAG for training/ETL; runbook with rollback.
 
 ### GitHub Portfolio Artifact
 
 ```
 FreshHarvest-Market/  (or mlops-pipeline/)
-├── .github/workflows/   # CI: build, test, deploy
-├── dvc/ or model_registry/  # Versioning
-├── serving/             # vLLM/TGI or similar config (if LLM)
-├── monitoring/          # Prometheus/OpenTelemetry, dashboard config
-├── runbook.md           # Rollback, alerting
+├── .github/
+│   └── workflows/
+│       ├── ci.yml          # Test, build
+│       └── deploy.yml      # Deploy to staging/K8s
+├── airflow_dags/           # Optional
+│   └── ml_pipeline.py
+├── services/
+│   └── <ml-service>/       # One of recommendation, demand, nlp
+│       ├── Dockerfile
+│       └── ...
+├── runbook.md              # Deploy, rollback
 └── README.md
 ```
 
+### Architecture Diagram to Design
+
+**CI/CD + Pipeline Architecture:** Diagram: (1) Developer push → (2) GitHub Actions (test → build image → push to registry), (3) Deploy step (K8s or cloud service), (4) Optional: Airflow DAG (schedule) triggering training or ETL → MLflow/model store. Label rollback path (previous image or model version).
+
 ### Evaluation Criteria
 
-- [ ] Document versioning strategy and use it for one project
-- [ ] Run one model in a proper serving stack and report latency/throughput
-- [ ] Have a CI pipeline that deploys to K8s (or staging)
-- [ ] Expose at least one business or reliability metric and one dashboard; document rollback
+- [ ] Have a CI workflow that runs tests and builds Docker image on push.
+- [ ] Have a CD workflow (or manual step) that deploys to staging or K8s.
+- [ ] Document rollback procedure (image or model version).
+- [ ] Optional: one Airflow DAG for training or ETL.
 
 ---
 
-## MONTH 12 — AI Infrastructure
+## MONTH 12 — Cloud Deployment & Monitoring
 
 ### Learning Goals
 
-| Goal | Description |
-|------|-------------|
-| **Conceptual** | GPU scheduling in K8s, model scaling, batch vs real-time inference, LLM caching, observability, cost optimization |
-| **Computational** | Deploy LLM microservice in K8s with autoscaling; evaluation metrics dashboard |
-| **Application** | Production-ready LLM service on K8s; autoscaling; evaluation dashboard; one-pager “AI-Native Architect” design |
+| Goal Type      | Description |
+|----------------|-------------|
+| **Conceptual** | AWS SageMaker (or equivalent), HuggingFace NLP deployment, Gen AI on AWS; Grafana + PostgreSQL (or similar) for monitoring; full production pipeline. |
+| **Computational** | Deploy one model to cloud (SageMaker or container); set up monitoring (Grafana + DB or cloud metrics). |
+| **Application** | Production-ready ML/Gen AI service on cloud with monitoring and runbook. |
 
-### Primary Materials
+### Primary Course
 
-| Resource | Type |
-|----------|------|
-| MLOps Specialization (continued) | Course |
-| Kubernetes docs — GPU, HPA, resource limits | Docs |
-| vLLM / TGI / similar — deployment guides | Docs |
+| Item | Detail |
+|------|--------|
+| **Course** | #5 — Complete MLOps Bootcamp (Udemy, Krish Naik) |
+| **Focus this month** | AWS SageMaker, HuggingFace NLP deployment, Gen AI on AWS, Grafana + PostgreSQL monitoring, full production pipeline. |
 
 ### Exact Topics
 
-| Topic | Relevance |
-|-------|-----------|
-| GPU scheduling in K8s (node pools, resource requests/limits) | Cost and performance |
-| Model scaling (horizontal pod autoscaling, scale-to-zero) | Cost and latency |
-| Batch vs real-time inference | When to use which |
-| LLM caching (prompt/response) | Cost and latency |
-| Observability (traces, logs, metrics) | Debugging and SLOs |
-| Cost optimization (spot, reserved, token-based) | Production at scale |
+| Topic | Why It Matters for ML/AI | Key Deliverable |
+|-------|---------------------------|-----------------|
+| AWS SageMaker (training, hosting, or both) | Managed ML in production. | One model deployed on SageMaker (or equivalent). |
+| HuggingFace NLP deployment (SageMaker HF DLC or container) | NLP models in production. | Deploy HuggingFace model (e.g., sentiment) to cloud. |
+| Gen AI on AWS (Bedrock, or LLM in container) | RAG/agent in production. | Optional: RAG or LLM endpoint on AWS. |
+| Grafana + PostgreSQL (or Prometheus + DB) for monitoring | Observability and SLOs. | Dashboard with latency, errors, or business metrics. |
+| Full production pipeline | From data to monitored service. | End-to-end pipeline doc and runbook. |
 
-### Weekly Milestones (Week 1–4)
+### Weekly Milestones
 
-| Week | Focus | Milestones | Deliverables |
-|------|--------|------------|--------------|
-| **Week 1** | GPU scheduling in K8s; node pools; resource requests/limits | Deploy GPU workload (or document for CPU-only); bin-packing considerations | K8s manifest with GPU (or doc); resource doc |
-| **Week 2** | Autoscaling (HPA, KEDA); batch vs real-time | Configure HPA or KEDA for LLM service; document batch vs real-time use cases | Autoscaling config; 1-page design |
-| **Week 3** | LLM caching; observability (traces, metrics) | Add caching for prompts/responses; add or refine metrics and traces | Caching design; observability diagram |
-| **Week 4** | Evaluation dashboard; cost; one-pager | Build evaluation dashboard (sample prompts, expected behavior, or latency percentiles); cost notes; final one-pager | Dashboard; cost doc; one-pager |
+| Week | Focus | Milestone | Deliverable |
+|------|--------|-----------|-------------|
+| **Week 1** | AWS SageMaker (or cloud ML hosting) | Deploy one model (e.g., sklearn or PyTorch) to SageMaker or container service | Deployed endpoint; invoke from script |
+| **Week 2** | HuggingFace on cloud; Gen AI on AWS | Deploy HF model (e.g., sentiment); optional Bedrock/LLM | HF endpoint; optional Gen AI endpoint |
+| **Week 3** | Monitoring: metrics, Grafana, PostgreSQL (or similar) | Instrument service (latency, errors); Grafana dashboard; optional DB for metrics | Dashboard; metric definitions |
+| **Week 4** | Full production pipeline; runbook; one-pager | Tie together: versioning, CI/CD, deployment, monitoring; write runbook and one-pager | Runbook; one-pager: “Production AI pipeline” |
 
-### Implementation Tasks
+### Implementation Task (FreshHarvest-Market)
 
-- [ ] Deploy an LLM-powered microservice (e.g., sentiment, RAG, or agent) in a K8s cluster
-- [ ] Configure autoscaling (HPA or KEDA) and document scaling triggers
-- [ ] Add or use LLM caching (prompt/response) and document invalidation policy
-- [ ] Build an evaluation metrics dashboard (e.g., sample prompts + expected outputs, or latency percentiles)
-- [ ] Write a one-pager: “Design for an AI-Native Distributed Systems Architect: production GenAI on K8s” (lifecycle, serving, monitoring, cost)
+**Production deployment and monitoring:**
 
-### Mini-Project: Deploy LLM Microservice in K8s (FreshHarvest-Market)
+- Deploy one ML or Gen AI service (e.g., demand forecast, NLP, or RAG) to cloud (AWS SageMaker, ECS, or equivalent).
+- Add monitoring: latency, errors, optional business metric (e.g., recommendation CTR placeholder); Grafana + PostgreSQL or cloud metrics.
+- Write runbook: deploy, rollback, scale, alerting.
+- Write one-pager: “Production AI Pipeline for FreshHarvest” (lifecycle, serving, monitoring, cost).
 
-| Item | Description |
-|------|-------------|
-| **Objective** | Deploy an LLM-powered microservice in a K8s cluster with autoscaling (HPA or KEDA), basic monitoring, and an evaluation dashboard |
-| **Output** | K8s manifests (Deployment, Service, HPA, optional Ingress); Docker image; metrics (Prometheus/OpenTelemetry or cloud); dashboard (Grafana or simple UI); runbook; one-pager design doc |
-| **Production** | GPU scheduling (if available), batch vs real-time, caching, cost optimization notes |
+### Production-Level Deliverable
 
-### Production Deliverable
-
-- **Production-ready LLM service on K8s**: autoscaling, monitoring, evaluation dashboard, runbook, and one-pager summarizing lifecycle, serving, monitoring, and cost for an AI-native architect.
-
-### Target State Architecture (ASCII)
-
-```
-                    ┌──────────────────────────────────────────────────────────────┐
-                    │                    Kubernetes Cluster                           │
-                    │  ┌─────────────┐  ┌─────────────┐  ┌─────────────────────┐   │
-                    │  │ Ingress /   │  │ LLM Service │  │ Vector DB           │   │
-                    │  │ Gateway     │──│ (vLLM/TGI)  │  │ (Chroma/Qdrant)      │   │
-                    │  └─────────────┘  │ + HPA/KEDA  │  └─────────────────────┘   │
-                    │         │         └──────┬──────┘            │                │
-                    │         │                │                   │                │
-                    │         ▼                ▼                   ▼                │
-                    │  ┌─────────────┐  ┌─────────────┐  ┌─────────────────────┐   │
-                    │  │ RAG/Agent   │  │ GPU Node    │  │ Monitoring          │   │
-                    │  │ API         │  │ Pool        │  │ (Prometheus/        │   │
-                    │  │ (FastAPI)   │  │             │  │  Grafana/Dashboard) │   │
-                    │  └─────────────┘  └─────────────┘  └─────────────────────┘   │
-                    │         │                │                   │                │
-                    │         └────────────────┴───────────────────┘                │
-                    └──────────────────────────────────────────────────────────────┘
-```
+**Production-ready ML/Gen AI service** on cloud with monitoring dashboard and runbook; one-pager summarizing the full pipeline (versioning, CI/CD, deployment, monitoring, cost).
 
 ### GitHub Portfolio Artifact
 
 ```
-FreshHarvest-Market/  (or llm-k8s-production/)
+FreshHarvest-Market/  (or ml-production/)
 ├── services/
-│   └── llm-production-service/
-│       ├── app/              # FastAPI, model load, cache
+│   └── <production-service>/
+│       ├── app/
 │       ├── Dockerfile
-│       ├── k8s/              # Deployment, Service, HPA, Ingress
-│       ├── monitoring/       # Prometheus, dashboard config
-│       ├── evaluation/       # Sample prompts, expected behavior, metrics
+│       ├── deploy/         # SageMaker or K8s/ECS config
+│       ├── monitoring/     # Grafana dashboards, metric config
 │       └── runbook.md
 ├── docs/
-│   └── ai-native-architect-onepager.md   # Lifecycle, serving, monitoring, cost
+│   └── production-ai-pipeline-onepager.md
 └── README.md
 ```
 
+### Architecture Diagram to Design
+
+**Production AI — Full Stack:** Diagram: (1) Data/versioning (DVC, MLflow), (2) CI/CD (GitHub Actions) → build & deploy, (3) Cloud runtime (SageMaker / ECS / K8s) with ML or Gen AI service, (4) Monitoring (Grafana, PostgreSQL or Prometheus, alerts). Label cost and scaling levers (instance type, replicas, scale-to-zero).
+
 ### Evaluation Criteria
 
-- [ ] Deploy the service to K8s and show it scales under load (manual or simple test)
-- [ ] Expose at least one business or reliability metric and one dashboard
-- [ ] Document rollback procedure and one failure scenario (e.g., model OOM, drift)
-- [ ] Write one-pager: “Design for an AI-Native Distributed Systems Architect: production GenAI on K8s” (lifecycle, serving, monitoring, cost)
+- [ ] Deploy at least one ML or Gen AI service to cloud (SageMaker or container).
+- [ ] Expose at least one reliability or business metric and one dashboard (Grafana or cloud).
+- [ ] Document runbook (deploy, rollback, alerting).
+- [ ] Write one-pager: “Production AI Pipeline” (lifecycle, serving, monitoring, cost).
 
 ---
 
-### PHASE 6 — Supplementary Resources
+### PHASE 5 — Supplementary Resources (Supplements Only)
 
 | Type | Resource | Use |
 |------|----------|-----|
-| Course | MLOps Specialization (DeepLearning.AI) | Full lifecycle |
-| Docs | Kubernetes — GPU, HPA, resource management | Infrastructure |
-| Blog | ML design patterns (Google), LLM production (Anthropic/OpenAI) | Patterns |
-| Tools | DVC, MLflow, Weights & Biases, vLLM, TGI | Implementation |
+| Docs | MLflow, DVC, DagsHub | Versioning and experiments |
+| Docs | GitHub Actions, Airflow/Astro | CI/CD and orchestration |
+| Docs | AWS SageMaker, HuggingFace deployment | Cloud deployment |
+| Docs | Grafana, Prometheus | Monitoring |
 
-### PHASE 6 — Architecture-Level Application
+### PHASE 5 — Checkpoint Criteria
 
-| Area | Application |
-|------|-------------|
-| **GPU scheduling** | Node pools, resource requests/limits, bin-packing |
-| **Autoscaling** | Scale on RPS or queue depth; scale-to-zero for cost |
-| **Caching** | Cache embeddings and frequent prompts; invalidation policy |
-| **Cost** | Spot/preemptible for batch; reserved for latency-sensitive; token-based cost tracking |
-| **Lifecycle** | Data and model versioning, CI/CD, rollback, drift detection |
-
-### PHASE 6 — Checkpoint Criteria
-
-- [ ] Deploy at least one LLM (or ML) service to K8s with autoscaling and monitoring
-- [ ] Have a versioning strategy and CI/CD that deploys to K8s
-- [ ] Produce evaluation dashboard and runbook with rollback
-- [ ] Write and refine the “AI-Native Distributed Systems Architect” one-pager
+- [ ] Have versioning (Git, DVC, MLflow) and containerization (Docker) for at least one project.
+- [ ] Have CI/CD that deploys an ML service to cloud or K8s.
+- [ ] Have monitoring (dashboard + runbook) for at least one production-like deployment.
+- [ ] Produce one-pager summarizing the production AI pipeline.
 
 ---
 
-# Summary: 12 Months to AI-Native Distributed Systems Architect
+# Summary: 12 Months at a Glance
 
-| Phase | Months | Focus | Key Outcome |
-|-------|--------|--------|-------------|
-| **1. Math** | 1–3 | Linear algebra, probability, calculus | No black boxes; implement similarity, logistic regression, gradient descent from scratch |
-| **2. Classical ML** | 4–5 | Core ML, pipelines, deployment | Recommendation + demand forecast microservices on K8s; model versioning |
-| **3. Deep Learning** | 6–7 | CNNs, RNNs, transfer learning | Product image classifier, review generator or LSTM; FastAPI deployment |
-| **4. Transformers** | 8 | Attention, BERT/GPT, fine-tuning | Product classification + sentiment; transformer API |
-| **5. RAG & Agents** | 9–10 | RAG, vector DBs, agents | RAG + AI Shopping Assistant; inventory management agent |
-| **6. MLOps & Infra** | 11–12 | Lifecycle, serving, K8s, monitoring | LLM microservice on K8s; autoscaling; dashboard; one-pager |
+| Phase | Months | Primary Course | Key Outcome |
+|-------|--------|----------------|-------------|
+| **1. Math** | 1–3 | #2 — Math Foundation | Linear algebra, probability, calculus; similarity search, churn model, gradient descent from scratch |
+| **2. ML + DL + NLP** | 4–6 | #7 — ML + DL + NLP | Classical ML (recommendation), deep learning (CNN), NLP (sentiment); end-to-end projects |
+| **3. RAG** | 7–8 | #1 — RAG Bootcamp | RAG over catalog; LangGraph; LangSmith; deploy RAG to cloud |
+| **4. Agentic AI** | 9 | #3 — Agentic AI Bootcamp | Single/multi-agent with tools and memory; inventory or task automation agent |
+| **5. MLOps** | 10–12 | #5 — MLOps Bootcamp | Versioning (DVC, MLflow), Docker, CI/CD, Airflow, cloud deployment, Grafana monitoring |
 
 **Target identity after 12 months:**  
-**AI-Native Distributed Systems Architect / GenAI Platform Engineer / LLM Systems Designer** — capable of designing and articulating production GenAI systems on Kubernetes: data and model versioning, training and fine-tuning pipelines, serving (classical ML and LLMs), RAG and agents, observability, and cost-aware GPU and scaling decisions, all in the language of a cloud-native architect, with FreshHarvest-Market as the reference e-commerce platform.
+**AI-Native Distributed Systems Architect / GenAI Platform Engineer** — capable of designing and implementing production ML and GenAI systems: math foundations, classical ML and deep learning, NLP, RAG, agentic AI, and MLOps (versioning, pipelines, CI/CD, cloud deployment, monitoring), with FreshHarvest-Market as the reference e-commerce platform.
 
 ---
 
-*Document version: 2.0 | Last updated: February 2025*
+*Document version: 3.0 | Based on Krish Naik Udemy courses #2, #7, #1, #3, #5 | Optional/skipped: #4 CV, #6 GenAI LangChain/HF, #8 Gemini Pro | Last updated: February 2025*

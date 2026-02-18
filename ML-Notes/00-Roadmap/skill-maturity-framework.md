@@ -8,7 +8,7 @@
 
 | Level | Band | Meaning |
 |-------|------|--------|
-| **1–2** | **Awareness** | Heard of it; can describe at a high level. Knows when/where it’s used. Cannot implement without heavy guidance. |
+| **1–2** | **Awareness** | Heard of it; can describe at a high level. Knows when/where it's used. Cannot implement without heavy guidance. |
 | **3–4** | **Beginner** | Can follow tutorials and docs. Basic usage in familiar setups. Needs examples to extend or debug. |
 | **5–6** | **Intermediate** | Can apply independently in new problems. Debugs issues and reads error messages. Can combine concepts with some design. |
 | **7–8** | **Advanced** | Can architect solutions, choose trade-offs, and teach others. Comfortable with edge cases and production concerns. |
@@ -94,57 +94,57 @@ _Score 1–10 for **Current** and **Target (12-month)**. **Phase** = roadmap mon
 
 ## 3. Architecture Application Matrix
 
-_How each skill area maps to production systems, with a **FreshHarvest E-commerce Platform** example._
+_How each skill area maps to production systems, with **FreshHarvest E-commerce Platform** examples aligned to the 5-phase roadmap (Math to Core ML to RAG to Agentic AI to MLOps)._
 
 | Skill Area | Production Application | Example: FreshHarvest E-commerce |
 |------------|------------------------|----------------------------------|
-| **Linear Algebra** | Embeddings, dimensionality reduction, similarity in vector spaces | Product embeddings for “similar items”; reduced-dim features for search. |
-| **Probability & Statistics** | A/B tests, uncertainty estimates, anomaly detection | A/B tests for recommendations; confidence intervals for demand forecasts. |
-| **Calculus & Optimization** | Training loops, hyperparameter tuning, gradient-based methods | Optimizing loss for demand model; tuning learning rates. |
-| **Supervised Learning Theory** | Choosing model class, bias–variance, generalization | Picking regression vs classification for churn vs demand. |
-| **Regression / Classification** | Demand forecasting, churn, propensity scores | Demand prediction; churn predictor; “buy again” classifier. |
-| **Model Evaluation & Metrics** | Offline metrics, thresholds, business alignment | Precision/recall for recommendations; MAE/RMSE for demand. |
-| **Feature Engineering** | Inputs that drive model performance | Time features, aggregates, user/product history for models. |
-| **Scikit-Learn / Pandas** | End-to-end training and data pipelines | Preprocessing, training, and evaluation pipelines in Python. |
-| **Neural Network Fundamentals** | Non-linear patterns, representation learning | Dense nets for tabular demand/churn; embeddings. |
-| **Backpropagation & Optimization** | Stable training, convergence | Training product classifiers and demand models. |
-| **CNNs** | Image and signal understanding | Product image classifier; visual search. |
-| **RNNs / Sequence Models** | Time series and sequences | Demand over time; session-based recommendations. |
-| **PyTorch / TensorFlow** | Custom models and deployment | Custom layers, export for serving. |
-| **Attention & Transformers** | Long-context, sequence-to-sequence | Search relevance; query–product matching. |
-| **Tokenization & Embeddings** | Text and multimodal inputs | Product titles/descriptions; semantic search. |
-| **Fine-Tuning & Transfer Learning** | Domain-specific LLMs and models | Fine-tuned model for FreshHarvest product taxonomy. |
-| **Prompt Engineering** | Reliable LLM behavior in apps | Product descriptions, FAQs, support chatbots. |
-| **Vector Databases** | Semantic search, retrieval | “Find similar products”; RAG over catalog and docs. |
-| **RAG Pipeline Design** | Grounded Q&A and search | Shopping assistant over catalog + policies. |
-| **LangChain / LlamaIndex** | Orchestration of retrieval and LLMs | RAG flows; tool use for cart/checkout. |
-| **Agent Architecture** | Multi-step reasoning and actions | Agent that browses, compares, suggests, and checks stock. |
-| **Tool Calling & Planning** | APIs, DB, external services | Agent calling inventory API, cart API, search. |
-| **Model Serving & APIs** | Real-time and batch inference | REST/gRPC endpoints for recommendations and demand. |
-| **CI/CD for ML** | Reproducible, auditable model releases | Train → test → deploy pipeline; versioned models. |
-| **Model Monitoring & Drift** | Reliability and data quality | Monitoring input drift and performance for demand/churn. |
-| **Kubernetes for ML** | Scalable, resilient serving | ML services and batch jobs on K8s. |
-| **GPU Scheduling & Scaling** | Cost-effective GPU use | Scaling inference and training on GPU nodes. |
-| **Cost Optimization** | Budget and efficiency | Right-sizing instances; spot/preemptible; caching. |
-| **Python for ML** | Scripts, notebooks, services | All training and serving code. |
-| **Git & Version Control** | Code and config history | Repos for models, pipelines, and infra. |
-| **System Design for AI** | End-to-end AI systems | Designing FreshHarvest ML stack (data → train → serve). |
-| **Technical Writing & Documentation** | Runbooks, design docs, READMEs | Runbooks for pipelines; READMEs for repos. |
+| **Linear Algebra** | Embeddings, dimensionality reduction, vector similarity | Phase 1: Vector similarity search engine; product embeddings for similar items. |
+| **Probability & Statistics** | A/B tests, uncertainty estimates, anomaly detection | Phase 1: A/B tests for recommendations; confidence intervals for churn and demand. |
+| **Calculus & Optimization** | Training loops, hyperparameter tuning, gradient-based methods | Phase 1: Gradient descent visualizer; optimizing loss for churn predictor. |
+| **Supervised Learning Theory** | Choosing model class, bias–variance, generalization | Phase 2: Picking regression vs classification for sales vs churn. |
+| **Regression / Classification** | Demand forecasting, churn, propensity scores | Phase 2: Sales prediction model; customer churn classifier with Scikit-learn. |
+| **Model Evaluation & Metrics** | Offline metrics, thresholds, business alignment | Phase 2: Precision/recall for churn; MAE/RMSE for sales forecasts. |
+| **Feature Engineering** | Inputs that drive model performance | Phase 2: Time features, aggregates, user/product history for sales and churn. |
+| **Scikit-Learn / Pandas** | End-to-end training and data pipelines | Phase 2: Preprocessing, training, evaluation for churn and sales pipelines. |
+| **Neural Network Fundamentals** | Non-linear patterns, representation learning | Phase 2: Dense nets for tabular; foundations for product image classifier. |
+| **Backpropagation & Optimization** | Stable training, convergence | Phase 2: Training product image classifier (CNN) and sentiment models. |
+| **CNNs** | Image and signal understanding | Phase 2: Product image classifier (CNN) for FreshHarvest catalog. |
+| **RNNs / Sequence Models** | Time series and sequences | Phase 2: Sales over time; sequence inputs for sentiment analysis pipeline. |
+| **PyTorch / TensorFlow** | Custom models and deployment | Phase 2: Custom layers for classifier; export for API serving. |
+| **Attention & Transformers** | Long-context, sequence-to-sequence | Phase 2: Transformers intro for sentiment analysis; query–product matching. |
+| **Tokenization & Embeddings** | Text and multimodal inputs | Phase 2–3: Product titles/descriptions; semantic search for RAG. |
+| **Fine-Tuning & Transfer Learning** | Domain-specific LLMs and models | Phase 2–3: Domain adaptation for FreshHarvest product taxonomy. |
+| **Prompt Engineering** | Reliable LLM behavior in apps | Phase 3: Product descriptions, FAQs; AI shopping assistant prompts. |
+| **Vector Databases** | Semantic search, retrieval | Phase 3: RAG-powered product search; find similar products over catalog. |
+| **RAG Pipeline Design** | Grounded Q&A and search | Phase 3: RAG foundations and advanced techniques; product search and docs. |
+| **LangChain / LlamaIndex** | Orchestration of retrieval and LLMs | Phase 3: AI shopping assistant with conversation memory; agentic RAG + LangSmith. |
+| **Agent Architecture** | Multi-step reasoning and actions | Phase 4: Multi-agent research assistant; inventory management AI agent. |
+| **Tool Calling & Planning** | APIs, DB, external services | Phase 4: Dynamic pricing agent; inventory agent calling stock and pricing APIs. |
+| **Model Serving & APIs** | Real-time and batch inference | Phase 5: Production ML service on AWS SageMaker; REST endpoints for demand/churn. |
+| **CI/CD for ML** | Reproducible, auditable model releases | Phase 5: Pipelines and CI/CD; end-to-end ML pipeline (Docker + MLflow + DVC). |
+| **Model Monitoring & Drift** | Reliability and data quality | Phase 5: Grafana ML monitoring dashboard; drift and performance alerts. |
+| **Kubernetes for ML** | Scalable, resilient serving | Phase 5: ML services and batch jobs; cloud deploy patterns. |
+| **GPU Scheduling & Scaling** | Cost-effective GPU use | Phase 5: Scaling inference and training on cloud (e.g., SageMaker). |
+| **Cost Optimization** | Budget and efficiency | Phase 5: Right-sizing instances; spot/preemptible; caching in production. |
+| **Python for ML** | Scripts, notebooks, services | All phases: Training, RAG, agents, and MLOps code. |
+| **Git & Version Control** | Code and config history | All phases: Repos for models, pipelines, and infra. |
+| **System Design for AI** | End-to-end AI systems | Phase 5: Designing FreshHarvest ML stack (data to train to serve to monitor). |
+| **Technical Writing & Documentation** | Runbooks, design docs, READMEs | All phases: Runbooks for pipelines; READMEs for portfolio artifacts. |
 
 ---
 
 ## 4. Quarterly Assessment Checkpoints
 
-_Expected score bands by end of each quarter (assuming ~3 months per quarter)._
+_Expected score bands by end of each quarter (assuming ~3 months per quarter), aligned to the 5-phase Krish Naik roadmap._
 
 | Checkpoint | Months | Expected Focus | Typical Score Ranges |
 |------------|--------|----------------|----------------------|
-| **Q1** | 1–3 | Math foundations (Linear Algebra, Probability & Statistics, Calculus) | Math: 4–6; rest: 1–3 (awareness/beginner). |
-| **Q2** | 4–6 | Classical ML + first Deep Learning | Classical ML: 4–6; DL fundamentals: 3–5; Math: 5–7. |
-| **Q3** | 7–9 | Deep Learning (CNNs/RNNs), Transformers, RAG | DL: 5–6; Transformers/RAG: 4–6; Classical ML: 5–7. |
-| **Q4** | 10–12 | Agents, MLOps, K8s/Infrastructure | Agents: 4–6; MLOps/Infra: 4–6; End-to-end system design: 5–6. |
+| **Q1** | 1–3 | Math Foundations complete (Linear Algebra, Probability & Statistics, Calculus & Optimization) | Math skills: 5–6; rest: 1–3 (awareness/beginner). |
+| **Q2** | 4–6 | Core ML complete: Classical ML, Deep Learning, NLP & Transformers intro | ML/DL/NLP skills: 5–7; Math: 5–6. |
+| **Q3** | 7–9 | RAG + Agentic AI complete (RAG foundations/advanced, Agentic RAG, Agents & Multi-Agent Systems) | RAG and Agent skills: 5–7; Core ML: 5–7. |
+| **Q4** | 10–12 | MLOps complete (Core Tools, Pipelines & CI/CD, Cloud Deploy & Monitoring) | MLOps and infra skills: 6–8; end-to-end system design: 5–7. |
 
-**How to use:** At the end of each quarter, re-run the self-assessment and compare to these bands. Adjust study plan if you’re ahead or behind.
+**How to use:** At the end of each quarter, re-run the self-assessment and compare to these bands. Adjust study plan if you're ahead or behind.
 
 ---
 
