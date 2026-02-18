@@ -54,7 +54,7 @@ By the end of Month 1, you should be able to:
 | **Vector** | Ordered list of numbers; arrow in space with magnitude and direction | **Feature vectors:** each data point (e.g., user, product) is a vector of features. **Word embeddings:** each word is a vector in a high-dimensional space. |
 | **Vector addition** | Component-wise; geometrically: head-to-tail | Combining or comparing feature representations. |
 | **Scalar multiplication** | Scale length; direction unchanged (unless negative) | Normalization, scaling features. |
-| **Vector norm** | Length: \(\|\mathbf{v}\| = \sqrt{v_1^2 + \cdots + v_n^2}\) | Measuring magnitude; normalizing to unit vectors for fair similarity. |
+| **Vector norm** | Length: `‖v‖ = sqrt(v₁² + ... + vₙ²)` | Measuring magnitude; normalizing to unit vectors for fair similarity. |
 
 **Why it matters for ML:** Every input to a model is a vector (e.g., pixel values, word IDs turned into embeddings). You need to add, scale, and measure length of these vectors constantly.
 
@@ -64,8 +64,8 @@ By the end of Month 1, you should be able to:
 
 | Concept | Definition / Intuition | ML Relevance |
 |---------|------------------------|---------------|
-| **Dot product** | \(\mathbf{a} \cdot \mathbf{b} = \sum_i a_i b_i = \|\mathbf{a}\| \|\mathbf{b}\| \cos\theta\) | **Similarity search:** high dot product ⇒ similar. **Attention:** attention scores are often dot products between query and key vectors. |
-| **Cosine similarity** | \(\cos\theta = \frac{\mathbf{a} \cdot \mathbf{b}}{\|\mathbf{a}\| \|\mathbf{b}\|}\); angle between vectors, ignores length | Comparing embeddings when magnitude doesn’t matter (e.g., text similarity). |
+| **Dot product** | `a · b = Σᵢ(aᵢ bᵢ) = ‖a‖ ‖b‖ cos(θ)` | **Similarity search:** high dot product ⇒ similar. **Attention:** attention scores are often dot products between query and key vectors. |
+| **Cosine similarity** | `cos(θ) = (a · b) / (‖a‖ ‖b‖)`; angle between vectors, ignores length | Comparing embeddings when magnitude doesn’t matter (e.g., text similarity). |
 
 **Why it matters for ML:** Recommendation (“find items similar to this one”) and transformer attention both rely on dot products and cosine similarity between vectors.
 
@@ -75,11 +75,11 @@ By the end of Month 1, you should be able to:
 
 | Concept | Definition / Intuition | ML Relevance |
 |---------|------------------------|---------------|
-| **Matrix** | Rectangular array of numbers; rows and columns | **Neural network layer:** weights stored in a matrix \(\mathbf{W}\); output = \(\mathbf{W}\mathbf{x} + \mathbf{b}\). |
-| **Matrix–vector product** | \(\mathbf{A}\mathbf{x}\): linear combination of columns of \(\mathbf{A}\) | One layer: multiply weight matrix by input vector to get pre-activation. |
-| **Matrix–matrix product** | \((\mathbf{A}\mathbf{B})_{ij} = \sum_k A_{ik} B_{kj}\) | Batch of inputs: \(\mathbf{X}\mathbf{W}^T\) processes many vectors at once. |
+| **Matrix** | Rectangular array of numbers; rows and columns | **Neural network layer:** weights stored in a matrix **W**; output = `Wx + b`. |
+| **Matrix–vector product** | **Ax**: linear combination of columns of **A** | One layer: multiply weight matrix by input vector to get pre-activation. |
+| **Matrix–matrix product** | `(AB)ᵢⱼ = Σₖ Aᵢₖ Bₖⱼ` | Batch of inputs: **XWᵀ** processes many vectors at once. |
 
-**Why it matters for ML:** Training and inference in neural networks are dominated by matrix multiplications. Understanding shape and meaning of \(\mathbf{W}\mathbf{x}\) is essential.
+**Why it matters for ML:** Training and inference in neural networks are dominated by matrix multiplications. Understanding shape and meaning of **Wx** is essential.
 
 ---
 
@@ -87,8 +87,8 @@ By the end of Month 1, you should be able to:
 
 | Concept | Definition / Intuition | ML Relevance |
 |---------|------------------------|---------------|
-| **System** | \(\mathbf{A}\mathbf{x} = \mathbf{b}\); find \(\mathbf{x}\) | **Solving for parameters:** e.g., normal equations \(\mathbf{X}^T\mathbf{X}\mathbf{w} = \mathbf{X}^T\mathbf{y}\) for linear regression. |
-| **Unique / many / no solution** | Depends on rank and dimensions of \(\mathbf{A}\) | Determines whether a unique set of weights exists or we need regularization / iterative methods. |
+| **System** | **Ax = b**; find **x** | **Solving for parameters:** e.g., normal equations **XᵀXw = Xᵀy** for linear regression. |
+| **Unique / many / no solution** | Depends on rank and dimensions of **A** | Determines whether a unique set of weights exists or we need regularization / iterative methods. |
 
 **Why it matters for ML:** Closed-form solutions (linear regression, some Bayesian updates) reduce to solving linear systems. Iterative methods (gradient descent) are used when systems are large or not invertible.
 
@@ -98,8 +98,8 @@ By the end of Month 1, you should be able to:
 
 | Concept | Definition / Intuition | ML Relevance |
 |---------|------------------------|---------------|
-| **Linear transformation** | Map \(T\) with \(T(\mathbf{v}+\mathbf{w})=T(\mathbf{v})+T(\mathbf{w})\) and \(T(c\mathbf{v})=c\,T(\mathbf{v})\) | **What a layer does:** each layer applies a linear map (matrix) then (often) a nonlinearity. |
-| **Matrix as transformation** | Columns of \(\mathbf{A}\) are where basis vectors go | Intuition for how weight matrix stretches/rotates the input space. |
+| **Linear transformation** | Map *T* with `T(v+w) = T(v) + T(w)` and `T(cv) = c·T(v)` | **What a layer does:** each layer applies a linear map (matrix) then (often) a nonlinearity. |
+| **Matrix as transformation** | Columns of **A** are where basis vectors go | Intuition for how weight matrix stretches/rotates the input space. |
 
 **Why it matters for ML:** A neural network layer is “linear transformation + activation.” Understanding linear maps helps you reason about capacity and behavior of networks.
 
@@ -121,8 +121,8 @@ By the end of Month 1, you should be able to:
 
 | Concept | Definition / Intuition | ML Relevance |
 |---------|------------------------|---------------|
-| **Eigenvector** | \(\mathbf{A}\mathbf{v} = \lambda \mathbf{v}\); direction unchanged by \(\mathbf{A}\) | **PCA:** principal components are eigenvectors of the covariance matrix. |
-| **Eigenvalue** | \(\lambda\): scale factor along that direction | **Dimensionality reduction:** keep directions with largest eigenvalues; drop small ones. |
+| **Eigenvector** | **Av = λv**; direction unchanged by **A** | **PCA:** principal components are eigenvectors of the covariance matrix. |
+| **Eigenvalue** | λ: scale factor along that direction | **Dimensionality reduction:** keep directions with largest eigenvalues; drop small ones. |
 
 **Why it matters for ML:** PCA, LDA, and many spectral methods rely on eigenvalues and eigenvectors. They tell you which directions in the data have the most variance.
 
@@ -132,8 +132,8 @@ By the end of Month 1, you should be able to:
 
 | Concept | Definition / Intuition | ML Relevance |
 |---------|------------------------|---------------|
-| **SVD** | \(\mathbf{A} = \mathbf{U}\mathbf{\Sigma}\mathbf{V}^T\); orthogonal matrices + diagonal singular values | **Recommendation systems:** low-rank approximation of user–item matrix. **Data compression:** approximate \(\mathbf{A}\) with few singular values. |
-| **Low-rank approximation** | Keep top \(k\) singular values; reconstruct \(\mathbf{A}_k\) | Compression; denoising; collaborative filtering. |
+| **SVD** | `A = UΣVᵀ`; orthogonal matrices + diagonal singular values | **Recommendation systems:** low-rank approximation of user–item matrix. **Data compression:** approximate **A** with few singular values. |
+| **Low-rank approximation** | Keep top *k* singular values; reconstruct **A**_k | Compression; denoising; collaborative filtering. |
 
 **Why it matters for ML:** Matrix factorization (e.g., in recommenders) and many dimensionality-reduction and compression techniques are SVD under the hood.
 
@@ -157,9 +157,9 @@ By the end of Month 1, you should be able to:
 | Day | Topic | Activities |
 |-----|------|------------|
 | 1–2 | Matrices; matrix–vector and matrix–matrix multiplication | Coursera; 3B1B “Matrix multiplication as composition” |
-| 3 | Systems of linear equations \(\mathbf{A}\mathbf{x}=\mathbf{b}\); inverse when square and invertible | Coursera; `np.linalg.solve` |
+| 3 | Systems of linear equations **Ax = b**; inverse when square and invertible | Coursera; `np.linalg.solve` |
 | 4 | Linear transformations; matrix as transformation | 3B1B “Linear transformations”; relate to one layer of a NN |
-| 5 | Review + practice | Mini exercise: implement \(\mathbf{Y} = \mathbf{X}\mathbf{W}^T + \mathbf{b}\) for a batch |
+| 5 | Review + practice | Mini exercise: implement `Y = XWᵀ + b` for a batch |
 
 ---
 
@@ -168,7 +168,7 @@ By the end of Month 1, you should be able to:
 | Day | Topic | Activities |
 |-----|------|------------|
 | 1–2 | Span, linear independence, basis, dimension | Coursera; 3B1B “Span”, “Linear dependence” |
-| 3 | Eigenvalues and eigenvectors: \(\mathbf{A}\mathbf{v}=\lambda\mathbf{v}\) | Coursera; 3B1B “Eigenvalues and eigenvectors” |
+| 3 | Eigenvalues and eigenvectors: **Av = λv** | Coursera; 3B1B “Eigenvalues and eigenvectors” |
 | 4 | Computing eigenvalues/eigenvectors in Python; link to PCA | `np.linalg.eig` or `eigh` for symmetric |
 | 5 | Review + practice | Quiz; derive “eigenvectors of covariance ⇒ principal directions” |
 
@@ -178,8 +178,8 @@ By the end of Month 1, you should be able to:
 
 | Day | Topic | Activities |
 |-----|------|------------|
-| 1–2 | SVD: \(\mathbf{A}=\mathbf{U}\mathbf{\Sigma}\mathbf{V}^T\); low-rank approximation | Coursera; 3B1B “Change of basis” (conceptually); `np.linalg.svd` |
-| 3 | Use SVD for recommendation / compression (conceptual or small example) | Small matrix: truncate \(\Sigma\), reconstruct, compare |
+| 1–2 | SVD: `A = UΣVᵀ`; low-rank approximation | Coursera; 3B1B “Change of basis” (conceptually); `np.linalg.svd` |
+| 3 | Use SVD for recommendation / compression (conceptual or small example) | Small matrix: truncate Σ, reconstruct, compare |
 | 4–5 | **Mini-project:** Vector Similarity Search Engine (see below) | Implement; test on toy product vectors |
 
 ---
@@ -188,14 +188,14 @@ By the end of Month 1, you should be able to:
 
 | Concept | Formula |
 |---------|---------|
-| **Vector norm** | \(\|\mathbf{v}\| = \sqrt{\sum_i v_i^2} = \sqrt{\mathbf{v}\cdot\mathbf{v}}\) |
-| **Dot product** | \(\mathbf{a}\cdot\mathbf{b} = \sum_i a_i b_i = \|\mathbf{a}\|\|\mathbf{b}\|\cos\theta\) |
-| **Cosine similarity** | \(\cos\theta = \frac{\mathbf{a}\cdot\mathbf{b}}{\|\mathbf{a}\|\|\mathbf{b}\|}\) |
-| **Matrix–vector product** | \((\mathbf{A}\mathbf{x})_i = \sum_j A_{ij} x_j\) |
-| **Matrix–matrix product** | \((\mathbf{A}\mathbf{B})_{ij} = \sum_k A_{ik}B_{kj}\) |
-| **Eigenvalue equation** | \(\mathbf{A}\mathbf{v} = \lambda\mathbf{v}\) |
-| **SVD** | \(\mathbf{A} = \mathbf{U}\mathbf{\Sigma}\mathbf{V}^T\), \(\mathbf{U},\mathbf{V}\) orthogonal, \(\mathbf{\Sigma}\) diagonal |
-| **Low-rank approx** | \(\mathbf{A}_k = \mathbf{U}_k \mathbf{\Sigma}_k \mathbf{V}_k^T\) (first \(k\) singular values) |
+| **Vector norm** | `‖v‖ = sqrt(Σᵢ vᵢ²) = sqrt(v·v)` |
+| **Dot product** | `a·b = Σᵢ aᵢ bᵢ = ‖a‖ ‖b‖ cos(θ)` |
+| **Cosine similarity** | `cos(θ) = (a·b) / (‖a‖ ‖b‖)` |
+| **Matrix–vector product** | `(Ax)ᵢ = Σⱼ Aᵢⱼ xⱼ` |
+| **Matrix–matrix product** | `(AB)ᵢⱼ = Σₖ Aᵢₖ Bₖⱼ` |
+| **Eigenvalue equation** | `Av = λv` |
+| **SVD** | `A = UΣVᵀ`, **U**, **V** orthogonal, **Σ** diagonal |
+| **Low-rank approx** | `Aₖ = Uₖ Σₖ Vₖᵀ` (first *k* singular values) |
 
 ---
 
@@ -262,10 +262,10 @@ print("Rank-2 approximation:\n", np.round(A_k, 2))
 
 **Steps:**
 
-1. **Data:** Create 10–20 “products” as vectors (e.g., 5–10 features: price norm, category one-hot, popularity score). Store in a matrix \(\mathbf{P}\) (each row = one product).
-2. **Query:** Take one product vector \(\mathbf{q}\).
-3. **Similarity:** Compute similarity of \(\mathbf{q}\) to every row of \(\mathbf{P}\) (dot product or cosine similarity). Use vectorized operations: `similarities = P @ q` or normalize rows and `q`, then `P_norm @ q_norm`.
-4. **Rank:** Sort by similarity (descending); return top \(k\) product indices (or names).
+1. **Data:** Create 10–20 “products” as vectors (e.g., 5–10 features: price norm, category one-hot, popularity score). Store in a matrix **P** (each row = one product).
+2. **Query:** Take one product vector **q**.
+3. **Similarity:** Compute similarity of **q** to every row of **P** (dot product or cosine similarity). Use vectorized operations: `similarities = P @ q` or normalize rows and `q`, then `P_norm @ q_norm`.
+4. **Rank:** Sort by similarity (descending); return top *k* product indices (or names).
 5. **Optional:** Add a simple CLI or Jupyter interface: input “product id”, output “top 5 similar products”.
 
 **Success criteria:** You use only NumPy (no sklearn.neighbors). You can explain why dot product or cosine similarity is a reasonable “similarity” for recommendations.
@@ -276,7 +276,7 @@ print("Rank-2 approximation:\n", np.round(A_k, 2))
 
 1. What is the geometric interpretation of the dot product of two unit vectors?
 2. Why do we often normalize vectors before comparing them in ML (e.g., for similarity)?
-3. If \(\mathbf{W}\) is \((64, 128)\) and \(\mathbf{x}\) is \((128,)\), what is the shape of \(\mathbf{W}\mathbf{x}\)?
+3. If **W** is (64, 128) and **x** is (128,), what is the shape of **Wx**?
 4. In one sentence, what does a linear transformation do geometrically?
 5. What do eigenvalues of a covariance matrix represent in PCA?
 6. Give one ML application of SVD.

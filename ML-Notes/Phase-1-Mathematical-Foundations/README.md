@@ -72,7 +72,7 @@ Phase-1-Mathematical-Foundations/
 
 - **Python basics:** Variables, functions, loops, lists/dicts. Comfort with at least one language (C#/.NET is fine; concepts transfer).
 - **NumPy basics:** Arrays, shape, indexing. You'll use NumPy for all hands-on math (dot products, gradients, etc.).
-- **High school math:** Algebra, basic geometry, functions (e.g. \(f(x) = x^2\)). No calculus or linear algebra required before starting—both are built from scratch in this phase.
+- **High school math:** Algebra, basic geometry, functions (e.g. `f(x) = x²`). No calculus or linear algebra required before starting—both are built from scratch in this phase.
 
 ---
 

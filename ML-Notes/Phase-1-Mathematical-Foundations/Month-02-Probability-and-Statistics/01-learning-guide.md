@@ -54,9 +54,9 @@ By the end of Month 2, you should be able to:
 |---------|------------------------|---------------|
 | **Sample space** | Set of all possible outcomes | **Data space:** all possible inputs/outputs; defining what we’re modeling. |
 | **Event** | Subset of sample space | “Model predicts class 1,” “error &gt; 0.5,” “user churns.” |
-| **Axioms** | \(P(\Omega)=1\), \(P(A)\ge 0\), \(P(A\cup B)=P(A)+P(B)\) for disjoint \(A,B\) | Foundation for all probabilistic reasoning; model outputs as probabilities (e.g., softmax). |
+| **Axioms** | `P(Ω) = 1`, `P(A) ≥ 0`, `P(A ∪ B) = P(A) + P(B)` for disjoint A, B | Foundation for all probabilistic reasoning; model outputs as probabilities (e.g., softmax). |
 
-**Why it matters for ML:** Models often output probabilities (e.g., \(P(\text{spam}\mid\text{email})\)). You need a clear notion of events and probability to interpret and evaluate these outputs.
+**Why it matters for ML:** Models often output probabilities (e.g., P(spam|email)). You need a clear notion of events and probability to interpret and evaluate these outputs.
 
 ---
 
@@ -64,10 +64,10 @@ By the end of Month 2, you should be able to:
 
 | Concept | Definition / Intuition | ML Relevance |
 |---------|------------------------|---------------|
-| **Conditional probability** | \(P(A\mid B) = \frac{P(A\cap B)}{P(B)}\) | Probability of label given features: \(P(Y\mid X)\). |
-| **Independence** | \(P(A\cap B)=P(A)P(B)\) or \(P(A\mid B)=P(A)\) | **Naive Bayes:** assumes features are independent given the class; simplifies \(P(X\mid Y)\). |
+| **Conditional probability** | `P(A|B) = P(A ∩ B) / P(B)` | Probability of label given features: P(Y|X). |
+| **Independence** | `P(A ∩ B) = P(A)P(B)` or `P(A|B) = P(A)` | **Naive Bayes:** assumes features are independent given the class; simplifies P(X|Y). |
 
-**Why it matters for ML:** Classification is often \(P(\text{class}\mid\text{features})\). Naive Bayes relies on conditional probability and (conditional) independence assumptions.
+**Why it matters for ML:** Classification is often P(class|features). Naive Bayes relies on conditional probability and (conditional) independence assumptions.
 
 ---
 
@@ -75,7 +75,7 @@ By the end of Month 2, you should be able to:
 
 | Concept | Definition / Intuition | ML Relevance |
 |---------|------------------------|---------------|
-| **Bayes’ theorem** | \(P(A\mid B) = \frac{P(B\mid A)\,P(A)}{P(B)}\) | **Spam filters:** \(P(\text{spam}\mid\text{words})\). **Medical diagnosis:** \(P(\text{disease}\mid\text{test})\). **Bayesian inference:** update prior \(P(\theta)\) with likelihood \(P(D\mid\theta)\). |
+| **Bayes’ theorem** | `P(A|B) = P(B|A)·P(A) / P(B)` | **Spam filters:** P(spam|words). **Medical diagnosis:** P(disease|test). **Bayesian inference:** update prior P(θ) with likelihood P(D|θ). |
 
 **Why it matters for ML:** Naive Bayes classifiers, Bayesian networks, and Bayesian optimization all use Bayes’ theorem. It’s the backbone of “update belief given evidence.”
 
@@ -85,8 +85,8 @@ By the end of Month 2, you should be able to:
 
 | Concept | Definition / Intuition | ML Relevance |
 |---------|------------------------|---------------|
-| **Discrete RV** | Takes countable values; PMF \(p(x)\) | Labels, counts (e.g., number of clicks). |
-| **Continuous RV** | Takes values in an interval; PDF \(f(x)\), \(P(a\le X\le b)=\int_a^b f(x)\,dx\) | Real-valued targets, errors, weights; Gaussian noise. |
+| **Discrete RV** | Takes countable values; PMF p(x) | Labels, counts (e.g., number of clicks). |
+| **Continuous RV** | Takes values in an interval; PDF f(x), `P(a ≤ X ≤ b) = ∫ₐᵇ f(x) dx` | Real-valued targets, errors, weights; Gaussian noise. |
 
 **Why it matters for ML:** Inputs and outputs are modeled as random variables; loss functions and likelihoods depend on whether we assume discrete or continuous distributions.
 
@@ -96,10 +96,10 @@ By the end of Month 2, you should be able to:
 
 | Distribution | Use case | ML Relevance |
 |--------------|----------|---------------|
-| **Bernoulli** | Single binary trial; \(P(X=1)=p\) | Binary classification; one data point. |
-| **Binomial** | Number of successes in \(n\) trials | Counts of successes (e.g., clicks in \(n\) impressions). |
-| **Gaussian (Normal)** | Bell curve; mean \(\mu\), variance \(\sigma^2\) | **Noise in regression;** many ML algorithms assume Gaussian errors; central limit theorem. |
-| **Poisson** | Counts in fixed interval; rate \(\lambda\) | Event counts (e.g., number of visits per day). |
+| **Bernoulli** | Single binary trial; `P(X=1) = p` | Binary classification; one data point. |
+| **Binomial** | Number of successes in n trials | Counts of successes (e.g., clicks in n impressions). |
+| **Gaussian (Normal)** | Bell curve; mean μ, variance σ² | **Noise in regression;** many ML algorithms assume Gaussian errors; central limit theorem. |
+| **Poisson** | Counts in fixed interval; rate λ | Event counts (e.g., number of visits per day). |
 
 **Why it matters for ML:** Choosing a distribution (e.g., Bernoulli for binary, Gaussian for regression noise) defines the likelihood and thus the loss (e.g., cross-entropy, MSE).
 
@@ -109,9 +109,9 @@ By the end of Month 2, you should be able to:
 
 | Concept | Definition / Intuition | ML Relevance |
 |---------|------------------------|---------------|
-| **Expectation** | \(E[X] = \sum x\,p(x)\) or \(\int x\,f(x)\,dx\); “average” outcome | **Model prediction:** often \(E[Y\mid X]\); mean of a distribution. |
-| **Variance** | \(\text{Var}(X)=E[(X-E[X])^2]\); spread | **Uncertainty of predictions;** regularization. |
-| **Standard deviation** | \(\sigma = \sqrt{\text{Var}(X)}\) | Same units as \(X\); reporting error bars. |
+| **Expectation** | `E[X] = Σ x·p(x)` or `∫ x·f(x) dx`; “average” outcome | **Model prediction:** often E[Y|X]; mean of a distribution. |
+| **Variance** | `Var(X) = E[(X - E[X])²]`; spread | **Uncertainty of predictions;** regularization. |
+| **Standard deviation** | `σ = √Var(X)` | Same units as X; reporting error bars. |
 
 **Why it matters for ML:** We optimize losses that are often expectations (e.g., mean squared error). Variance is key to overfitting and to Bayesian uncertainty.
 
@@ -121,8 +121,8 @@ By the end of Month 2, you should be able to:
 
 | Concept | Definition / Intuition | ML Relevance |
 |---------|------------------------|---------------|
-| **Covariance** | \(\text{Cov}(X,Y)=E[(X-E[X])(Y-E[Y])]\) | **Feature relationships;** redundant features. |
-| **Correlation** | \(\rho = \frac{\text{Cov}(X,Y)}{\sigma_X\sigma_Y}\); \(-1\le\rho\le 1\) | **Multicollinearity:** high correlation between features can make some models unstable. |
+| **Covariance** | `Cov(X,Y) = E[(X - E[X])(Y - E[Y])]` | **Feature relationships;** redundant features. |
+| **Correlation** | `ρ = Cov(X,Y) / (σ_X σ_Y)`; −1 ≤ ρ ≤ 1 | **Multicollinearity:** high correlation between features can make some models unstable. |
 
 **Why it matters for ML:** Feature selection and interpretation; understanding why some models prefer uncorrelated or regularized features.
 
@@ -132,8 +132,8 @@ By the end of Month 2, you should be able to:
 
 | Concept | Definition / Intuition | ML Relevance |
 |---------|------------------------|---------------|
-| **Likelihood** | \(L(\theta) = P(\text{data}\mid\theta)\); function of parameters | How well do parameters \(\theta\) explain the data? |
-| **MLE** | \(\hat{\theta} = \arg\max_\theta L(\theta)\) (often maximize \(\log L\)) | **How models learn parameters:** many estimators (linear regression, logistic regression) are MLE under a chosen distribution. |
+| **Likelihood** | `L(θ) = P(data|θ)`; function of parameters | How well do parameters θ explain the data? |
+| **MLE** | `θ̂ = argmax_θ L(θ)` (often maximize log L) | **How models learn parameters:** many estimators (linear regression, logistic regression) are MLE under a chosen distribution. |
 
 **Why it matters for ML:** Training is often “find parameters that maximize likelihood (or minimize negative log-likelihood).” Cross-entropy and MSE can be derived from MLE.
 
@@ -143,7 +143,7 @@ By the end of Month 2, you should be able to:
 
 | Concept | Definition / Intuition | ML Relevance |
 |---------|------------------------|---------------|
-| **Hypothesis test** | Decide between \(H_0\) and \(H_1\) using \(p\)-value or critical region | **A/B testing:** is the new model/UI better? **Model comparison:** is difference in accuracy significant? |
+| **Hypothesis test** | Decide between H₀ and H₁ using p-value or critical region | **A/B testing:** is the new model/UI better? **Model comparison:** is difference in accuracy significant? |
 | **Confidence interval** | Interval that contains true parameter with a given probability (e.g., 95%) | Reporting uncertainty of metrics (e.g., accuracy, AUC). |
 
 **Why it matters for ML:** You need to know whether an improvement is real or due to chance, and how to report metrics with uncertainty.
@@ -171,7 +171,7 @@ By the end of Month 2, you should be able to:
 | 1–2 | Sample space, events, axioms; basic rules (addition, complement) | Coursera Week 1; Khan Academy probability |
 | 3 | Conditional probability; independence | Coursera; tree diagrams; “given B, what’s P(A)?” |
 | 4 | Bayes’ theorem; prior, likelihood, posterior | StatQuest “Bayes”; medical/test example |
-| 5 | Naive Bayes idea: \(P(\text{class}\mid\text{features})\) with independence | Coursera quiz; small Bayes calculation by hand |
+| 5 | Naive Bayes idea: P(class|features) with independence | Coursera quiz; small Bayes calculation by hand |
 
 ---
 
@@ -181,7 +181,7 @@ By the end of Month 2, you should be able to:
 |-----|------|------------|
 | 1–2 | Random variables (discrete and continuous); PMF, PDF, CDF | Coursera; define RV for “number of clicks” |
 | 3 | Bernoulli, Binomial, Gaussian, Poisson (when to use each) | StatQuest “Probability distributions”; plot in Python |
-| 4 | Expectation, variance, standard deviation; rules (e.g., \(\text{Var}(aX+b)=a^2\text{Var}(X)\)) | Coursera; compute for Bernoulli and Gaussian |
+| 4 | Expectation, variance, standard deviation; rules (e.g., `Var(aX+b) = a² Var(X)`) | Coursera; compute for Bernoulli and Gaussian |
 | 5 | Covariance and correlation; interpret in a small dataset | NumPy: `np.cov`, correlation matrix; link to multicollinearity |
 
 ---
@@ -190,9 +190,9 @@ By the end of Month 2, you should be able to:
 
 | Day | Topic | Activities |
 |-----|------|------------|
-| 1–2 | Likelihood; log-likelihood; MLE for Bernoulli and Gaussian | Coursera; StatQuest “Maximum Likelihood”; derive \(\hat{p}\) for Bernoulli |
+| 1–2 | Likelihood; log-likelihood; MLE for Bernoulli and Gaussian | Coursera; StatQuest “Maximum Likelihood”; derive p̂ for Bernoulli |
 | 3 | MLE and loss: cross-entropy ↔ Bernoulli MLE; MSE ↔ Gaussian MLE | Derive; implement MLE for mean of Gaussian in Python |
-| 4 | Hypothesis testing: \(H_0\), \(p\)-value, type I/II error | Coursera; StatQuest “Hypothesis testing” |
+| 4 | Hypothesis testing: H₀, p-value, type I/II error | Coursera; StatQuest “Hypothesis testing” |
 | 5 | Confidence intervals; A/B test interpretation | Build 95% CI for a proportion; interpret “difference significant or not” |
 
 ---
@@ -211,17 +211,17 @@ By the end of Month 2, you should be able to:
 
 | Concept | Formula |
 |---------|---------|
-| **Conditional probability** | \(P(A\mid B) = \frac{P(A\cap B)}{P(B)}\) |
-| **Bayes’ theorem** | \(P(A\mid B) = \frac{P(B\mid A)\,P(A)}{P(B)}\) |
-| **Independence** | \(P(A\cap B) = P(A)\,P(B)\) |
-| **Expectation** | \(E[X] = \sum x\,p(x)\) or \(\int x\,f(x)\,dx\) |
-| **Variance** | \(\text{Var}(X) = E[X^2] - (E[X])^2\) |
-| **Gaussian** | \(f(x) = \frac{1}{\sigma\sqrt{2\pi}} e^{-(x-\mu)^2/(2\sigma^2)}\) |
-| **Covariance** | \(\text{Cov}(X,Y) = E[XY] - E[X]E[Y]\) |
-| **Correlation** | \(\rho_{X,Y} = \frac{\text{Cov}(X,Y)}{\sigma_X\,\sigma_Y}\) |
-| **MLE (Bernoulli)** | \(\hat{p} = \frac{\text{number of successes}}{n}\) |
-| **MLE (Gaussian mean)** | \(\hat{\mu} = \bar{x} = \frac{1}{n}\sum_i x_i\) |
-| **Logistic (sigmoid)** | \(\sigma(z) = \frac{1}{1+e^{-z}}\); \(P(Y=1\mid X) = \sigma(\mathbf{w}^T\mathbf{x})\) |
+| **Conditional probability** | `P(A|B) = P(A ∩ B) / P(B)` |
+| **Bayes’ theorem** | `P(A|B) = P(B|A)·P(A) / P(B)` |
+| **Independence** | `P(A ∩ B) = P(A)·P(B)` |
+| **Expectation** | `E[X] = Σ x·p(x)` or `∫ x·f(x) dx` |
+| **Variance** | `Var(X) = E[X²] - (E[X])²` |
+| **Gaussian** | `f(x) = (1 / (σ√(2π))) × e^(-(x-μ)²/(2σ²))` |
+| **Covariance** | `Cov(X,Y) = E[XY] - E[X]E[Y]` |
+| **Correlation** | `ρ_{X,Y} = Cov(X,Y) / (σ_X σ_Y)` |
+| **MLE (Bernoulli)** | `p̂ = (number of successes) / n` |
+| **MLE (Gaussian mean)** | `μ̂ = x̄ = (1/n) Σᵢ xᵢ` |
+| **Logistic (sigmoid)** | `σ(z) = 1 / (1 + e⁻ᶻ)`; `P(Y=1|X) = σ(wᵀx)` |
 
 ---
 
@@ -287,19 +287,19 @@ print("MLE p_hat =", round(p_hat, 3))
 
 ## Mini-Project: Customer Churn Probability Estimator
 
-**Goal:** Implement a simple **logistic regression from scratch** (no sklearn) to estimate \(P(\text{churn}\mid\text{features})\) and interpret it as a probability model (MLE view).
+**Goal:** Implement a simple **logistic regression from scratch** (no sklearn) to estimate P(churn|features) and interpret it as a probability model (MLE view).
 
 **Steps:**
 
 1. **Data:** Use a small churn dataset (e.g., 2–4 features: tenure, monthly charges, contract type encoded). Or create synthetic: `X` (features), `y` (0/1 churn).
-2. **Model:** \(P(Y=1\mid X) = \sigma(\mathbf{w}^T\mathbf{x} + b)\) where \(\sigma(z) = 1/(1+e^{-z})\).
+2. **Model:** `P(Y=1|X) = σ(wᵀx + b)` where `σ(z) = 1 / (1 + e⁻ᶻ)`.
 3. **Loss:** Binary cross-entropy (negative log-likelihood under Bernoulli):  
-   \(-\sum_i \bigl[ y_i \log p_i + (1-y_i)\log(1-p_i) \bigr]\).
-4. **Optimization:** Gradient descent on the loss with respect to \(\mathbf{w}\) and \(b\). Derive \(\frac{\partial L}{\partial w_j}\) (chain rule: loss → \(p\) → \(z\)).
-5. **Training:** Loop: compute probabilities, loss, gradients; update \(\mathbf{w}\) and \(b\).
-6. **Output:** For a few test customers, output \(P(\text{churn})\) and classify (e.g., threshold 0.5).
+   `−Σᵢ [ yᵢ log pᵢ + (1−yᵢ) log(1−pᵢ) ]`.
+4. **Optimization:** Gradient descent on the loss with respect to **w** and b. Derive `∂L/∂wⱼ` (chain rule: loss → p → z).
+5. **Training:** Loop: compute probabilities, loss, gradients; update **w** and b.
+6. **Output:** For a few test customers, output P(churn) and classify (e.g., threshold 0.5).
 
-**Success criteria:** You implement sigmoid, loss, and gradient by hand; you can state that this is MLE for Bernoulli with linear model for \(\log(p/(1-p))\).
+**Success criteria:** You implement sigmoid, loss, and gradient by hand; you can state that this is MLE for Bernoulli with linear model for log(p/(1−p)).
 
 **Optional:** Plot loss vs iteration; plot decision boundary in 2D if you have 2 features.
 
