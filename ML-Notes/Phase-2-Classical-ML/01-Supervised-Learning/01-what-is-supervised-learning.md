@@ -88,7 +88,7 @@ For neural networks specifically, the supervised learning process works like thi
 
 ## The Machine Learning Process
 
-![Machine Learning Process](../images/ml-process-diagram.png)
+![Machine Learning Process](../../images/ml-process-diagram.png)
 
 Here is the **step-by-step process** for supervised learning:
 
