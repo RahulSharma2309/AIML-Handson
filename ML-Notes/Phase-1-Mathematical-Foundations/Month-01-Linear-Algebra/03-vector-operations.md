@@ -484,7 +484,79 @@ Range: [-1, +1]
 
 ---
 
-## 8. Python Quick Check
+## 8. RAG (Retrieval-Augmented Generation) and Vector Databases — Real-World Cosine Similarity
+
+Cosine similarity is the backbone of **RAG** and **vector databases**, which power many modern GenAI applications (chatbots, search, assistants). Here is how it fits in.
+
+### How RAG Works (High-Level Flow)
+
+1. **Book/PDF or any text** is split into chunks (paragraphs, sections).
+2. Each chunk is **converted to a vector** (embedding) using an embedding model.
+3. These vectors are **stored in a vector database**.
+4. When a **user asks a question**, the query is **converted to a vector** (same embedding model).
+5. The database performs a **cosine similarity search**: find the stored vectors most similar to the query vector.
+6. The **most similar chunks** (their text) are **retrieved** and passed to an LLM.
+7. The LLM **generates an answer** using that retrieved context (hence "retrieval-augmented" generation).
+
+```
+RAG Pipeline (ASCII):
+
+  [Book/PDF]                    [User Query]
+       |                              |
+       v                              v
+  Split into chunks            Convert to vector
+       |                              |
+       v                              |
+  Convert each chunk  --------> [Embedding Model]
+  to vector (embedding)              |
+       |                              |
+       v                              v
+  [Vector Database]  <--cosine similarity search-->
+  (store vectors)         (query vector vs stored vectors)
+       |
+       v
+  Return most similar chunks (text)
+       |
+       v
+  [LLM] uses chunks as context --> Generate answer
+```
+
+### Vector Databases
+
+These systems store high-dimensional vectors and support fast **similarity search** (often using cosine similarity or related metrics):
+
+| Database    | Notes |
+|------------|--------|
+| **FAISS**  | Facebook AI Similarity Search — library for similarity search, often used with embeddings |
+| **Pinecone** | Managed vector DB, cloud-hosted |
+| **Weaviate** | Open-source vector DB with GraphQL API |
+| **Qdrant**  | Vector DB optimized for ML embeddings |
+| **ChromaDB** | Lightweight, often used for prototyping and local RAG |
+
+### Embedding Techniques
+
+Text is turned into vectors (embeddings) using various methods:
+
+| Technique | Description |
+|-----------|-------------|
+| **Bag of Words** | Count word frequencies → vector of counts (simple, no order) |
+| **TF-IDF** | Weighted word frequency; down-weights common words (good for classic search) |
+| **Word2Vec** | Dense vectors from neural nets; captures semantic similarity |
+| **Transformer embeddings (BERT/GPT)** | Contextual embeddings; state-of-the-art for semantic similarity and RAG |
+
+For RAG, **transformer-based embeddings** (e.g. sentence-BERT, OpenAI embeddings) are most common because they capture meaning and work well with cosine similarity.
+
+### Why This Matters for GenAI
+
+- **Chatbots & assistants:** RAG lets the model "look up" facts from your docs instead of relying only on training data — fewer hallucinations, more accurate answers.
+- **Search:** Semantic search uses query and document embeddings + cosine similarity to find relevant content by meaning, not just keywords.
+- **Enterprise apps:** Internal wikis, PDFs, and databases can be turned into queryable knowledge bases using the same pipeline: text → embeddings → vector DB → similarity search → LLM.
+
+Cosine similarity is the operation that answers: *"Which stored vectors are closest in direction to my query vector?"* — and that is exactly what RAG and vector databases use to retrieve the right context for generation.
+
+---
+
+## 9. Python Quick Check
 
 ```python
 import numpy as np
@@ -516,4 +588,4 @@ print("‖movie_b‖  =", norm(movie_b))    # 2.646
 ---
 
 **Previous:** [← Introduction to Linear Algebra](./02-introduction-to-linear-algebra.md)  
-**Next:** Matrices & Matrix Operations → (coming soon)
+**Next:** [Element-wise and Scalar Multiplication →](./04-element-wise-and-scalar-multiplication.md)
