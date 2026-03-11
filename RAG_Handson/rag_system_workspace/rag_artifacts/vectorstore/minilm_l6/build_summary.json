@@ -1,0 +1,8 @@
+{
+  "model_name": "sentence-transformers/all-MiniLM-L6-v2",
+  "batch_size": 128,
+  "normalize_embeddings": true,
+  "chunks": 979,
+  "vector_dim": 384,
+  "index_path": "rag_system_workspace/rag_artifacts/vectorstore/minilm_l6/faiss_index.bin"
+}

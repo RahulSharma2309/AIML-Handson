@@ -1,0 +1,17 @@
+Introduction to Python
+Python is a popular, beginner-friendly programming language used in web development,
+data science, machine learning, automation, and more.
+Why Python is great for beginners:
+1. Easy-to-read syntax
+2. Large community and learning resources
+3. Huge ecosystem of libraries (NumPy, pandas, scikit-learn, etc.)
+Basic concepts in Python:
+- Variables and data types (int, float, str, bool)
+- Control flow (if/else, loops)
+- Functions and modules
+- Lists, dictionaries, tuples, and sets
+- File handling and exception handling
+Example:
+name = "Rahul"
+print(f"Hello, {name}! Welcome to Python.")
+Python is a great first step for building AI and RAG applications.

@@ -36,6 +36,7 @@ Phase-5-RAG-and-Agents/
 |--------|------|----------|-------|
 | **Ultimate RAG Bootcamp Using LangChain, LangGraph & LangSmith** | **PRIMARY** | Months 7–8 | Krish Naik, Udemy — RAG foundations, advanced techniques, agentic RAG, LangSmith, cloud deployment |
 | **Complete Agentic AI Bootcamp with LangGraph and LangChain** | **PRIMARY** | Month 9 | Krish Naik, Udemy — single agents, multi-agent collaboration, autonomous workflows, state transitions |
+| [RAG_Handson Environment Setup Guide](./03-LangChain-and-Orchestration/00-rag-handson-environment-setup-guide.md) | PRACTICAL NOTE | Phase 5 start | Windows + `uv` + Jupyter kernel setup used in this repo |
 | [LangChain Documentation](https://python.langchain.com/docs/) | SUPPLEMENTARY | — | Chains, agents, retrievers, integrations |
 | [LlamaIndex Documentation](https://docs.llamaindex.ai/) | SUPPLEMENTARY | — | Alternative RAG/retrieval framework |
 | [Pinecone Learning Center](https://www.pinecone.io/learn/) | SUPPLEMENTARY | — | Vector DB concepts |

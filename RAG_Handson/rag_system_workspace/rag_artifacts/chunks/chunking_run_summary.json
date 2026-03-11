@@ -1,0 +1,62 @@
+[
+  {
+    "profile": "general_docs",
+    "md_files": 28,
+    "total_chunks": 267,
+    "total_tokens": 40624,
+    "settings": {
+      "target_tokens": 380,
+      "max_tokens": 520,
+      "overlap_tokens": 60,
+      "split_levels": [
+        2
+      ]
+    },
+    "avg_chunk_tokens": 152.15
+  },
+  {
+    "profile": "operations_docs",
+    "md_files": 22,
+    "total_chunks": 298,
+    "total_tokens": 46838,
+    "settings": {
+      "target_tokens": 320,
+      "max_tokens": 450,
+      "overlap_tokens": 50,
+      "split_levels": [
+        2
+      ]
+    },
+    "avg_chunk_tokens": 157.17
+  },
+  {
+    "profile": "product_owner_docs",
+    "md_files": 25,
+    "total_chunks": 241,
+    "total_tokens": 36158,
+    "settings": {
+      "target_tokens": 450,
+      "max_tokens": 600,
+      "overlap_tokens": 60,
+      "split_levels": [
+        2
+      ]
+    },
+    "avg_chunk_tokens": 150.03
+  },
+  {
+    "profile": "technical_docs",
+    "md_files": 14,
+    "total_chunks": 140,
+    "total_tokens": 21920,
+    "settings": {
+      "target_tokens": 360,
+      "max_tokens": 520,
+      "overlap_tokens": 70,
+      "split_levels": [
+        2
+      ]
+    },
+    "avg_chunk_tokens": 156.57
+  }
+]
